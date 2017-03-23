@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<Animek>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Animek>
  <anime>
   <animeID>1</animeID>
   <animeNev>.hack//SIGN</animeNev>
@@ -7621,6 +7620,6 @@
   <animeNev>Rewrite</animeNev>
   <nezem>1</nezem>
   <reszek>0</reszek>
-  <megjegyzes>8 - 21 daikara +-</megjegyzes>
+  <megjegyzes>8 - 21 daikara</megjegyzes>
  </anime>
 </Animek>
