@@ -3285,9 +3285,9 @@
  <anime>
   <animeID>470</animeID>
   <animeNev>Koukaku no Pandora</animeNev>
-  <nezem>3</nezem>
+  <nezem>1</nezem>
   <reszek>1</reszek>
-  <megjegyzes>7 komal kueva jó</megjegyzes>
+  <megjegyzes>8 komal kueva jó</megjegyzes>
  </anime>
  <anime>
   <animeID>471</animeID>
@@ -7464,9 +7464,9 @@
  <anime>
   <animeID>1070</animeID>
   <animeNev>Youja Senki Saga of Tanya the Evil</animeNev>
-  <nezem>1</nezem>
+  <nezem>0</nezem>
   <reszek>12</reszek>
-  <megjegyzes>11 Daikara, kis démon hadnagy aa 7</megjegyzes>
+  <megjegyzes>12 Daikara, kis démon hadnagy aa 7, ki elpusztítaná istent, de az istennek nevezett x létforma, csak szivatja</megjegyzes>
  </anime>
  <anime>
   <animeID>1071</animeID>
@@ -7513,16 +7513,16 @@
  <anime>
   <animeID>1077</animeID>
   <animeNev>Gabriel Drop Out</animeNev>
-  <nezem>1</nezem>
-  <reszek>0</reszek>
-  <megjegyzes>10 kiseki angyal-démon-sátán</megjegyzes>
+  <nezem>0</nezem>
+  <reszek>12</reszek>
+  <megjegyzes>12 kiseki angyal-démon-sátán</megjegyzes>
  </anime>
  <anime>
   <animeID>1078</animeID>
   <animeNev>Kobayashi-san Chi no Maid Dragon</animeNev>
-  <nezem>1</nezem>
+  <nezem>0</nezem>
   <reszek>13</reszek>
-  <megjegyzes>12 srkany szokfg kiseki</megjegyzes>
+  <megjegyzes>srkany szokfg kiseki</megjegyzes>
  </anime>
  <anime>
   <animeID>1079</animeID>
@@ -7550,14 +7550,14 @@
   <animeNev>Little Witch Academia</animeNev>
   <nezem>1</nezem>
   <reszek>0</reszek>
-  <megjegyzes>7adademia</megjegyzes>
+  <megjegyzes>12adademia</megjegyzes>
  </anime>
  <anime>
   <animeID>1083</animeID>
   <animeNev>Demi-chan wa Kataritai</animeNev>
   <nezem>1</nezem>
   <reszek>0</reszek>
-  <megjegyzes>7 ricz -- félemberek</megjegyzes>
+  <megjegyzes>10 ricz -- félemberek</megjegyzes>
  </anime>
  <anime>
   <animeID>1084</animeID>
@@ -7569,9 +7569,9 @@
  <anime>
   <animeID>1085</animeID>
   <animeNev>ACCA</animeNev>
-  <nezem>1</nezem>
+  <nezem>0</nezem>
   <reszek>0</reszek>
-  <megjegyzes>11aa láncdonáx</megjegyzes>
+  <megjegyzes>aa láncdonáx</megjegyzes>
  </anime>
  <anime>
   <animeID>1086</animeID>
@@ -7622,4 +7622,4 @@
   <reszek>0</reszek>
   <megjegyzes>8 - 21 daikarailll</megjegyzes>
  </anime>
-</Animek>
+<anime><animeID>1093</animeID><animeNev>Gin no Guardian</animeNev><nezem>1</nezem><reszek>0</reszek><megjegyzes>2 komal bemutató rész, nem szeretnék még véleményt mondani, aranyos a ciaca</megjegyzes></anime><anime><animeID>1094</animeID><animeNev>Rokudenashi Majutsu Koushi to Akashic Records</animeNev><nezem>1</nezem><reszek>0</reszek><megjegyzes>2 mágia</megjegyzes></anime><anime><animeID>1095</animeID><animeNev>Sakurada Reset</animeNev><nezem>1</nezem><reszek>0</reszek><megjegyzes>1 sok képesség</megjegyzes></anime><anime><animeID>1096</animeID><animeNev>Clockwork Planet</animeNev><nezem>1</nezem><reszek>0</reszek><megjegyzes>1 óra világ, nem is tudom</megjegyzes></anime><anime><animeID>1097</animeID><animeNev>Renai Boukun</animeNev><nezem>1</nezem><reszek>0</reszek><megjegyzes>1 szerelmi sokszög Yorusubs</megjegyzes></anime><anime><animeID>1098</animeID><animeNev>Eromanga sensei</animeNev><nezem>1</nezem><reszek>0</reszek><megjegyzes>1 hentai razoló kishúgi Yorusubs</megjegyzes></anime><anime><animeID>1099</animeID><animeNev>Re Creators</animeNev><nezem>1</nezem><reszek>0</reszek><megjegyzes>1 flash hunravil anime karakterek a rendes világban</megjegyzes></anime><anime><animeID>1100</animeID><animeNev>Busou Shoujo Machiavellianism</animeNev><nezem>1</nezem><reszek>0</reszek><megjegyzes>1 komal kardos leányok verik az átkozott férfiakat</megjegyzes></anime><anime><animeID>1101</animeID><animeNev>Seikaisuru Kado</animeNev><nezem>1</nezem><reszek>0</reszek><megjegyzes>00 konal kocka</megjegyzes></anime></Animek>
