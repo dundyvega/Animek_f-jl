@@ -1,0 +1,1291 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass book
+\use_default_options true
+\maintain_unincluded_children false
+\language magyar
+\language_package babel
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "NOEL"
+\pdf_author "Vega Aldár"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language polish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Sarazen
+\end_layout
+
+\begin_layout Author
+Horváth Jonathán
+\end_layout
+
+\begin_layout Part*
+Elöszó
+\end_layout
+
+\begin_layout Standard
+Ennek a rövid regénykémnek a terve már 2013-ban megfogalmazódott bennem
+ egy szép éjszaka alatt.
+ Muzsám aznap este is meglátogatott álmomban.
+ Mesélt nekem életéről, és úrnőjének életéről, akit megböntetett a szomorú
+ tündér, és ki halála előtt megbánta tetteit.
+ Az úrnője halála előtt röviden összefoglalva leírta életének történetét,
+ azt adom most át nektek.
+\end_layout
+
+\begin_layout Part
+Egy elátkozott ház
+\end_layout
+
+\begin_layout Standard
+Egyszer réges-régen egy nemeskisasszony rosszul bánt árva aprócska szobalányával
+, hogy ha az nem tanult volna mágiát egy nagyhatalmú sötétmágus rokonától,
+ belehalt volna.
+\end_layout
+
+\begin_layout Standard
+Elhatározta, hogy bosszút magáért, és a hasonlú sorsú szegény lányokért,
+ kiket úrnőik kegyetlenül megkinoznak, megvernek.
+\end_layout
+
+\begin_layout Standard
+Elhagyta úrnője kastélyát, elhatározta, hogy soha többé nem tér vissza.
+ Ment, ment míg meglátott egy gyönyörű kis dombocskát.
+ Mágikus hatalmának segedelmével hatalmas kastélyt épített magának.
+\end_layout
+
+\begin_layout Standard
+Miután kastélya elkészült démonaiknak parancsba adta, hogy terjesszék a
+ következőt: aki betér a kastélyba három nap és három éjjen keresztül részesülhe
+t mindenféle jóban, de ha letelik ez a három nap, akkor meghal.
+ Magáról pedig azt terjesztette, hogy ő az elátkozott házának szelleme.
+ 
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Hamarosan volt urnőjének családja csődbe ment.
+ Édesapja öngyilkos lett, édesanyja belehalt fájdalmában.
+ Szegény tönkre ment úrnő, ki soha nem ismerte a nélkülözést, most megismerte.
+ Egy héten több olyan nap volt, mikor nem evett semmit.
+ 
+\end_layout
+
+\begin_layout Standard
+Egy nap, mikor koldulgatásból tartott szálása felé, meghallotta a következő
+ beszélgetést:
+\end_layout
+
+\begin_layout Standard
+-- Hallottad hírét az elátkozott kastélynak?
+\end_layout
+
+\begin_layout Standard
+-- Igen, hallottam.
+ Aki oda betér az három napig jó kajákat ehet, jó italokkal olthatja szomját.
+ Milyen nagyszerű egy kastély, bár igaz lenne.
+\end_layout
+
+\begin_layout Standard
+-- Igen, igen, de hallottad a végét is, ugye?
+\end_layout
+
+\begin_layout Standard
+-- Éppen emiatt nem megyek ahhoz a kastélyhoz, igaz nem is tudom, hogy hol
+ keressem.
+ Hallottam, ki egyszer betér abban a kastélyban, soha többé nem hagyhatja
+ el élve.
+ Három napon keresztül, három éjszakán keresztül élveheti a kastély gonosz
+ szellemének ajándékait, ételeket, italokat mik szem-szájnak kívánatosak,
+ de miután letelt a harmadik éjszaka is, meghal.
+ A halálból eddig még senki se menekülhetett.
+\end_layout
+
+\begin_layout Standard
+-- Én tudom, hogy hol van az a kastély.
+ Birodalmunk keleti határához közel, van egy kis Estern falucska, annak
+ közepén egy kis domb, a dombon épült meg az elátkozott kastély.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Ennyit hallott a lány, de ekkor még nem szánta rá magát arra, hogy igénybevegye
+ ezt lehetőséget.
+ Azonban egy napon annyira elhatalmasodott rajta az éhség és a szomjúság,
+ hogy úgy döntött, legyen ami lesz, ő elmegy abban a kastélyba.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Hosszú utazás után el is érkezettt a kastélyba.
+ A kastély szelleme örömmel fogadta.
+ A Lány soha nem látta a szellemet, csak azt, hogy az asztal roskad a rengeteg
+ ételtől italtól.
+ Három napon keresztül boldogan élt.
+ Harmadik napon azonban eszébe jútott, hogy életének órái megvannak számlálva.
+ Most, hogy jól lakott, nem akart meghalni.
+ Hangos szóval szólította a szellemet:
+\end_layout
+
+\begin_layout Standard
+-- Kastély szelleme! Mond, hogyan maradhatnél életben?
+\end_layout
+
+\begin_layout Standard
+A szellem kellemes hangját akkor hallotta először.
+ A Hang így felelt kérdésére?
+\end_layout
+
+\begin_layout Standard
+-- Lány, ki kastélyomat felkereste, ha életbe akarsz maradni, találd ki
+ a nevemet.
+ 
+\end_layout
+
+\begin_layout Standard
+A lány egész nap a szellem nevén gondolkodott, de nem tudta kitalálni, így
+ a negyedik nap reggelén már hallott volt.
+\end_layout
+
+\begin_layout Part
+És akkor elkezdődik a történet
+\end_layout
+
+\begin_layout Standard
+Óh, hogy hányszor de hányszor hallottam ezt a történetet.
+ Immár 200 éve szedi áldozatait az az átkozott ház.
+\end_layout
+
+\begin_layout Standard
+Gazdag családba születtem, ősi nemesi családban.
+ Apám a császár bizalmasa volt, a dicsőséges Kriniai birodalom császáráé.
+\end_layout
+
+\begin_layout Standard
+Gazdasságunk, szolgáink száma megszámlálhatatlan.
+ Soha nem gondoltuk, hogy tönkre mehetünk, de megtörtént.
+ Családunk kegyvesztett lett császárunk szemében.
+\end_layout
+
+\begin_layout Standard
+Apám a hírre öngyilkos lett, édesanyám bánatában meghalt, bátyáim elbújdostak
+ valahová.
+ Húsz éves voltam, és nem volt semmim és senkim.
+ Az udvarlók, akik korábban még versenyeztek kezemért, eltűntek.
+ Ha véletlenül szembetalálkoztam velül az útcákat járva, elfordultak tőllem.
+ 
+\end_layout
+
+\begin_layout Standard
+Mivel nem volt mit ennem, dolgozni nem tudtam, hiszen még soha nem dolgoztam.
+ Boldog életem volt apám kastélyában, minden munkát a kastélyban az alantas
+ cselédség végezte.
+ Óh, régi szép idők, bár visszatérnétek.
+\end_layout
+
+\begin_layout Standard
+Koldulnom kellett a megélhetésért.
+ Koldulni azoktól, akik annyi, de annyi mindennel tartóztak családunknak.
+ Nemrég még ők kérték édesapámat, hogy támogassa előremenetelüket az udvarnál.
+ És most? Ha meglátnak, elfordulnak.
+ Korábban udvaroltak nekem, most úgy kerültek mint a pestist.
+\end_layout
+
+\begin_layout Standard
+Nem tartoztam sehová.
+ A gazdagok elfordultak tőlem, észre se vettek, de a szegények se tartottak
+ maguk közül valónak.
+ A szegények segítik egymást azzal a kicsivel, mit istenek jóvoltából összeszedt
+ek, de egy lecsúszott nemest miért segítsenek? Erősen él emlékezetükben,
+ hogy apám ostorral csapot végig hátukon, mikor adományért könyörögtek nála,
+ hogy éhező gyermekeiket eltarhassák.
+\end_layout
+
+\begin_layout Standard
+-- Legalább most megtanulja a kisasszony, hogy milyen nélkülözni, éhezni,
+ éhen halni.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Gonosz volt ő is, ahogy az egész családja.
+ Annak a szegény lánynak a halála is az ő lelkén szárad.
+\end_layout
+
+\begin_layout Standard
+Hát igen.
+ Gazdagként néha eljárt a kezem.
+ Ha cselédlányom hajam fésülése közben hajamat megrántotta, vagy hajamból
+ akár egy szállat is kitépet, keményen büntettem.
+ Többször is megtörtént az, hogy olyan büntetést rótam ki szerencsétlen
+ szolgáimra, hogy többé soha nem kerültek szemeim elé.
+\end_layout
+
+\begin_layout Standard
+Halványan emlékszem az egyik ilyen esetemre.
+ A kislány, kit hajam fésülésére rendelt mellém édesapám meghúzta hajam.
+ Haragomba a következő parancsot adtam remegő szolgáimnak:
+\end_layout
+
+\begin_layout Standard
+-- Ötezer ostorcsapást a hállátlannak, aztán vetköztessétek meztelenre és
+ dobjátok ki két napra a kertben.
+ 
+\end_layout
+
+\begin_layout Standard
+Akkoriban tél volt, hideg tél.
+ Soha többé nem láttam.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Akkoriban soha nem tudtam, hogy milyen kegyetlen kiszolgáltatotnak lenni,
+ behódolni nagyurak kényének, kedvének, de mióta magam is szegénységben
+ tengődöm ráeszméltem arra, hogy milyen kegyetlen is voltam akkoriban.
+\end_layout
+
+\begin_layout Part
+Éhezem
+\end_layout
+
+\begin_layout Standard
+Tél volt, hideg tél.
+ A mai napom is testemet adtam egy koszos részegnek, hogy pénzéből, mit
+ testem használatáért adott, ételt, italt, szállást vehessek magamnak.
+ 
+\end_layout
+
+\begin_layout Standard
+Óh, ha tudnád édesapám, hogy mennyire éhezik lányod.
+ 
+\end_layout
+
+\begin_layout Standard
+Kihasznált, megerőszakolt, de nem adott semmit.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Ha gondolod menj panaszra a bírósághoz, de ki fog hinni egy letaszított
+ szavának?
+\end_layout
+
+\begin_layout Standard
+Igaza volt.
+ Családom minden tagja megbélyegzett volt, és országszerte nem találtam
+ volna olyan bíróra, ki kiállt volna mellettem.
+\end_layout
+
+\begin_layout Standard
+Nagyon éhhes voltam.
+ Már négy napja nem ettem semmit, és szomjúságomat is csak a lágy kispatak
+ poshadt vízével tudtam enyhíteni.
+ A parkban próbáltam nyugovóra térni egy lombos fa védelmében, mikor egy
+ párocska beszédét fújta felém a szél.
+ Az elején nem is figyeltem, hogy miről is beszéltek, de első szavaik felhívták
+ figyelműket.
+\end_layout
+
+\begin_layout Standard
+-- Hallod drágám, az elátkozott kastélyban annyit ehhet, annyit ihhat az
+ ember amit akar.
+\end_layout
+
+\begin_layout Standard
+-- Igen, tudom, de csak három napig és vége.
+ Nem irigylem azókat, akik erre fanyalódnak.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Eszembe jútott, hogy korábban maga a császár is hadat indított a kastély
+ ellen, apám is részt vett a támadásban.
+ A császári seregek verességet szenvedtek.
+ A szellem fekete mágiát használt, ami akkorára szinte teljesen ismeretlen
+ volt, még a legjobb császári mágus se tudott szembeszállni a hatalmas szellemme
+l.
+ 
+\end_layout
+
+\begin_layout Standard
+Ezek után többé nem támadtak rá a kastélyra.
+ 
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Annyira éhhes voltam, hogy már nem türhettem többé.
+ Lesz ami lesz, három napig ismét ehetek, ihatok amennyit akarok, hogy azután
+ mi lesz, az mindegy.
+\end_layout
+
+\begin_layout Standard
+Elindultam a palota felé.
+ Nagyjából sejtettem, hogy hol keressem.
+ Apám a császár seregében egyszer haddal indult a palota ellen.
+ Győzelemben reménykedtünk akkoriban, és abban, hogy végre megfejthetjük
+ a gonosz ház titkát, de vereséget szenvedtünk.
+ Császárunk ötvenezer katonájából húsz maradt életben.
+ Apám gyakran mesélte nekem, hogy milyen volt az az ütközet.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Eleinte minden úgy ment, ahogy elvártuk volna.
+ Seregünk megérkezett a gonosz kastélyhoz.
+ Követet küldött a kastély kapúja elé, hogy megvigye a hadüzenete.
+ A tündért akarták felszólítani, hogy adja meg magát, adja át minden tudását
+ a császáriaknak, hagyjon fel sötét praktikáival, és akkor megkegyelmeznek
+ az életének, egész életét letőltheti egyik kolostorunkban.
+ 
+\end_layout
+
+\begin_layout Standard
+Követünk a kapuig jútott, de üzenetet mit magával vitt nem tudta átadni,
+ a tündér nem bocsájtotta be kastélyába a császáriak követjét!!!
+\end_layout
+
+\begin_layout Standard
+Ezt a sértést nem hagyhattuk abba.
+ Megkezdtük az előkészületeket a csatához.
+ Apám még mindig iszonyodva emlékszik meg arról a napról.
+ A környező falvak minden népe, kicsinyek, nagyok, férfiak asszonyok kaszákkal,
+ kapákkal, vasvillával felfegyverkezve a kastély védelmére kelltek.
+ Az ő szemükben ugyanis a tündér nem volt gonosz, sőt.
+ Áldást hozott a főldjükre, a tündér előtt soha oly jó termés nem termett
+ azokon a földeken, most meg nincs párja a birodalomban.
+\end_layout
+
+\begin_layout Standard
+Gondolhatjuk, hogy a császár ötvenezer embere nem ilyedt meg a parasztoktól.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Tűz!! -- kiáltotta el magát a parancsnok.
+ 
+\end_layout
+
+\begin_layout Standard
+Ha nem lett volna a tündér gonosz hatalma minden jól ment volna, de a parasztoka
+t a gonosz tündér mágiája védte.
+ Sebezhetetlenek voltak, legyőzhetetlenek, fegyvereik azok a semmire való
+ kaszák, kapák, csákányok meg átvágtak a legerősebb páncélon is.
+ Nem csak ők védték meg a tündért, a tündér is megvédte katonáit.
+ Képzeljünk el egy hadsereget, ami harca alatt egyetlen embert se veszít,
+ de lemészárolja teljes ellenségét.
+ Csapatunk húsz emberét is csak azért hagytál életbe, hogy elvigyék hírét
+ annak, hogy senki se bánthatja büntetlenül a kastély bosszúálló szellemét.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Napokon keresztül mentem, és mentem, végül megérkeztem.
+ Este volt, sötét este.
+ Egyetlen csillag sem ragyogott azon a napon az égen.
+ Mintha az ég is figyelmeztetni akart volna, hogy ha belépek azon az ajtón,
+ többé onnan élve nem kerülhetek ki.
+ Ha akár egy falat kenyeret is ehhettem volna azon a napon, talán megfogadtam
+ az ég tanácsát.
+\end_layout
+
+\begin_layout Part
+Az első éjszaka
+\end_layout
+
+\begin_layout Standard
+Odaléptem a kapuhoz, ami magától megnyílott előttem.
+ Ahogy egyre és egyre beljebb jutottam a kastélyba, úgy gyúladtak ki a fények
+ előttem, és a fények vezettek egy előttem ismeretlen irányba.
+ Ez csak a gonosz tündér lehet -- gondoltam, és most bizton tudom, hogy
+ nem csalodtam.
+ 
+\end_layout
+
+\begin_layout Standard
+A fényeket követve hamarosan elérkeztem egy gyönyörű kis szobába, egy hatalmas
+ ággyal a közepén.
+ Óh, mióta nem alúdtam ágyban, alig vártam, hogy eldölhessek benne.
+ Ilyen gyönyörű ágyat, ágyhúzatot, dunyhákat soha életemben nem láttam,
+ még apám fénykorában sem.
+ De először enni akartam, bármilyen kicsit is.
+ Vajon, hogy közölhetem ezt a tündérrel? -- gondoltam.
+\end_layout
+
+\begin_layout Standard
+-- Köszönöm szépen ezt a kényelmes ágyat, de először ennék valamit! -- mondtam
+ hangosan, remélve, hogy a tündér meghallja szavaimat.
+\end_layout
+
+\begin_layout Standard
+Abban a pillanatban egy hatalmas fénycsóva jelent meg előttem, ami intett,
+ hogy kövessem.
+ Követtem.
+ Néhány percnyi járkálás után (ne csodálkozzanak, a kastély hatalmas volt,
+ ha jól belegondolok legalább tíz percemben telt ez a séta), elérkeztünk
+ egy hatalmas teremben, ahol egy hatalmas asztal roskadozott a legfinomabb
+ ételek alatt.
+ Ilyen szépet még életemben nem láttam.
+ Volt ott minden, még külföldről az Aszanok birodalmában termő kaltra is,
+ aminek párja nincs a világon, egy darabnak az ára több millió Ttinger.
+\end_layout
+
+\begin_layout Standard
+Hogy ezt a hatalmas vagyont megbecsülhessék elmondanám, hogy tizezer Ttingerből
+ már palotát vásárolt magának az ember, ezer rabszolgával együtt, és kisebb
+ csónakot.
+ Egyszóval nem kis mulatság.
+\end_layout
+
+\begin_layout Standard
+Leültem, és rávetettem magam a kajára.
+ Csak ettem, és ettem.
+ Nem is gondolva azt, hogy a hosszú éhezés után megárthat a sok-sok kaja.
+ Nem ártott meg, gonosz vendéglátom tartotta a szavát, három napot, három
+ éjjelt igért, az alatt nem engedte, hogy bármi baj érhessen.
+\end_layout
+
+\begin_layout Standard
+Jóllakottan, elégedeten dőltem hátra karosszékeben, minél puhábat életemben
+ nem tapasztaltam.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Szeretnék tisztálkodni, és szeretnék tiszta ruhákat magamra venni --
+ mondtam hangosan.
+\end_layout
+
+\begin_layout Standard
+Tüzes fákja jelent meg előttem, és csak ment, ment előre.
+ Néhány perccel később megérkeztünk egy kellemes illatú medence elé.
+ A medence szinültig volt kellemes meleg vizzel, gyönyörű mercédes szirmok
+ uszkáltak a víz színén.
+ Nem mondom, ez a tündér tényleg tudja, hogy mi a pazar élet.
+ A milliókat érő kaltra után mercédes szirmokkal beborított melegvizes fürdőt
+ ad...
+ Hát ez se olcsó mulatság, legalább hatvan milliócska.
+ Nem mondom, nagyon élveztem a kiszolgálást.
+\end_layout
+
+\begin_layout Standard
+Miután megfürüdtem, és kiléptem a medencéből.
+ Vajon mit vegyek magamra? Nem akartam ócska ruháimat ismét magamra venni.
+ Nem kellett aggodnom.
+ Megláttam magam felé lebegni egy hálóinget, de milyen hálóing volt.
+ Mercédes szirmokból összevart finom munka.
+ Ára száz millió is lehetett.
+\end_layout
+
+\begin_layout Standard
+Az öltöztetéssel se kellett bajlódnom.
+ A rúha kinyújtotta karjait, és magától rásimult testemre.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Szeretném, ha valaki rendbetenné a hajam -- mondtam hangosan.
+\end_layout
+
+\begin_layout Standard
+Abban a pillanatban kefék, fésűk, csattok, ollók és mindenféle fodrász kellékek
+ jelentek meg előttem, és neki kezdtek rendbe tenni a hajamat.
+ Ez volt aztán finom munka, egyetlen hajszálam se sérült.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Tükröt -- mondtam.
+\end_layout
+
+\begin_layout Standard
+Egy gyönyörű tükör repült be ajtómon, és elém állt.
+ 
+\end_layout
+
+\begin_layout Standard
+Bár lefekvésre készülve, smink nem volt rajtam, de láttam, ilyen gyönyörű
+ hajam soha nem volt.
+\end_layout
+
+\begin_layout Standard
+-- Most meg aludnék!
+\end_layout
+
+\begin_layout Standard
+Tüzes fákja jelent meg előttem, és elindult, az utat mutatva.
+ Hamarosan megérkeztünk az előbb látott hálószobába.
+ Örömmel, és elégedetten vetettem be magam az ágyban, és rögtön elaludtam.
+ 
+\end_layout
+
+\begin_layout Part
+Az első reggel
+\end_layout
+
+\begin_layout Standard
+A tüzes fákja felkeltem után ismét a medencéhez vezetett, ahol megfüdüdtem,
+ utána ismét a maguktól mozgó fodrász eszközökre bíztam hajam.
+ Ezek után sminkelést parancsoltam.
+ Mindenféle sminkkészlettek jelentek meg előttem, és arcom minden szépséghibáját
+ eltüntették, ajkaimat vérvörösre festették.
+\end_layout
+
+\begin_layout Standard
+Gyönyörű voltam, és miközben a tükröt néztem, eszembe jútott valami szörnyű.
+ Ennek a gyönyörű lánynak, a császár hűséges emberének lányának néhány nap
+ múlva vége.
+\end_layout
+
+\begin_layout Standard
+-- Nics valami mód arra, hogy megmeneküljek a haláltól? -- kérdeztem aznap
+ reggeli után.
+\end_layout
+
+\begin_layout Standard
+Egy vérvörössen izzó fáklya jelent meg előttem, és intett, hogy kövessem.
+ Követtem, néhány perccel később elérkeztünk egy terembe.
+ A terem falán a következő írást tekinthettem meg:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes pld
+\end_inset
+
+Akár elhagyod a palotát, akár nem, három nap, három éjjel élvezheted a bőséget,
+ mit a ház nyújt neked.
+ Nem menekülhetsz az átoktól.
+ Nics az a távolság, mi megmenthet téged a ház átkától.
+ Az átkot te hoztad fejedre azzal, hogy beléptél.
+ Egy módon szabadulhasz meg az átoktól: találd ki a szarazin nevét.
+ Ha kitalálod a szarazin nevét, örökké élhetsz boldogan, elégedetlen, élelemben,
+ gazdagságban nem lesz hiányod.
+ 
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+-- Ki az a szarazin? -- kérdeztem.
+\end_layout
+
+\begin_layout Standard
+A fákja elindult előttem, és egy másik falra mutatott.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes pld
+\end_inset
+
+A szarazinért létezik jelenleg ez a kastény.
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Elgondolkodtam.
+ A szarazin ó-kriniai nyelven, aminek ismerete a nemesek kiváltsága, azt
+ jelentette: 
+\begin_inset Quotes pld
+\end_inset
+
+A kastély kisasszonya
+\begin_inset Quotes prd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Vajon a tündér nevét kell kitalálnom? 
+\end_layout
+
+\begin_layout Standard
+-- A szarazin az aki mágiájával felépítette a kastélyt?
+\end_layout
+
+\begin_layout Standard
+A fáklya egyet pörgött maga körül, és fénye rávillant a falra, amin a következő
+ írás áll:
+\end_layout
+
+\begin_layout Standard
+-- 
+\begin_inset Quotes pld
+\end_inset
+
+Ki a kastélyt építette, a kastély gonosz tündére, kiért jelenleg létezik
+ a kastély az a szarazin, a kastély kisasszonya.
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Elgondolkoztam.
+ Gondoltam kimegyek, és információkat gyűjtök a kastély környéki falvakból,
+ hátha ők tudnak valamit arról a rejtelmes szarazinról.
+\end_layout
+
+\begin_layout Standard
+-- Szeretnék körülnézni a környező falvakban, szabad?
+\end_layout
+
+\begin_layout Standard
+A fáklya fénye zöldre váltott, és fényét rávetette a falra.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes pld
+\end_inset
+
+Mehetsz ahová akarsz, és amikor akarsz, de ne feledd.
+ Mióta lábaidat betetted a kastélyba az átok rajtad van.
+ Ha a harmadik nap végére nem jössz rá arra, hogy ki a szarazin, akkor meghalsz
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+-- Szeretnék kimenni! -- mondtam.
+\end_layout
+
+\begin_layout Standard
+A fáklya színe vörössé váltott és elindult.
+ Követtem, és egy félórás séta után megérkeztünk a kastély kapujához.
+ Ott a fény eltűnt.
+ 
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Elindultam, mentem, és mentem, míg megérkeztem a legközelebbi falucskába.
+ Valami falusi ünnepély lehetett, mivel a falucska apraja-nagyja a mezőn
+ volt, és ünnepeltek, táncoltak, vigadtak.
+ Egy anyóka vett észre engem.
+ 
+\end_layout
+
+\begin_layout Standard
+-- A kastély elátkozott lánya közöttünk, köszöntsük őt! 
+\end_layout
+
+\begin_layout Standard
+A falucska népe körém gyült.
+\end_layout
+
+\begin_layout Standard
+-- Miért léptél be az elátkozott kastélyba, még túl fiatal vagy a halálra!
+ -- mondta az anyóka.
+\end_layout
+
+\begin_layout Standard
+Elmeséltem nekik, hogy családom tönkre ment, és annyira éhheztem, hogy végül
+ úgy döntöttem, hogy eljövök az elátkozott kastélyba.
+\end_layout
+
+\begin_layout Standard
+-- Éppen úgy mint a többi -- mondta szomorúan anyóka.
+ -- Hetven éve élek, minden évben eljön vagy két lány, aki hallott az elátkozott
+ kastély történetőről, eljött a kastélyhoz, és ez okozta vesztüket.
+\end_layout
+
+\begin_layout Standard
+-- Kedves anyóka, nem tudod véletlenül, hogy kicsoda, és micsoda az a szarazin?
+ Úgyanis a ház tündére megigérte, hogy ha kitalálom a szarazin nevét, akkor
+ felszabadulok a ház átkától.
+\end_layout
+
+\begin_layout Standard
+-- Óh te szegény lány! -- kiáltotta anyóka.
+ -- Még soha senki nem menekült meg az átoktól.
+ Mit is mondtál a szarazin nevét kell kitalálnod? 
+\end_layout
+
+\begin_layout Standard
+Az anyóka a fejére csapott.
+ Hiszen a szarazin is itt van közöttünk jelenleg! És rámutatott egy lánykára
+ távol mindenkitől, egy kis padocskán üldögélve, könyvet olvasott.
+ Nem látszott többnek 10-12 évesnél.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Ő a szarazin, már többször is próbáltunk beszélni, de beszédét mi nem
+ értjük, ő meg nem érti a miénket.
+ Szeretjük őt, mivel a kastély bosszúálló asszonya hozta a kastélyhoz néhány
+ évvel ezelőtt.
+ Ő a kastély nemtudom hányadik szarazinje.
+\end_layout
+
+\begin_layout Standard
+-- Ki ő, pontosan hogy is került ide, hogy néz ki a ház gonosz tündére,
+ ki ő, micsoda? -- tettem fel kérdéseimet.
+ Anyóka a szarazinnel kapcsolatban nem tudott válaszolni, de a tündérrel
+ kapcsolatban kiigazított.
+\end_layout
+
+\begin_layout Standard
+-- A tündér bosszúálló, de nem gonosz.
+ A tündér egy gyönyörű nő, kin nem fog az idő.
+ Ötven évvel is éppen olyan fiatal és szép volt mint most.
+ Az a szomorkás mosoly, mit azóta látunk arcán, mióta eszünket tudjuk, elárulja
+ nekünk természetét.
+ Kastélyába azokat hívja meg, akik valaha rosszatt tettek alantas alkalmazottaik
+nak, és mondhatni bosszút áll rajtuk, de nem gonosz.
+\end_layout
+
+\begin_layout Standard
+Mióta itt van, falunkban nem volt semmi betegség, semmi nyavaja, nem ritka
+ az, hogy valaki megélje itt a száz-százötven évet.
+\end_layout
+
+\begin_layout Standard
+Ami a szarazin illeti, a tündér egyetlen társa.
+ Még gyermekkorában fogadja kastélyába a tündér, és neveli éveken, évtizedeken
+ keresztül, és egészen addig tartozkodhat a kastélyba, mig akar.
+ Ha már elunta a kastélyt, és szeretné megismerni a világot, akkor a tündér
+ hatalmas kincsekkel ajándékozza meg, úgy bocsájtja útjára, aztán ismét
+ keres egy kis árva lányt.
+ 
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Odamentem a szarazinhoz.
+ Gyönyörű kislány volt, aranyszőke hajjal, égszinkék szemekkel.
+ Egy könyvet olvasot.
+ Legnagyobb megrökönyödésemre a legnagyobb ó-kriniai író Alde Ludarisz híres
+ regényét, a 
+\begin_inset Quotes pld
+\end_inset
+
+Szerencsétlenség és halál
+\begin_inset Quotes prd
+\end_inset
+
+ c.
+ könyvét olvasta, mégpedig ó-kriniai nyelven.
+ Az ó-kriniai nyelvnek is a legrégebbi dialektusa, amit a nemesek is csak
+ nehezen értenek meg.
+\end_layout
+
+\begin_layout Standard
+Megszolítottam, új-kriniai nyelven, de a lányka nem értett semmit a jelenlegi
+ nyelvből, csak a fejét csóválta szomorúan.
+ 
+\end_layout
+
+\begin_layout Standard
+Majd ó-kriniai nyelven szóltam hozzá (hiszen nemesnek születtem, így valamennyir
+e beszéltem ezt a nyelvet, bár nem azt a dialektust, amivel a lány könyve
+ íródott), ezt már megértette.
+\end_layout
+
+\begin_layout Standard
+-- Üdvözöllek, hallottam az itteniektől, hogy te vagy a szarazin.
+\end_layout
+
+\begin_layout Standard
+-- Igen, én vagyok a szarazin -- felelte az ó-kriniai nyelv legrégebbi dialektus
+ában.
+ Nemesként kötelességem volt az ó-kriniai nyelv ismerete, mondhatni a nemesek
+ nyelve volt, de minden tudásomra szükségem volt, minden koncentrációra,
+ hogy megértsem.
+ Az ó-kriniai nyelv legrégebbi dialektusában beszélt.
+ -- Te meg az új lány a kastélyban, kinek életénak maradéka három nap, három
+ éjszaka.
+ Mond milyen feladatot kaptál a tündértől átkod megtörésére? Tudom, hogy
+ egy feladatot soha kétszer nem adta a kastélyhoz érkező lányoknak.
+\end_layout
+
+\begin_layout Standard
+Eltöprengtem.
+ Vajon össszintén válaszolna, ha megkérdezném a nevét, vagy neki is célja
+ az elveszejtésem.
+\end_layout
+
+\begin_layout Standard
+-- Átkom akkor törik meg, ha kitalálom a szarazin nevét, azaz a te neved.
+\end_layout
+
+\begin_layout Standard
+A lány szomorúan nézett rám.
+\end_layout
+
+\begin_layout Standard
+-- Sajnos semmire sem emlékszem a múltamból.
+ Emlékeim azelötről, hogy szarazin lettem nincsenek, így erre a kérdésedre
+ sajnos felelni nem tudok.
+ Csak egyetlen dolgot tudok magamról, mégpedig azt, hogy én vagyok a 11.
+ szarazin, és azt, hogy bár az elátkozott kastélyban élek, bármikor elhagyhatom
+ a kastélyt, a kastély átka nem érvényes rám.
+ A tündér így rendelkezett.
+\end_layout
+
+\begin_layout Standard
+Elgondolkoztam, őszintének látszott, ki hazudni nem szokott.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Mond milyen ember a tündér?
+\end_layout
+
+\begin_layout Standard
+-- Olyan ember, ki csalódott abban a személyben, kit legjobban imádott,
+ kit legjobban szeretett.
+ Egyébként ő a legszebb, a legjobb, s legigazságosabb lény a világon.
+\end_layout
+
+\begin_layout Standard
+Elfutott a méreg.
+ Méghogy a tündér igazság?! Kitudja hány ártatlan eset már áldozatául kastélyána
+k átkául?
+\end_layout
+
+\begin_layout Standard
+-- Igazságos, legjobb? -- kérdeztem mérgesen.
+ -- Hiszen kitudja hány embert őlt meg az átkával....
+\end_layout
+
+\begin_layout Standard
+A lány szomorú szemeivel rám nézett.
+\end_layout
+
+\begin_layout Standard
+-- Senki se kényszerít senkit, hogy belépjen a kastélyba, és akik eljönnek,
+ azok már előre tudnak az átokról.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Kitudja hány ártatlan éhhes embert csalogatott ide a tündér a kastélyhoz?!!!
+\end_layout
+
+\begin_layout Standard
+-- Nem -- mondta a szarazin határozottan.
+ Már több éve vagyok szarazin a kastélynál, és bizony tudom, hogy a kastélyba
+ érkező hölgyek mind-mind nemesek voltak valamikor, kik valamikor rosszul
+ bántak azokkal kiket a sors alájuk rendelt.
+\end_layout
+
+\begin_layout Standard
+-- Hogy lehet, hogy csak hölgyek, volt nemesek érkeznek erre a meghívásra
+ a kastélyhoz?
+\end_layout
+
+\begin_layout Standard
+-- A tündér figyelme kitér arra, hogy csak volt nemes hölgyek léphessenek
+ be a kastélyba.
+ Ha szegény szeretne belépni, már az kapunál megállítja, és elmondja neki,
+ hogy van más lehetőség is az éhhség ellen.
+ Elviszi az egyik közeli falucskába, otthont készít nekik, élelemmel, ruhával
+ látja el őket, és azon túl részt vesznek a falu életében.Azok boldogan élnek
+ életük végéig.
+\end_layout
+
+\begin_layout Standard
+-- Tönkre ment férfiak soha nem érkeznek a kastélyhoz?
+\end_layout
+
+\begin_layout Standard
+-- Érkeznek néha, de azokat se engedi be.
+ Ez a kastély azon nemes hölgyek megbüntetésére épült, akik rosszul bántak
+ alkalmazottaikkal.
+ Ha tönkrement nemes úrak érkeznek a kastélyhoz, a tündér ott helyben elpusztítj
+a őket.
+\end_layout
+
+\begin_layout Standard
+-- És erre mondod, hogy igazságos? Elég nagy büntetés a lányoknak, hogy
+ tönkre mennek.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Gondolod? -- kérdezte a lányka rámemelve tekintetét.
+ -- Nem hiszem.
+ Már találkoztam olyan lánnyal, aki a négy éves kis cselédjét megégette
+ puszta kedvtelésből, mert látni kivánt azt, hogy hogyan szenvedhet az,
+ akit élve égetnek meg.
+ Három hónappal később ő is megtapasztalhatta, mivel bárhogy gondolkodott
+ nem tudta felidézni magában a megégetett kislány nevét.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Az áldozatának a nevét kellett kitalálja? -- kérdeztem meghökkenve.
+\end_layout
+
+\begin_layout Standard
+-- Ahogy mondod.
+ Sokat beszéltem a tündérrel, azokkal a hölgyekkel is akik itt jártak.
+ Eddig úgy gondoltam, hogy a tündér feladatul mindig az áldozat nevét kérdezte
+ a hozzá betérő hölgyektől.
+ Eddig így hittem, de most az én nevem kitalálása a feladatod....
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Elgondolkoztam a hallottakon.
+ Ha a tündér általában az áldozat nevét kéri számon a betérőktől, akkor
+ most miért tenne kivételt az én kedvemért? Mi van ha? Mi van ha a szarazin
+ egyike azoknak a lánykáknak, akiket réges-régen még nemesként megkínoztam?
+ 
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+Délután visszatértünk a katélyhoz.
+ Mondanom se kell, hogy az ebéd kitünő volt.
+ Ebédnél a nagy ó-kriniai írókról beszélgettünk.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Mond a tündér miért nem ebédel velünk? -- kérdeztem.
+\end_layout
+
+\begin_layout Standard
+-- A tündér a betérő lányoknak csak egyszer mutatja meg magát.
+ Te is találkozni fogsz vele személyesen, életed utolsó órájában.
+\end_layout
+
+\begin_layout Standard
+Hát nem kicsit kegyetlen a tündér.
+ Jelenleg arra kell koncentrálnom, hogy rájöjjek arra, hogy ki és mocsoda
+ volt a szarazin mielőtt idekerürült.
+\end_layout
+
+\begin_layout Standard
+-- Mond milyenek voltak az előtted lévő szarazinek?
+\end_layout
+
+\begin_layout Standard
+-- Sajnos nem tudom.
+ A tündér nem szokott róluk mesélni.
+ Annyit tudok, hogy azok bármikor szivesen látott vendégek a kastélynál,
+ néha-néha megfordulnak itt, akkor beszélgetek velük.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Miért hagyták el a kastélyt, nem mondták? -- kérdeztem.
+\end_layout
+
+\begin_layout Standard
+-- De igen.
+ Megismerték a szerelmet, de férfi ember nem teheti lábát a kastélyba, így
+ menniük kellett, ha szerelmük mellett akartak lenni.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Ebéd után a szobámba vezetettem magam a szarazinnal.
+ Ő kitünően kiismerte magát a kastély labirintusaiban.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Ittléted alatt, ha szeretnél olvasgatni, akkor elvezethetlek a könyvtárba.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Van könyvtáratok is? -- kérdeztem.
+\end_layout
+
+\begin_layout Standard
+-- Van -- felelte.
+ 
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Elmentünk a könyvtárba.
+ Egyszerűen csodás volt.
+ Az ó-kriniai, az új-kriniai irodalom remekei mind-mind ott voltak.
+ Találtam egy könyvet, amit a szarazin szerint a tündér írt.
+ A könyv új-kriniaiul írodott, így a szarazin soha nem olvasta ezt a könyvet,
+ mivel nem értette az új nyelvet.
+ A könyv egyik részletét szeretném elmondani:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes pld
+\end_inset
+
+Eljött hozzám.
+ Én felismertem őt, ő nem ismert fel engem.
+ Úgy gyülöltem.
+ Soha nem felejtem el azokat az ostorcsapásokat, kezeitől kellett elszenvednem,
+ mert öt éves kislányként a 'c' hang helyett 'sz'-t mondtam.
+ Már az ötszázadik ostorcsapás után inkább voltam halott mint eleven, de
+ mégis rámverette az ötezer ostorcsapást.
+ Akkori életem utolsó pillanatában felébredt bennem a vér parancsa.
+ Ősi fekete mágusok vére kavarog bennem, és bár addig semmit se tudtam a
+ fekete mágiáról, ott az utolsó pillanatban valamiért felsikerült idéznem
+ őseimnek minden tudását.
+ Megmenekültem.
+\end_layout
+
+\begin_layout Standard
+Bosszút akartam állni rajta, és mindenkin, akit gonosz szíve arra ösztönöz,
+ hogy gyereklányokat bántson.
+ A sötét erőknek parancsba adtam, hogy húzák fel ezt a kastélyt.
+ Ezek után azon dolgoztam, hogy volt úrnőm családja tönkre menjen.
+ Nem volt nehéz, végtelen hatalom állt rendelkezésemre.
+ Ebben a mágia nélküli világban nem volt senki, akki megtudta volna akadályozni
+ tervemet.
+ 
+\end_layout
+
+\begin_layout Standard
+Úrnőm családja tönkre ment.
+ Aznap mikor úrnőm éhhezett, sötét seregeim segítségével elvittem neki az
+ üzenetet: Ha szeretne jól lakni, kényelmes ruhákba járni, jöjjön el a kastélyom
+ba, és három napig boldogan élhet, mindenféle gond nélkül, aztán pedig meghal.
+\end_layout
+
+\begin_layout Standard
+Úrnőm eljött hozzám.
+ A gyűlölettől amit iránta éreztem, majdnem ott helyben megfolytottam, de
+ gondoltam próbára teszem.
+ Az első éjszakája után úrnőmnek eszébe jútott, hogy mégse lenne jó meghalni,
+ emiatt megkérdezte tőlem, hogy van-e bármi mód a megmenekülésére.
+\end_layout
+
+\begin_layout Standard
+Igen van -- feleltem.
+ -- Ha nevemet kitalálod, élhetsz, kincsekkel, vagyonnal ruházlak fel, és
+ boldogan élhetsz amig szeretnél.
+\end_layout
+
+\begin_layout Standard
+Úrnőm nem találta ki a nevemet.
+ Pedig rengeteg kérdést feltett nekem, amelyekre én válaszoltam.
+\end_layout
+
+\begin_layout Standard
+Szerencsétlen árva lány vagyok, úrnőmtől egyszer ötezer korbácsütést kaptam
+ egy nyelvbotlásért.
+ Ha nem folyna bennem mágus őseimnek vére, most halott lennék.
+\end_layout
+
+\begin_layout Standard
+Úrnőmnek eszébe jútott, hogy egyszer ő is megostorozott egy lánykát egy
+ nyelvbotlásért, és talán arra is rájött, hogy éppen annak a lánykának a
+ nevét kérem számon tőlle.
+ Több napon keresztül gondolkozott, de nem jutott eszébe a megölt lány neve.
+ Nemesként, úrhölgyként nem tartotta számon egyetlen szolgájának a nevét
+ sem.
+\end_layout
+
+\begin_layout Standard
+Az utolsó órában elé álltam, és megkérdeztem, hogy rájött-e a nevemre.
+ Találgatott, de nem találta el.
+ Meghalt.
+ Azt a büntetést adtam neki, amit ő adott nekem egy nyelvbotlásért, ötezer
+ ostorcsapást.
+ Nem birta ki, a kétezredik után belehalt.
+\end_layout
+
+\begin_layout Standard
+A bosszúmnak itt nem lehet vége.
+ Tudtam, hogy rengeteg kislány szenved gonosz úrnőjének gonoszsága miatt.
+ Ezeknek az úrnőknek családját tönkretettem, megaláztam, majd elhívtam kastélyom
+hoz.
+ Volt aki szökni próbált, volt aki öngyilkos lett csak azért, hogy ne szenvedje
+ el azt a kint, mit annak okozott, aki miatt ilyen sorsra jútott.
+\end_layout
+
+\begin_layout Standard
+Te lány, ki jelenleg olvasod ezt a könyvet.
+ Áldozatod nevét kérem, ki meghalt volna, ha akkor nem lettem volna mellette,
+ és mágiám segítségével visszahoztam az életben.
+ Kinek a nevét kérem tőled számon, egy a sok közül, akiket megkinoztál,
+ megaláztál, megöltél.
+ Nem kérek sokat tőletek, csak a lelkiismereteteket.
+ Legalább az áldozataid nevére emlékezned kell.
+ 
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Találtam egy másik könyvet, amiből a következő részletet emelném ki, szintén
+ új-kriniaiul írodott.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes pld
+\end_inset
+
+A kastélyban magányos voltam.
+ A kastélyomhoz érkező gonosz úrhölgyek nem jelentettek nekem szórakozást,
+ társaságot.
+ Utáltam őket.
+ Így magam mellé vettem egy kislányt, kit úrnője halálra itélt különböző
+ gonosz kinzásokkal.
+ A lánykának töröltem emlékeit, mert azok az emlékek annyira kegyetlenek
+ voltak, hogy élni velük nem lehetett volna.
+ Új nyelvet tanítottam nekik, az ó-kriniai nyelvet, mely a nemesek kiváltsága.
+ Ő volt a mindenem.
+ Imádtam szerettem, babusgattam, egészen addig míg felnőtt, és megismerte
+ a szerelmet.
+ Maradhatott volna, de ő szerelmét választotta.
+ Mivel szerettem elengedtem.
+ Bármikor szívesen látom kastélyomban.
+ Ezek után kerestem még egy kislányt, kit szintén megkinzott gonosz úrnője....
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+A két idézetetből a következőkre jöttem rá.
+ A tündér amiatt kéri tőlem a szarazin nevét, mivel valamikor réges-régen
+ a szarazint megkínoztam, megöltem.
+ A tündér hatalmának köszönhetően azonban megmenekült, azért, hogy rajtam
+ számon kérje halálát.
+ De vajon ki lehet? Vajon mivel okoztam a halálát? Mi lehetett a neve?
+\end_layout
+
+\begin_layout Standard
+A szarazintől hiába kérdem, semmire sem emlékszik, csak arra, hogy ő a szarazin,
+ és szereti a tündért, ki anyjaként neveli, szereti.
+\end_layout
+
+\end_body
+\end_document

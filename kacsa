@@ -1,0 +1,14 @@
+nem_szam() {
+  i=$((3+2));
+  echo $i;
+}
+
+if [ "$1" -eq "$1" ] 2> /dev/null
+then echo "szám"
+else nem_szam "kacsa"
+fi 
+
+for i in $(seq 1 2 5)
+do
+  echo $i
+done
