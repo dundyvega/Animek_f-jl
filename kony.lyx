@@ -1,0 +1,3840 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass book
+\use_default_options true
+\maintain_unincluded_children false
+\language magyar
+\language_package babel
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language polish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Egy különc család
+\end_layout
+
+\begin_layout Author
+Horváth Jonathán
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Előszó, amiben röviden bemutatom azt a világot, amiben a művem cselekménye
+ zajlik
+\end_layout
+
+\begin_layout Standard
+Egy rövid történelmi ismertető:
+\end_layout
+
+\begin_layout Standard
+- 1914.
+ június 28-án Szarajevóban egy Gavarilo Princip nevű anarchista meggyilkolta
+ az Osztrák-Magyar Monarchia trónörökösét trónörököst Szarajevóban.
+\end_layout
+
+\begin_layout Standard
+- 1914.
+ július 1-én kivégezték Gavarilo Principet.
+\end_layout
+
+\begin_layout Standard
+- 1914.
+ július 20-án Nagy Britannia, Franciaország és Németország közös megegyezés
+ alapján ismét felosztották egymás között a gyarmataikat, mert mindhárom
+ állam elakarta kerűlni egy hatalmas háború kitörését.
+\end_layout
+
+\begin_layout Standard
+- 1915.
+ december 2-án az Osztrák-Magyar Monarchiában trónfosztották a Habsburg
+ dinasztriát, és kikiáltották az Osztrák-Magyar Szövetségi Köztársaság megalapít
+ását.
+\end_layout
+
+\begin_layout Standard
+- 1916.
+ szeptember 10-én miután az Osztrák-Magyar Monarchiában tronfosztották a
+ Habsburg családot, az Osztrák-Magyar Monarchia több részre esett szét:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ -$
+\end_inset
+
+ Osztrák Szövetségi Köztársaság
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ -$
+\end_inset
+
+ Magyar Föderáció
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ -$
+\end_inset
+
+ Cseh-Morva köztársaság
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ -$
+\end_inset
+
+ Kis Lengyel Köztársaság
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ -$
+\end_inset
+
+Horvátország
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ $
+\end_inset
+
+- Bosznia-Hercegovinai Föderáció
+\end_layout
+
+\begin_layout Standard
+- 1916.
+ decemberében a Magyar Föderáció országgyűlésében döntöttek a Föderáció
+ hivatalos nyelveiről, amelyek a következőek: magyar, román, szlovák, szerb-horv
+át, ruszin-ukrán és német.
+\end_layout
+
+\begin_layout Standard
+Egy kicsit előbbre ugrunk az időben.
+ 2200-ban Európa vezető nagyhatalmai:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ $
+\end_inset
+
+- Nagy Britannia, hivatalos nyelvei az angol és a skót
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ $
+\end_inset
+
+- Franciaország, hivatalos nyelvei a francia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ -$
+\end_inset
+
+Magyar-Horvát Egyesűlt Köztársaságok hivatalos nyelvei a magyar és a horvát.
+ Ekkorára a Magyar Föderáció-beli románok, szlovákok, szerbek, horvátok,
+ ruszinok elmagyarosodtak.
+ Ötven évvel ezelőtt pedig Magyarország és Horvátország egyesűlt, mivel
+ rájöttek arra, hogy együtt sokkal jobb volt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ -$
+\end_inset
+
+Orosz Föderáció, hivatalos nyelvei az orosz, az ukrán és mások.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ -$
+\end_inset
+
+Északi Unió, aminek a tagjai Svédország, Norvégia, Dánia, Finnország.
+ Hivatalos nyelvei a svéd, a norvég, a dán és a finn.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ -$
+\end_inset
+
+ Német Császárság, hivatalos nyelve a német
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ $
+\end_inset
+
+- Lengyel Köztársaság, ami tartalmazza a korábbi Kis Lengyel Köztársaság
+ terűletét.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ -$
+\end_inset
+
+Oszmán Császárság, hivatalos nyelvei a török, örményt, stb.
+\end_layout
+
+\begin_layout Standard
+Természeten voltak Európának még erős államai, de azok nem említhetőek egy
+ csúlycsoportban a felsoroltakkal.
+ Például a Spanyol Föderáció, az Olasz Királyság.
+\end_layout
+
+\begin_layout Standard
+Már körülbelől vázoltam az európai helyzetet, de még nem ejtettem szót a
+ technikáról, pedig az is lényeges fejlődésen ment keresztűl.
+ 
+\end_layout
+
+\begin_layout Standard
+Ebben a világban a technika kb.
+ úgy fejlődött mint a mi világunkban.
+ Szóval ezt most már nem ecsetelném tovább.
+ 
+\end_layout
+
+\begin_layout Part
+Élet egy lakatlan szigeten
+\end_layout
+
+\begin_layout Chapter
+Egy különc programozó
+\end_layout
+
+\begin_layout Standard
+A főnök irodájába beront az új alkalmazott.
+ Két hete van még csak a cégnél, de már bizonyította rátermettségét.
+ A főnök felkapja a fejét a papírjaiból, és az alkalmazottjára néz.
+\end_layout
+
+\begin_layout Standard
+- Hozta Isten, miben segíthetek?
+\end_layout
+
+\begin_layout Standard
+- Kérdésem lenne, amire a kollégák nem tudtak megválaszolni.
+ - mondta az új fiú.
+\end_layout
+
+\begin_layout Standard
+- Mi lenne az a híres kérdés? 
+\end_layout
+
+\begin_layout Standard
+- Egy projekten együtt kell dolgozzak egy bizonyos Szájtó Bélával, de eddig
+ még soha nem láttam őt a cégnél.
+ A kollégáktól megkérdeztem, hogy hogy lehet vele felvenni a kapcsolatot,
+ de senki sem tudott válaszolni.
+ Azt állítják, hogy még soha sem találkoztak eddig vele a cégnél, habár
+ a többségük biztos abban, hogy már hallotta ezt a nevet a cégnél.
+ Ez valami áprilisi tréfa?
+\end_layout
+
+\begin_layout Standard
+A főnök elmosolyodott.
+ 
+\end_layout
+
+\begin_layout Standard
+- Nem tréfa ez uram.
+ Szájtó Béla valóban nálunk dolgozik.
+\end_layout
+
+\begin_layout Standard
+- Akkor miért nem láttam eddig őt soha? - kérdezte az új fiú.
+\end_layout
+
+\begin_layout Standard
+- Szájtó úr eléggé antiszociális.
+ Azzal a feltétellel szegődött el a cégünkhöz, hogy soha se kelljen bejöjjön
+ a céghez.
+\end_layout
+
+\begin_layout Standard
+- Akkor hogy lehet, hogy alkalmazták? - kérdezte az új fiú.
+\end_layout
+
+\begin_layout Standard
+- Elárulok önnek egy hatalmas nagy titkot: Szájtó Béla a világ legjobb programoz
+ó.
+ A világ legjobb cégeinek dolgozott már, és tudásáról mindenki a legjobbakat
+ mondja.
+ Csak azért dolgozik nálunk, és nem valamilyen híres nagy cégnél, mert a
+ többi cég nem egyezett bele a feltételeibe.
+\end_layout
+
+\begin_layout Standard
+- A programozok tudtommal nincsenek rangsorolva.
+ Honnan olyan biztos, hogy ő a legjobb az összes közül? - kérdezte az újonc.
+\end_layout
+
+\begin_layout Standard
+- A programozol valóban nincsenek hivatalos listán rangsorolva, de azért
+ van különbség két programozó tudása között.
+ Például az egyik többféle nyelvben tud programozni mint egy másik, vagy
+ jobban ismeri az egyik nyelvet mint a másik.
+ Ezt elismered?
+\end_layout
+
+\begin_layout Standard
+- OK, ezt elfogadom, de én úgy hallottam, hogy a Rox Andersen több mint
+ 20 programozási nyelven tud programozni, és ő ismeri a legjobban a JAVA-t,
+ hiszen a ő JAVA-nak a legfőbb fejlesztője - mondta az újonc - vagy tévedek?
+\end_layout
+
+\begin_layout Standard
+A főnök elnevette magát.
+\end_layout
+
+\begin_layout Standard
+- Szájtó Béla nem vágyik hírnévre, ezért gyakran van az, hogy munkáit más
+ programozóknak engedi át, némi pénzért cserébe.
+ Rox Andersen egy balek, aki a programozásról azt sem tudja, hogy eszik
+ vagy isszák, de mivel a közvélemény azt várja tőle, hogy elismert programozó
+ legyen mint az apja, fizet Szájtónak, hogy programozzon helyette.
+\end_layout
+
+\begin_layout Standard
+- Ez most vicc! - kiáltott fel az újonc.
+ Ez nem lehet igaz, Rox Andersen a példaképem.
+ 
+\end_layout
+
+\begin_layout Standard
+- Ez mégsem vicc, de ezt ne híresztelje el, mert Szájtó úgy is le fogja
+ tagadni, mivel nem vágyik hírnévre.
+\end_layout
+
+\begin_layout Standard
+Az újoncnak néhány percébe telt, míg felfogta, hogy fiatal példaképe, az
+ alig 25 éves Rox Andersen igazából egy nagy nulla.
+ Elfogadta amit a főnök mondott, habár még mindig voltak kételyei.
+\end_layout
+
+\begin_layout Standard
+- Ami a projektet illeti - mondta a főnök - a projekt tervet, osztálydiagramot,
+ stb.-t Szájtó már megtervezte.
+ 
+\end_layout
+
+\begin_layout Standard
+- Magába? - kérdezte az újonc.
+\end_layout
+
+\begin_layout Standard
+- Ez neki nem nagy dolog.
+ - mondta a főnök, benyúlt az asztala fiókjában, és előhúzott egy lemezt.
+ - Tessék itt van.
+\end_layout
+
+\begin_layout Standard
+Az újonc átvette a lemezt.
+\end_layout
+
+\begin_layout Standard
+- Szájtó azt üzente, hogy amennyit megtudsz csinálni belőle két hét alatt
+ azt csináld meg.
+ Mához két hétre küld el a meglévő részeket neki.
+ Ő majd megcsinálja a maradékot.
+\end_layout
+
+\begin_layout Standard
+- De uram, erre a projektre két hetet és egy napot kaptunk.
+ Én két hét alatt a projektnek legfeljebb a felét tudom elkészíteni.
+ Hogy akarja ő egy nap alatt elkészíteni a másik felét, sőt még tesztelni
+ is kell a programot.
+\end_layout
+
+\begin_layout Standard
+- Ezzel maga ne törődjön.
+ Ő azt mondta, hogy menni fog neki, és mivel eddig még mindig beváltotta
+ az ígéretét, nincs okom arra, hogy kételkedjek a szavaiban.
+\end_layout
+
+\begin_layout Standard
+Az újonc a fejét csóválta.
+ Tudta, hogy vannak zsenik, akik nála sokkal gyorsabban programoznak, de
+ ami lehetetlen az lehetetlen.
+ 
+\end_layout
+
+\begin_layout Standard
+- Maga meg csak ne csóválja a fejét, hanem csak lásson munkához.
+\end_layout
+
+\begin_layout Standard
+Az újonc elköszönt.
+ Egy kicsit később odaült az egyik géphez.
+ Berakta a lemezt.
+ Mikor meglátta, hogy mi volt a lemezen majdnem megütötte a guta.
+ A lemezen nem csak az volt rajta amit várt, hanem rajta volt a kész projekt
+ szőröstől-bőröstől.
+ 
+\end_layout
+
+\begin_layout Standard
+Visszarohant a főnökhöz.
+ A főnök mosolyogva nézte a felhevült arcát.
+\end_layout
+
+\begin_layout Standard
+- Mi a probléma, tán rossz valamelyik terv?
+\end_layout
+
+\begin_layout Standard
+- Meg-meg-meg-old-old-oldotta az egészet, neem hiiszek a szeememnek.
+ - dadogta az újonc.
+\end_layout
+
+\begin_layout Standard
+- Hát ezt elég gyakran megcsinálta már az a pernahajder.
+ - vigyorgott a főnök, de ne félj, a fizetésed ettől nem fog kevesebb lenni.
+ 
+\end_layout
+
+\begin_layout Chapter
+A brit trónörökösnő
+\end_layout
+
+\begin_layout Standard
+Alice unatkozva ette az eléje tálalt ételt.
+ Szeretett volna felpattanni székéről, de nem tehette.
+ Nevelője szigorú szemei még evés közben is rajta nyugodtak.
+ 
+\end_layout
+
+\begin_layout Standard
+A legutóbbi csínyje óta még Hany sem merte a pártját fogni, nevelőjével
+ szembe, pedig eddig gyakran megtette.
+ A lány édesapjára nézett.
+ Arcán most sem látszott semmilyen változás, de Alice tudta, hogy apja is
+ mérges rá.
+ 
+\end_layout
+
+\begin_layout Standard
+- Alice - szólalt meg az édesapja - étkezés után várom a dolgozószobámba.
+\end_layout
+
+\begin_layout Standard
+- Értettem.
+ - mondta Alice.
+\end_layout
+
+\begin_layout Standard
+Egy fél óra elteltével Alice apja dolgozószobájában hallgatta apja szidalmait.
+\end_layout
+
+\begin_layout Standard
+- Alice, ez nem mehet így tovább.
+ Gondolnod kell a hírnevére.
+ Gondolom nem úgy szeretnél bevonulni Britannia történelmébe, mint Alice
+ Courtesan.
+\end_layout
+
+\begin_layout Standard
+- Nem apukám.
+ - mondta Alice.
+ 
+\end_layout
+
+\begin_layout Standard
+- Akkor mit kerestél a bordélyházban? - kérdezte apa.
+\end_layout
+
+\begin_layout Standard
+- A barátnőmet mentem meglátogatni.
+ - mondta Alice.
+\end_layout
+
+\begin_layout Standard
+- Gondolod, hogy ezt valaki elhiszi valaki? Máris elkezdett terjedni a pletyka,
+ hogy a trónörökös a legforgalmasabb londoni bordélyba árulja a testét.
+\end_layout
+
+\begin_layout Standard
+- De nem árultam, csak vittem gyógyszert a barátnőmnek.
+ - mondta Alice remegve.
+ - Te is azt hiszed, hogy a testemet árultam?
+\end_layout
+
+\begin_layout Standard
+- Azt, hogy én mit hiszek vagy mit nem, az nem számít.
+ Az számít, amit a nép hisz.
+ Ezért én megtiltom, hogy továbbra is barátkozzál azzal a nővel.
+ - mondta a király.
+\end_layout
+
+\begin_layout Standard
+- Azt nem tilthatod meg.
+ - visította Alice - Elisabeth már hat éves koromtól a legjobbik barátnőm.
+ 
+\end_layout
+
+\begin_layout Standard
+- Akkor még egy rendes kislány volt, rendes szülők gyermeke.
+ Akkor még én sem elleneztem, hogy barátkozz vele, de azóta eltelt tíz hosszú-ho
+sszú év, és egészen megváltozott.
+ Még a szülei is kitagadták, mikor rájöttek, hogy mivel foglalkozik.
+ Felejtsd el ezt a barátnődet, és találj magadnak jobb társaságot.
+\end_layout
+
+\begin_layout Standard
+- Nem hagyom el barátnőmet a nyomorában.
+ Lehet, hogy hibázott, de ettől még a barátnőm, és nagyon-nagyon szeretem.
+\end_layout
+
+\begin_layout Standard
+- Szóval a válaszod az, hogy nem szakítod meg vele a kapcsolataidat.
+ - kérdezte mérgesen a király.
+\end_layout
+
+\begin_layout Standard
+- Az.
+ - mondta Alice durcásan.
+\end_layout
+
+\begin_layout Standard
+- Értem.
+ Én már erre is felkészültem.
+ Őt nem távolíthatom el Londonból, de téged igen.
+ Már meg is vettem a hajó jegyedet, ami Görögországba visz a Hamburgból.
+ Kapsz elegendő költőpénzt, és kíséretet.
+ Addig nem térhetsz haza, míg meg nem engedem.
+\end_layout
+
+\begin_layout Standard
+- Ezt nem teheted apa.
+ - kiáltott apjára Alice.
+\end_layout
+
+\begin_layout Standard
+- Dehogy nem.
+ Tizennyolc éves korodig engedelmeskedned kell szüleidnek.
+ Szóval holnap utazol is.
+\end_layout
+
+\begin_layout Standard
+- Nem fogok! - kiáltotta Alice.
+\end_layout
+
+\begin_layout Standard
+- Akkor jobban szeretnéd azt, hogy azt a nőcskét száműzzem Nagy Britanniából.
+\end_layout
+
+\begin_layout Standard
+Ezután már Alice sem ellenkezett többet.
+ Sóhajtott egyet, majd beleegyezett abba, hogy Görögországba utazik két
+ évre.
+\end_layout
+
+\begin_layout Chapter
+A Titanica luxus hajó
+\end_layout
+
+\begin_layout Standard
+Hamburg egyik korcsmájában az egyik asztalnál két férfi beszélget.
+ Mindkettő túl van már a huszadik életévén, de még egyikük sem töltötte
+ még be a huszonötöt.
+\end_layout
+
+\begin_layout Standard
+Az egyik férfi egy jól megtermett fekete hajú férfi volt.
+ Szemei állandóan csillogtak.
+ Magyarul beszélt, de angolos kiejtéséből látszott, hogy nem született magyar.
+\end_layout
+
+\begin_layout Standard
+A másik egy középtermetű sovány hosszú barna hajú férfi volt.
+ Ő is magyarul beszélt mint társa, de az ő kiejtésén látszott, hogy született
+ magyar.
+\end_layout
+
+\begin_layout Standard
+- Megvettem neked a jegyet a Titanica hajóra.
+ - mondta angolos kiejtésű.
+ 
+\end_layout
+
+\begin_layout Standard
+- A kapitánynak már elmondtad? - kérdezte a másik.
+\end_layout
+
+\begin_layout Standard
+- Természetesen elmondtam, Décsey János néven fogsz utazni a hajón.
+ Egyébként ez mire kell?
+\end_layout
+
+\begin_layout Standard
+- Tudod Roxi, mióta az egyik idióta kiszivárogtatta, hogy én vagyok a legjobb
+ programozó a világon, azóta minden valamire való újságíró szeretne velem
+ riportot készíteni, de nekem semmi kedvem sincs arra, hogy egy rakás szájtáti
+ idióta bámulja a képemet az újságokban.
+ Szerencsére az az idióta nem tudta, hogy milyen címen lakok, mert ha tudta
+ volna, ellepték volna a környékemet.
+ 
+\end_layout
+
+\begin_layout Standard
+- Emlékszem - mondta nevetve Rox - azóta mindig mikor meginterjúvolnak,
+ az első kérdésük az, hogy igaz, hogy a JAVA-t nem én fejlesztettem, hanem
+ valamilyen Szájtó Béla nevű magyar programozó.
+ 
+\end_layout
+
+\begin_layout Standard
+- Tudom, hogy vannak gondjaid emiatt.
+ - mondta a barna hajú férfi, akiről most már megtudtuk, hogy a neve Szájtó
+ Béla.
+\end_layout
+
+\begin_layout Standard
+- Nem tagadom.
+ - mondta nevetve Rox - de tudod, hogy én csak a te kedvedért vallom magam
+ programozónak.
+ Ha akarod, bármikor kiállok a közvélemény elé, és elmondom ország világnak,
+ hogy én még egy egyszerű HELLO WIRLD programot sem írtam még soha.
+\end_layout
+
+\begin_layout Standard
+- Inkább ne.
+ - mondta Szájtó.
+ - Nem akarom, hogy csalónak bélyegezzenek téged.
+\end_layout
+
+\begin_layout Standard
+- Az engem nem érdekelne - mondta nevetve Rox - szerintem jó móka lenne
+ megnézni látni azoknak az arcát, akik egyfolytában azt mondogatták, hogy
+ Rox így, Rox úgy, stb.
+\end_layout
+
+\begin_layout Standard
+- Akkor sem.
+ - mondta Szájtó.
+\end_layout
+
+\begin_layout Standard
+- Rendben.
+ - mondta Rox.
+ 
+\end_layout
+
+\begin_layout Standard
+- A hajó mikor indul? - kérdezte Szájtó.
+ 
+\end_layout
+
+\begin_layout Standard
+- Két óra múlva.
+ Ahogy kérted a jegyeid a második osztályra szólnak.
+ - mondta Rox.
+\end_layout
+
+\begin_layout Standard
+Hagyjuk ott ezt a két embert abban a korcsmában, és pillantsunk be, Hamburg
+ legszebb szállodájának 2.
+ emeletének egyik szobájába.
+ 
+\end_layout
+
+\begin_layout Standard
+Abban a szobában az asztalnál egy 16-17 éves gyönyörű szőke hajú lányka
+ ült, és levelet írt.
+ A lányt már ismerjük, ő Nagy Britannia trónörökösnője Alice Windsor.
+\end_layout
+
+\begin_layout Standard
+Kinek szól a levél? Talán szüleinek, vagy Henrynak? Nem.
+ A levél Londonban hagyott barátnőjének Elisabethnek szól.
+ Hogy miről szól a levél? Gentlemannek nem illik elolvasni más levelét,
+ hát mi se tegyük.
+ 
+\end_layout
+
+\begin_layout Standard
+Az ajtón kopogás hallatszik.
+ Alice gyorsan eldugja a levelet asztala fiókjába.
+\end_layout
+
+\begin_layout Standard
+- Szabad!
+\end_layout
+
+\begin_layout Standard
+Mire belépett egy öreg emberke, a komornyik.
+\end_layout
+
+\begin_layout Standard
+- Felség.
+ Kérem fáradjon át a hajóra, a kísérete maradék része már ott van.
+\end_layout
+
+\begin_layout Standard
+- Két percet kérek még.
+ - mondta Alice.
+ 
+\end_layout
+
+\begin_layout Standard
+A komornyik bólintott, és kiment.
+ Alice előszedett a fiókból levelét, borítékba csúsztatta, megcímezte, megbélyeg
+ezte, majd csengetett, amire a komornyik ismét belépet.
+ 
+\end_layout
+
+\begin_layout Standard
+- Ezt a levelet add postára.
+ - mondta Alice.
+\end_layout
+
+\begin_layout Standard
+A komornyik kezébe vette a levelet.
+ Neki már ki volt adva parancsba, hogy Alice minden levelét a királynak
+ továbbítson, de ezt nem kötötte Alice orrára.
+\end_layout
+
+\begin_layout Standard
+Néhány perccel később Alice komornyikjának kíséretében megérkezett a Titanica
+ hajóhoz.
+ Alice körül nézett.
+ Nem messze tőlük egy sovány barna férfi, és egy jóképű fekete hajú férfi
+ állt és beszélgetett.
+ Alice magához intett a fekete hajú férfinak, aki a barna hajú kíséretében
+ odament hozzá.
+\end_layout
+
+\begin_layout Standard
+- Ön is utazik lord Andersen? - kérdezte mosolyogva, mivel már régóta ismeri
+ a lordot, és annak barátságos személyét.
+\end_layout
+
+\begin_layout Standard
+- Nem, csak barátomat kísértem ki felség.
+ - mondta mosolyogva Rox.
+\end_layout
+
+\begin_layout Standard
+- Bemutatná a barátját? - kérdezte Alice.
+\end_layout
+
+\begin_layout Standard
+- Décsey János felség.
+ - mondta Rox.
+\end_layout
+
+\begin_layout Standard
+Szájtó a nevét hallva meghajolt.
+ Rox barátja felé fordult, és most magyarra fordítva a szót:
+\end_layout
+
+\begin_layout Standard
+- Nagy Britannia, stb.
+ országok trónörököse Alice Windsor.
+\end_layout
+
+\begin_layout Standard
+A lány odanyújtotta a kezét Szájtónak, aki megcsókolta azt.
+\end_layout
+
+\begin_layout Standard
+- Do you speak English?
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+beszélsz angolul?
+\end_layout
+
+\end_inset
+
+ - kérdezte a lány Szájtótól.
+\end_layout
+
+\begin_layout Standard
+- No
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+nem
+\end_layout
+
+\end_inset
+
+ - válaszolta Szájtó.
+\end_layout
+
+\begin_layout Standard
+Alice többet nem törődött Szájtóval.
+ Az ő szemében aki nem tudott angolul, az nem létezett.
+\end_layout
+
+\begin_layout Standard
+- Érdekes pletykákat hallani lordságodról mostanában.
+ - mondta mosolyogva Alice.
+\end_layout
+
+\begin_layout Standard
+- Miféle pletykákat felség? - kérdezte Rox.
+\end_layout
+
+\begin_layout Standard
+- Hogy nem lordságod egy kicsit sem konyít a programozáshoz, és az eddigi
+ programjait mind-mind egy Szájtó Béla nevű magyar írta.
+ - mondta Alice, és kíváncsian várta a Rox válaszát.
+\end_layout
+
+\begin_layout Standard
+Rox gyorsan barátjára nézett.
+ Szájtó egykedvűen álldogált mellette, mintha nem is az ő nevét emlegette
+ volna a brit trónörökös.
+ 
+\end_layout
+
+\begin_layout Standard
+- Ez csak rágalom felség.
+ - mondta Rox mosolyogva.
+\end_layout
+
+\begin_layout Standard
+- Ezt könnyen felmérhetnénk.
+ - mondta Alice, és ujjával megfenyegette Roxot - egyszerűen csak oda kéne
+ ültetni lordságodat egy géphez, és felmérni programozói tudását.
+\end_layout
+
+\begin_layout Standard
+- Ez nem lesz olyan könnyű.
+ - mondta Rox mosolyogva.
+ - Ha néznek nem tudok koncentrálni, és programozni sem felség.
+\end_layout
+
+\begin_layout Standard
+Alice elnevette magát.
+ Mindig is sejtette, hogy Rox átveri a világot.
+ Rox húgától Leától hallotta néhány évvel ezelőtt, hogy Rox apjának a legnagyobb
+ bánata az, hogy Rox nem akar programozó lenni mint édesapja.
+ Meglepetésként érte őket, mikor szárnyra kapott az a hír, hogy Rox vezeti
+ a JAVA fejlesztését.
+ 
+\end_layout
+
+\begin_layout Standard
+Alice elbúcsúzott Roxtól, és komornyikjától kísérve felszállt a hajóra.
+\end_layout
+
+\begin_layout Standard
+- Mit gondolsz a trónörökösünkről? - kérdezte Rox Szájtótól.
+\end_layout
+
+\begin_layout Standard
+- Egy kicsit úrhatnámságnak tűnik.
+ - mondta Szájtó, és megvonta a vállát - nem úgy tűnik mintha törődne a
+ kisemberekkel.
+\end_layout
+
+\begin_layout Standard
+- HAHAHA - röhögött Rox - most melléfogtál.
+ Alicét éppen azért zavarta az apja Görögországba, mert nem volt hajlandó
+ felmondani a barátságát egy prostituálttá züllött nemes hölgynek.
+\end_layout
+
+\begin_layout Standard
+- Ez nem lehet igaz.
+ - mondta Szájtó hihetetlenül.
+ 
+\end_layout
+
+\begin_layout Standard
+- Pedig igaz.
+ - mondta Rox nevetve.
+ Az összes újságban megemlítették ezt az esetet, csodálkozom, hogy elkerülte
+ a figyelmedet ez a hír.
+\end_layout
+
+\begin_layout Standard
+- Tudod, hogy én csak normális híreket olvasok.
+ - mondta Szájtó.
+\end_layout
+
+\begin_layout Standard
+- Egyébként hogy tetszik a kislány?- kérdezte Rox - Szerinted is jó bőr?
+\end_layout
+
+\begin_layout Standard
+- Nem felségsértés jó bőrnek nevezni a trónörökösötöket lord Rox?
+\end_layout
+
+\begin_layout Standard
+- HAHAHA, nos? -kérdezte Rox.
+\end_layout
+
+\begin_layout Standard
+- Szép.
+ - mondta Szájtó.
+\end_layout
+
+\begin_layout Standard
+- Kár, hogy semmi esélyed nála, nem? - kérdezte nevetve Rox.
+\end_layout
+
+\begin_layout Standard
+- Tudod, hogy csak a 2D-s lányok érdekelnek az animékből, nem? - kérdezte
+ Szájtó.
+\end_layout
+
+\begin_layout Standard
+- Ezt állítod, de te is vágysz romantikára, csak félsz az emberi kapcsolatoktól.
+ - mondta Rox, mélyen barátja szemébe nézve.
+\end_layout
+
+\begin_layout Standard
+- Erről inkább majd máskor - mondta kelletlenül Szájtó.
+\end_layout
+
+\begin_layout Standard
+- Igazad van, itt az idő, hogy felszállj.
+ Szia.
+\end_layout
+
+\begin_layout Standard
+A két barát kezet fogott.
+ Majd az egyik megindult a hajó feljárója felé, és felszállt a hajóra.
+\end_layout
+
+\begin_layout Standard
+Kicsi idő múlva a hajó megindult.
+ Szájtó a hajóról integetett barátjának, aki a partról visszaintegetett
+ neki.
+\end_layout
+
+\begin_layout Standard
+Talán fogalmuk sem volt róla, hogy ez az utolsó találkozásuk.
+ Az egyikük sem tudta, hogy Rox három nap múlva rablógyilkosság áldozata
+ lesz.
+ Azt sem sejtették, hogy a Titanica a Földközi-tengeren el fog tűnni.
+ Nincs mit tenni, ez volt megírva a sors könyvében.
+ 
+\end_layout
+
+\begin_layout Chapter
+A Titanica halála
+\end_layout
+
+\begin_layout Standard
+A Titaniaca-ot szomáliai kalózok szállták meg.
+ A kapitányt és tisztjeit lemészárolták, az utasokat megkötözték, a kincseket
+ és mentőcsónakokat a saját hajójukra szállították.
+ 
+\end_layout
+
+\begin_layout Standard
+- A kincseket átszállítottuk kapitány.
+ - mondta az egyik rabló a rablók főnökének.
+ - mi legyen az utasokkal? Öljük meg őket is?
+\end_layout
+
+\begin_layout Standard
+-Dehogy fiam.
+ A nőket is szállítsátok át a mi hajónkra.
+ Ők jók lesznek prostituáltaknak.
+ - mondta a kapitány.
+ - A hajót pedig elsüllyesztjük.
+ 
+\end_layout
+
+\begin_layout Standard
+A parancs ki volt adva.
+ A megkötözött nőket hatalmas sírás-rívás közepette a saját hajójukra vonszolták
+, a hajót megtömték robbanószerrel.
+ A kalózhajó eltávozott, a Titanica pedig felrobbant.
+\end_layout
+
+\begin_layout Standard
+Egy kicsit röviden meséltem el a történetet, de a lényege ez volt.
+ Hogy miért nem kért a Titanica kapitánya segítséget? Talán kért is, de
+ nem érkezett meg elég gyorsan.
+ Mi történt Décsey János néven utazó Szájtó Jánossal? Mi történt Alice Windsorra
+l?
+\end_layout
+
+\begin_layout Standard
+Egy kicsit menjünk vissza az időben, arra a pillanatra, amikor a Titanica
+ kapitánya észrevette a kalózhajót.
+ Értesítette az megfelelő helyeket, ahonnan segítséget remélhetett, majd
+ az utasaihoz szólt:
+\end_layout
+
+\begin_layout Standard
+- Tisztelt utasok.
+ A Titanica-t megfogja támadni egy szomáliai kalózhajó.
+ Kértem már segítséget, de a segítség csak két óra múlva érkezhet meg.
+ Ha ...
+\end_layout
+
+\begin_layout Standard
+Nem tudta befejezni a mondatát.
+ A kalózok a hajóra ugráltak, és az egész tisztikart lemészárolták.
+ 
+\end_layout
+
+\begin_layout Standard
+Hamarosan beözönlöttek az utastérbe és megkötözték az utasokat.
+ A többi már rutin munka volt a kalózoknak.
+ A kincseket és a nőket átszállították a saját hajójukra.
+ A nők között átszállították Szájtót is, mert vékony termete és hosszú haja
+ miatt lánynak nézték.
+ Majd felgyújtották a hajót.
+ 
+\end_layout
+
+\begin_layout Chapter
+A kalózhajó 
+\end_layout
+
+\begin_layout Standard
+Miután a kalózok elhagyták a tett színhelyét, elosztották maguk között a
+ kincseket és a zsákmányolt nőket.
+ A kapitánynak jutott Alice.
+ Néhányan már bele is kezdtek megerőszakolni a nekik jutó nőket.
+ Tudták, hogy a vállalkozásuk halálra van ítélve, mert a Titanica segítséget
+ kért, de utoljára piszkos életükben még tenni akartak valami gonoszat.
+ Megerőszakolni az elrabolt nőket, majd megölni őket.
+\end_layout
+
+\begin_layout Standard
+A kalózok kapitánya undorító kezeivel végig tapogatott Alice testén.
+\end_layout
+
+\begin_layout Standard
+- Nem tűröm ezt a pofátlanságot! - szólt rá Alice a kapitányra.
+\end_layout
+
+\begin_layout Standard
+A kapitány szemügyre vette a lányt, majd letépdeste róla a ruhákat, mire
+ feltárult előtte az Alice szűzies teste.
+ Ha Alice nem lett volna megkötözve, akkor foggal-körömmel védekezett volna
+ ruháinak leszakítása ellen.
+\end_layout
+
+\begin_layout Standard
+A kapitány letolta nadrágját, és közelebb lépett Alicehoz.
+ Alice biztos volt abban, hogy már senki sem mentheti meg, de nem így történt.
+ A kapitány fejét egy erős ökölcsapás érte, amitől a földre rogyott.
+ A hátánál Szájtó Béla állt.
+ Egy késsel gyorsan elvágta a hercegnő köteleit.
+ 
+\end_layout
+
+\begin_layout Standard
+Alice pirulva nézett maga köré.
+ Szégyellte magát, mert meztelenül mutatkozott egy férfi előtt.
+ Szájtó ránézett.
+ Gyorsan lerángatta a kapitány hosszú kabátját, és odadobta a Alicenak.
+ Alice valahogy eltakarta testét a kapitány kabátjával.
+\end_layout
+
+\begin_layout Standard
+- Thank you sir.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+köszönöm uram
+\end_layout
+
+\end_inset
+
+ - mondta Alice.
+\end_layout
+
+\begin_layout Standard
+Szájtó legyintett, majd intett a hercegnőnek, hogy kövesse, és megindult
+ az ajtó felé.
+ Alice megszeretett volna kérdezni még valamit, de tudta, hogy megmentője
+ úgy sem érteni.
+ 
+\end_layout
+
+\begin_layout Standard
+Kiértek a fedélzetre.
+ Alice látta, hogy az egész tér vöröslik a vértől.
+ A lányok mind-mind le vannak mészárolva, és a kalózok részegen röhögnek
+ a holttestek mellett.
+ Elfordította a fejét.
+ Egy kicsit félt, hogy a kalózok észreveszik őket, de megmentője nem látszott
+ ezzel nagyon törődni.
+ Nyugodtan ment tovább, ameddig elérkeztek a mentőcsónakokhoz.
+ Az egyiket a csigák segítségével a tengerre bocsájtotta.
+ Valahonnan előszedett egy kötelet, amit Alice köré kötötte, amivel lebocsájtott
+a a lányt a csónakba.
+ Ő egy kicsit visszatért a hajóra, és néhány jól megrakott hátizsákkal tért
+ vissza.
+ A hátizsákokat is leeresztette a csónakba.
+ Majd egy ugrással ő is ott termett, és igyekezett elevezni onnan.
+ 
+\end_layout
+
+\begin_layout Standard
+Alice megpróbálta jelekkel megkérdezni tőle, hogy hogy menekült meg.
+ Szájtó nagy nehezen megértette.
+ Szájtó jelekkel elmagyarázta, hogy hogy történt.
+\end_layout
+
+\begin_layout Standard
+Őt is a hajóra szállították, mert azt hitték, hogy nő.
+ Ő egy elég hülye kalózra jutott, aki azzal kezdte, hogy elvágta a köteleit.
+ Már csak annyi volt a dolga, hogy egy erős ütéssel mozgásképtelenné tegye
+ a részeg kalózt.
+ Körül nézett a hajón.
+ Sajnos a többi lányon már nem segíthetett, mivel a részeg kalózok a fene
+ sem tudja miért a megerőszakolás előtt megölték a nőket.
+ Aztán eszébe jutott, hogy a kapitány a saját szobájába vonszolt egy nőt.
+ Követte őt.
+ A kalózoktól nem kellett tartania, mert azok matt részegek voltak.
+ A kapitány után ment, lecsapta a kapitányt, és megmentette Alicét.
+\end_layout
+
+\begin_layout Standard
+Alice gondolkozott.
+ Nem kellett volna bosszút állni a kalózokon? Gondolatait Szájtóval is megosztot
+ta, de Szájtó csak legyintett, és a kalózhajó felé mutatott.
+ Alice arra nézett, és felkiáltott.
+ A hajót tűz vette körül.
+ Jelekkel elmagyarázta Alicenek, hogy miután Alicet a csónakba rakta, majd
+ visszatért, hogy csomagoljon be maguknak élelmet, vizet, ruhát, evőeszközöket
+ és egyebeket.
+ Akkor látta, hogy a kalózok a tűzzel játszanak.
+ 
+\end_layout
+
+\begin_layout Standard
+Alice látta, hogy Szájtó egy papírlapot húz elő a csomagjából, amire ezeket
+ a számára ismeretlen nyelven szavakat írt.
+ A szavak között megismerte a saját nevét.
+ Csak egyszer kellett lássa azokat a szavakat, örökre a fejébe íródott,
+ habár fogalma sem volt, hogy mit jelentettek.
+ Azok a szavak a következőek voltak:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes pld
+\end_inset
+
+Rox Andersennek: Értesítsd a királyotokat, hogy Alice Windsor él.
+ Én is élek.
+ Rajtunk kívül mindenki halott.
+ 
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A csónak néhány órával később kikötött az egyik szigeten.
+ Alice és Szájtó partra szállt.
+ Alice látta, hogy Szájtó elővette az előbbi papírt, amire a következő szavakat
+ írta:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes pld
+\end_inset
+
+Kikötöttünk az egyik szigetre.
+ A kalózhajótól kb.
+ két órára.
+ Koordináták ismeretlenek.
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Szájtó elővett egy kis palackot, és készült, hogy a papírt belerakja, de
+ Alice intett neki, hogy ő is akar valamit írni rá.
+ Szájtó átadta neki a papírt és az írószert.
+ Alice ezeket a szavakat írta a papírra angol nyelven:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes pld
+\end_inset
+
+Help me, dear father! 
+\end_layout
+
+\begin_layout Standard
+Alice Windsor
+\begin_inset Quotes prd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A levélre még néhány könnyet is ráejtett, majd odaadta Szájtónak.
+ Szájtó a levelet bedugta a palackba, majd bedobta a tengerbe.
+\end_layout
+
+\begin_layout Chapter
+Egy hónappal később a Titanica halála után
+\end_layout
+
+\begin_layout Standard
+Nemrég egy óriási hír járta be a világot.
+ Lehet, hogy a trónörökösnő talán mégsem halt meg.
+ Nemrég találtak egy palackot, amiben egy üzenet volt.
+ Az üzenetnek az egyik része a Rox Andersennek szólt - aki nemrég rablógyilkossá
+g áldozata lett, a másik pedig Nagy Britannia királyának.
+ Az üzenet egy része magyarul van, amit egy magát meg nem nevező ember írt,
+ a másik angolul, amit Alice Windsor - az eltűnt trónörökös írt.
+ 
+\end_layout
+
+\begin_layout Standard
+A király - Alice apja, azóta legalább százszor megátkozta azt a percet,
+ mikor Görögországba zavarta a lányát.
+ Úgy érzi, hogy szerencsétlenségét részben ő okozta.
+ Kérésére több száz hajó kezdte meg kutatását a Földközi-tengeren.
+ 
+\end_layout
+
+\begin_layout Standard
+Próbált érdeklődni az Andersen családnál is, hogy vajon ki lehet az a magyar,
+ aki megmentette a lányát, de az Andersenek fogalmuk sem volt arról, hogy
+ fiúknak lett volna valamikor magyar barátja.
+ 
+\end_layout
+
+\begin_layout Standard
+A királynak Hamburgban azt is kiderítette, hogy a Titanica-n két magyar
+ utazott, egy bizonyos Kis István és egy Décsey János magyar is.
+ 
+\end_layout
+
+\begin_layout Standard
+A Titanica áldozatainak családjaival próbálta felvenni a kapcsolatot, hogy
+ vígaszt nyújtson nekik, de a Décsey családot sehol sem tudta felkutatni.
+ A Kis család pedig abban reménykedik, hogy a túlélő magyar az Kis István.
+\end_layout
+
+\begin_layout Standard
+Alice és Décsey János - mostantól emlegessük így, lassanként amennyire tudtak
+ hozzászoktak a szigeti életmódhoz.
+ Décsey már többször átkutatta a szigetet, de emberi életre nem talált nyomot.
+ Lakatlan sziget a Földközi-tengeren? - ez lehetetlen, gondolja gyakran
+ Décsey.
+\end_layout
+
+\begin_layout Standard
+Az étel amit a kalózhajóról hoztak már elfogyott, de éhen, szomjan mégsem
+ haltak, mivel a szigeten találtak ivóvizet, néhány ehető növényt és kisebb
+ állatokat.
+ 
+\end_layout
+
+\begin_layout Standard
+Az elején Décsey dolga volt az élelem szerzés és a főzés is, mert Alice
+ ehhez sem értett, de most már változott a helyzet.
+ Most Décsey dolga az élelemszerzés, Alice dolga a főzés.
+\end_layout
+
+\begin_layout Standard
+Az elején voltak gondok a beszéddel és jelekkel próbáltak kommunikálni egymással.
+ Most már nincsenek ilyen bajok, mert néhány fontosabb szót eltanult Alice
+ a magyar nyelvből, Décsey pedig az angol nyelvből, de mivel Alice sokkal
+ gyorsabban sajátította el a magyar nyelvet mint Décsey az angolt, közös
+ megegyezés alapján úgy döntöttek, hogy a szigeten a magyar nyelvet használják.
+\end_layout
+
+\begin_layout Chapter
+Alice és János a lakatlan szigeten
+\end_layout
+
+\begin_layout Standard
+Décsey megtömött hátizsákkal tért vissza a kunyhóhoz.
+ A kunyhó előtt a tűznél Alice szorgoskodott.
+\end_layout
+
+\begin_layout Standard
+- Hello Alice.
+ - mondta Décsey
+\end_layout
+
+\begin_layout Standard
+- Szia János.
+ - mondta Alice - Mit te hozni?
+\end_layout
+
+\begin_layout Standard
+- tojásokat és madarakat - mondta Décsey.
+\end_layout
+
+\begin_layout Standard
+Décsey bement a kunyhóba lerakni a zsákját, majd visszatért, és leheveredett
+ a kunyhó mellé.
+\end_layout
+
+\begin_layout Standard
+- Kész van a ebéd.
+ - mondta Alice mosolyogva, és két kisebb tányérba tálalta az ételt kettőjüknek.
+\end_layout
+
+\begin_layout Standard
+- Finom volt.
+ - mondta Décsey.
+ - Egyre jobb vagy.
+\end_layout
+
+\begin_layout Standard
+- Én köszön.
+ - mondta Alice.
+\end_layout
+
+\begin_layout Standard
+- Elmegyek fáért, úgy néz ki eső lesz az este.
+ - mondta Décsey, és talpra ugrott, és elindult az erdő felé.
+ 
+\end_layout
+
+\begin_layout Standard
+Alice pedig neki látott a vacsora elkészítéséhez azokból a tojásokból és
+ madarakból, amit Décsey hozott.
+ Mikor elkészült a vacsorával, magához vett egy váltás ruhát, leszaladt
+ a tengerpartra.
+\end_layout
+
+\begin_layout Standard
+Kibújt a piszkos ruháiból, majd belemerült a tenger habjaiba.
+ Tudta, hogy Décsey nem fogja meglepni, mivel a sziget másik felén van dolga.
+ Miután megfürdött kimosta a piszkos ruháit, kiterítette a partra, és felvette
+ a váltás ruhát.
+ 
+\end_layout
+
+\begin_layout Standard
+Visszasietett a kunyhóhoz, mert itt volt már az ideje, hogy Décsey is megérkezze
+n a tűzifaszedésből.
+ 
+\end_layout
+
+\begin_layout Standard
+A tűzifát együtt elraktározták a kunyhó egyik oldalában, majd a vacsorához
+ ültek.
+\end_layout
+
+\begin_layout Standard
+- Jó étvágyat János.
+ - mondta Alice.
+\end_layout
+
+\begin_layout Standard
+- Jó étvágyat Alice.
+ - mondta Décsey.
+\end_layout
+
+\begin_layout Standard
+Hozzáláttak enni.
+ 
+\end_layout
+
+\begin_layout Standard
+- Nem láttál hajót errefelé? - kérdezte Décsey.
+\end_layout
+
+\begin_layout Standard
+- Nem, és te? - kérdezte Alice.
+\end_layout
+
+\begin_layout Standard
+- Én sem.
+ - mondta Décsey.
+\end_layout
+
+\begin_layout Standard
+A vacsora maradék részét teljes csöndben töltötték el.
+ Magyar ember ha eszik, nem beszél, legfeljebb az elején - vallotta Décsey.
+ Alice pedig, ha nem akart magában beszélni, akkor hozzászokott ehhez.
+ 
+\end_layout
+
+\begin_layout Standard
+- Finom volt az étel.
+ - mondta Décsey - Köszönöm.
+\end_layout
+
+\begin_layout Standard
+- Te hoztad étel.
+ - mondta mosolyogva Alice.
+\end_layout
+
+\begin_layout Standard
+Décsey megvárta míg Alice befejezte az ételt, majd fogta az evőeszközöket,
+ és levitte a folyóhoz elmosogatni.
+\end_layout
+
+\begin_layout Standard
+Mire visszatért Alice már a kunyhóba várta.
+ Bár aprocska volt a kunyhó, még sem csak egy terem volt benne, hanem három.
+ Az egyik szoba volt az Alice szobája, a másik Décseyé, a harmadik pedig
+ a mindenes terem.
+ A mindenes termet tüzifa tárolására használták, de ha esett az eső, ezt
+ a szobát használták az étkezéshez is.
+\end_layout
+
+\begin_layout Standard
+A szobák nem voltak olyan fényűzöek amihez ez a két európai szokva volt.
+ A fekhely csak fű volt.
+ Ajtaja sem volt a szobáknak, sőt fala sem.
+ Két szobát egymástól csak egy vastagabb faág választotta el egymástól.
+ 
+\end_layout
+
+\begin_layout Standard
+Ennek ellenére mindketten szerették ezt a kunyhót.
+ Alicenek nem kellett soha sem attól tartania, hogy Décsey meglesi öltözködés
+ közben.
+ Attól sem kellett féljen, hogy Décsey megerőszakolja mikőzben alszik.
+ Ha megakarta volna, akkor már lett volna rá lehetősége, mivel csak ketten
+ voltak, de Décsey a becsületessége soha nem gondolt effélére.
+\end_layout
+
+\begin_layout Standard
+Másnap reggel mikor Alice felkelt, Décsey már nem volt a kunyhóban, pedig
+ egész este esett az eső, de Alicét ez nem lepte meg.
+ Décseyt soha semmi sem akadályozta meg abban, hogy minden reggel kimenjen
+ egy kicsit az erdőben, és hozzon némi táplálékot.
+\end_layout
+
+\begin_layout Standard
+Alice sem várta meg míg Décsey hazaérkezik.
+ Bement a 
+\begin_inset Quotes pld
+\end_inset
+
+konyhában
+\begin_inset Quotes prd
+\end_inset
+
+ és nekifogott reggelit készíteni a tegnap hozott madarak és tojások maradékaibó
+l.
+\end_layout
+
+\begin_layout Standard
+Alig fejezte be, mikor visszatért Décsey.
+ Zsákjában valószínűleg most is gyümölcsök, madarak, tojások, halak vagy
+ békák vannak.
+ A szigeten ezeken kívűl nem nagyon fordul elő egyébb élelem.
+ 
+\end_layout
+
+\begin_layout Standard
+- Jó reggelt Alice.
+ - mondta Décsey.
+ - Hogy aludtál?
+\end_layout
+
+\begin_layout Standard
+- Jó reggelt János.
+ - mondta Alice.
+ - Jól.
+ Regelizük mi most?
+\end_layout
+
+\begin_layout Standard
+- Igen, reggelízhetünk most.
+ - mondta Décsey.
+\end_layout
+
+\begin_layout Standard
+Mindketten bementek a 
+\begin_inset Quotes pld
+\end_inset
+
+konyhába
+\begin_inset Quotes prd
+\end_inset
+
+, és leűltek a tűzhely mellé.
+ Mondanom sem kell, hogy a ebben a szobában az is volt.
+\end_layout
+
+\begin_layout Standard
+Míg reggelízek elállt az eső.
+ Alice és Décsey a reggeli után elmentek békát fogni.
+ Azok a kis dögök mindig eső után bújnak elő, és mivel a combjuk finom falat,
+ nem szalaszthatják el ezt a megfelelő alkalmat.
+\end_layout
+
+\begin_layout Standard
+- Ott szalad az egyik éppen feléd Alice! - kiáltott Décsey Alice felé.
+\end_layout
+
+\begin_layout Standard
+Alice próbálta megragadni, de a kis rohadék kicsúszott a kezéből.
+ Ez Alice nagy bosszúságára megmosolyogtatta Décseyt.
+\end_layout
+
+\begin_layout Standard
+- János most szalad feléd egy! - kiáltotta oda Alice Décseynek.
+\end_layout
+
+\begin_layout Standard
+Décsey megpróbálta megragadni, de túl lassan, és mire kezét arra a helyre
+ tette, ahol a békát észlelte, a béka már nem volt ott.
+ Alice elevette magát.
+ Sejtette, hogy Décsey direkt hibázta el a békát.
+\end_layout
+
+\begin_layout Standard
+- János, te lenni nagy gazember.
+ - mondta Alice nevetve.
+\end_layout
+
+\begin_layout Standard
+- Túl gyors volt a béka.
+ - mondta Décsey mosolyogva.
+\end_layout
+
+\begin_layout Standard
+Miután összefogdostak legalább egy zsákravaló békát, hazaballagtak a kunyhóba.
+ Közösen áltak neki a békák elkészítéséhez.
+ A békáknak csak a combja ehető.
+ Levagdosni egy zsáknyi béka combjait elég fárasztó munka, ezért ezt mindig
+ együtt szokták csinálni.
+ 
+\end_layout
+
+\begin_layout Standard
+Most egy kicsit mesélnék a köztük lévő kapcsolatról.
+ Becsülték és tísztelték egymást.
+ 
+\end_layout
+
+\begin_layout Standard
+Décsey pedig már az első perctől amikor meglátta Alice-t beleszeretett.
+ A szigeten megismerte Alicet, és mégjobban megszerette.
+ Ezen nem is lehet csodálkozni.
+ Alice mindent megtett, hogy az itt tőltött időt kellemesebbé tegye mindkettőjük
+nek.
+ Ezért tanult meg főzni is, és ezért kezdte el tanulni a Föld bolygó legnehezebb
+ nyelvét - a magyar nyelvet.
+\end_layout
+
+\begin_layout Standard
+Azt, hogy Alice mit érzett Décsey felé, nem lehet tudni.
+ Vonzódott hozzá, de ez a vonzódás talán csak abból fakadt, hogy Décsey
+ volt az egyetlen ember a szigeten.
+ 
+\end_layout
+
+\begin_layout Standard
+Mindamellett, hogy Alice és Décsey vonzódtak egymáshoz, de eddig még nem
+ lépték át azt a vonalat, ami örökre összeköti őket, de talán már nem kell
+ túl sok idő ehhez sem.
+ A vad élet általában tesz erről.
+ 
+\end_layout
+
+\begin_layout Standard
+- Végre elkészűlt.
+ - mondta Décsey egy nagy sóhajjal.
+\end_layout
+
+\begin_layout Standard
+- Végre el.
+ - mondta mosolyogva Alice, és már tálalta is a békacombot leves.
+\end_layout
+
+\begin_layout Standard
+Olvasóimnak gondolom, hogy fogalmuk sincs arról, hogy miből áll egy ilyen
+ leves egy lakatlan szigeten, mivel itt se só, se tej, se liszt nincs.
+ Az olvasók kedvéért nevezzük a nevén ezt a békacomb levest.
+ A leve 1/20-od részben tengervíz, 15/20-od részben folyó víz.
+ Van benne néhány tojás és békacomb, sőt még egy bizonyos fűszer is volt
+ benne, amit ezen a szigeten fejlesztettek ki.
+ 
+\end_layout
+
+\begin_layout Standard
+A fűszert egy itteni növényekből nyerték, amit a szigeten élő madarak előszerete
+ttel fogyasztottak.
+ 
+\end_layout
+
+\begin_layout Standard
+- Egyre jobb vagy a főzésben.
+ - mondta Décsey.
+\end_layout
+
+\begin_layout Standard
+- Köszönöm.
+ - mondta Alice.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Egy száraz napon, az egyik ebéd után Décsey felállt, és a szoba egyik sarkából
+ elővett egy ásóhoz hasonlító eszközt.
+ Ásóhoz hasonlított, de egyáltalán nem volt az.
+ Nyele egy vastagabb ág volt, az ásója pedig talán egy lábosnak az alja.
+ Hogy miért kellett neki egy ásó? Azért, hogy a kunyhótól egy csatornával
+ elvezesse az esővizet.
+ A kunyhóban nem nagyon csoroghat a víz, mivel a tetejét paticsból készítették.
+ Egy erősebb eső után, alig lehet járni a nagy locsplocs-ban.
+ 
+\end_layout
+
+\begin_layout Standard
+- Ásni mész? - kérdezte Alice.
+ 
+\end_layout
+
+\begin_layout Standard
+- Igen - mondta Décsey.
+ 
+\end_layout
+
+\begin_layout Standard
+Az ásás nagyon nehéz.
+ A sziget talaja száraz időben nagyon kemény, esős időben és közvetlen utánna
+ locsplocs, ezért Décsey egy ilyen ásást három nappal egy esős nap utánra
+ szokta halasztani.
+ Akkorára a talaj még nem száradt meg annyira, hogy ásni ne lehessen, de
+ a locsplocs valamennyire eltűnt.
+ 
+\end_layout
+
+\begin_layout Standard
+Az ásás ennek ellenére fárasztó és izzasztó.
+ A sziget olyan övezetben van, ahol két féle időjárás létezik.
+ Mikor esik az eső és esőzés elállta után két-három nappal meleg, száraz
+ időben pedig nagyon meleg.
+ 
+\end_layout
+
+\begin_layout Standard
+Ezen a napon is addig dolgozott míg bírta.
+ 
+\begin_inset Quotes pld
+\end_inset
+
+Még maradt 3 adag.
+ 
+\begin_inset Quotes prd
+\end_inset
+
+ - gondolta Décsey mikor visszarakta az ásót a helyére.
+\end_layout
+
+\begin_layout Standard
+Ezután kezdődött a kettőjük közös programja: a magyar nyelvlecke.
+ Ezekhez a nyelvleckékhez Alice ragaszkodott, mivel könnyebbé akarta tenni
+ a kommunikációt.
+ Ragaszkodhatott volna ahhoz is, hogy Décsey tanuljon angolul.
+ Ezt csak azért nem tette, mert úgy gondolta, hogy ha Décsey eddig nem tanult
+ meg angolul (legfeljebb a programozáshoz szükséges minimumot), akkor ez
+ azért van mert nincs tehetsége a nyelvekhez.
+ 
+\end_layout
+
+\begin_layout Standard
+Régebben mikor még Alice nem tudta a tárgyak nevét magyarul, a nyelvlecke
+ azt jelentette, hogy Décsey rámutatott egy tárgyra és elmondta a nevét.
+ Mostanában a ragozást tanítja Décsey Alicénak.
+ 
+\end_layout
+
+\begin_layout Standard
+- Én vagyok, te vagy, ő van, mi vagyunk, ti vagytok, ők vannak.
+ - mondta Décsey.
+ - This is the prezent tense of be.
+ Magyarul: ez a jelenbeli alakja a lenni igének.
+\end_layout
+
+\begin_layout Standard
+- Én vagyok, te van, ő ....
+ - kezdte Alice, de Décsey megállította.
+\end_layout
+
+\begin_layout Standard
+- Én vagyok, te vagy, ő van, mi vagyunk, ti vagytok, ők vannak.
+ - mondta Décsey.
+ Alice most már híbátlanul mondta:
+\end_layout
+
+\begin_layout Standard
+- Én vagyok, te vagy, ő van, mi vagyunk, ti vagytok, ők vannak.
+\end_layout
+
+\begin_layout Standard
+Most nem akarom tovább fárasztani kedves olvasóimat ezzel a nyelvleckével.
+ Ezt is csak azért írtam le, hogy ha maguk is egy idegen nyelvű személlyel
+ lesznek együtt kettesben egy lakatlan szigeten, akkor arra lesznek kényszerűlve
+ a könnyebb kommunikáció miatt, hogy az egyikük eltanúlja a másik anyanyelvét.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kettesben éltek, de mégsem történt meg közöttük az, ami normális helyzetben
+ egy férfi és egy nő között megtörténik.
+ Décsey talán félt közeledni a hercegnőhöz, Alice pedig ha el is ismerte
+ Décsey tudását, eléggé lenézte.
+ Angolul ne tudni ebben a korban?...
+\end_layout
+
+\begin_layout Standard
+Megvolt közöttük a tísztelet, a barátság, ennyi számukra elég volt.
+ Legalább is azt hitték....
+\end_layout
+
+\begin_layout Standard
+Az igazság az, hogy kölcsönösen vonzodtak egymáshoz.
+ Ez a vonzalom talán csak azért alakult ki közöttük, mivel ők ketten voltak
+ az egyetlen emberek a szigeten.
+ Gyakran megfedték a szívüket emiatt a vonzalom miatt, vagy bizonygatták
+ lelküknek, hogy semmit se éreznek, de végül a szív, a lélek győzött az
+ elme felett.
+ Gúzsban közötte az, és uralta.
+ 
+\end_layout
+
+\begin_layout Chapter
+Az elválás
+\end_layout
+
+\begin_layout Standard
+Már el se hitték, hogy létezhet még az elmenekülés a szigetről, már-már
+ úgy gondolták mindketten, hogy minden tökéletes az életükben, legfeljebb
+ kis gyermekhangok hiányzanak az életükből.
+ De talán az is meglesz nemsokára.
+ Legalább is Alice így gondolta, de gondolatait Décseyvel nem osztotta meg.
+ Három éve élnek a szigeten, teljes egyetértésben, nyugalomban.
+ Egy éve forró szeretettel, szerelemmel szeretik egymást.
+\end_layout
+
+\begin_layout Standard
+Décsey nem értette, hogy mi az a sejtelmes mosoly néha-néha Alice arcán,
+ bár ha megsejtette volna, oda-vissza lett volna az örömtől.
+ Décsey már antiszociális volt, de mindig is vágyot arra, hogy utódokat
+ hagyjon hátra.
+ 
+\end_layout
+
+\begin_layout Standard
+És akkor megérkezett a hajó, egy brit hajó.
+ Nem Alice után kutattak, mert álmukba se jútott volna eszükbe az eltűnt
+ trónörökösnőt az oly aprócska Baker-szigeten keresni.
+ Bár mindenhol keresték Britannia, Kanada, Ausztrália, stb.
+ királyságok örökösnőjét, de a Baker-szigetre senki se gondolt.
+\end_layout
+
+\begin_layout Standard
+Hogy micsoda az a Baker-sziget? Nost egy aprócska szigetecske 1,64 
+\begin_inset Formula $km^{2}$
+\end_inset
+
+-nyi terület Hawaii és Ausztrália között valahol féluton, ami jelenleg hivatalos
+an az Amerikai Egyesült Államok birtokában van, bár igazán senki se gyakorol
+ uralmat a lényegtelen kis kéződmény fölött.
+ Pedig már 1818-ban felfedezték, a jenkik pedig 1857-ben vették hivatalosan
+ birtokukban, és hivatkoztak arra, hogy néhány évvel ezelőtt eltemettek
+ itt egy amerikai tengerészt.
+ 
+\end_layout
+
+\begin_layout Standard
+Hogy hogyan kerülhetett ide Décsey János és Alice, senki se tudja, de megtörtént.
+ A brittek először rá se ismertek uralkodójukra, hiszen annyira megváltoztatta
+ őt a déli félteke.
+ Korábban fehér bőre, most szinte teljesen vörös.
+ Korábban gyönyörű, milliókat érő ruhái cafatokban lógtak rajta.
+ 
+\end_layout
+
+\begin_layout Standard
+Décsey az egész hajóuton távol maradt Alicetől.
+ Hiszen ők csak a sziget miatt jöttek össze, egyenlőrangú személyekként,
+ immár semmi közük sincs egymáshoz.
+ Az egyik siett haza édesapja ölelő karjaiba, ma-holnap tizenhét királyság
+ uralkodója, ő pedig örülhet, ha visszakaphatja a programozói állását.
+ Sejtette, hogy előbb-utóbb ez lesz belőle.
+ Kapcsolatuk hazugság.
+ A lány még mindig úgy tudja, hogy őt Décsey Jánosnak hívják.
+ Szájtó Bélának pedig semmi köze Alice Windsornak pedig semmi köze nincs
+ hozzá.
+ 
+\end_layout
+
+\begin_layout Standard
+Alice is valahogy így gondolkozhatott, mert észre se jútott Décsey, rokonairól,
+ csalájdáról, a divatról kérdezgette az otlévőket.
+ Természetesen magában már döntött: amilyen hamar elfelejti a Décseyvel
+ tőltött inséges napokat, Décseyt is elfelejti, gyermeke apját, amilyen
+ gyorsan csak lehet.
+ A gyerekről pedig említést se tesz Décseynek.
+ 
+\end_layout
+
+\begin_layout Standard
+Az együtt tőltött három gyönyörű év így lett semmivé egy nyavadt hajó miatt.
+\end_layout
+
+\begin_layout Chapter
+Az új királynő és a névtelen kislánya
+\end_layout
+
+\begin_layout Standard
+Hat év telt el a sziget elhagyása után.
+ Alice apja örömmel vette, hogy lánya előkerült, így 17 királyság trónját
+ az ő családja viszi tovább, nem pedig egy oldalági örökös.
+ 
+\end_layout
+
+\begin_layout Standard
+Mikor lánya hazakerült, komolyan leültek beszélgeti, ahol Alice mindent
+ elmondott apjának.
+ Az apja pedig mindent megtett, hogy a szégyen ne derüljön ki.
+\end_layout
+
+\begin_layout Standard
+Alice három évvel később férjhez ment a svéd korona egyik hercegéhez, a
+ szelebudri Stefan Gustaf av Sverighez, ki harmadik volt a svéd korona trónjának
+ örököseinek listáján.
+ Persze csak hivatalosan, mert úgy a svéd király, a nép mint maga Stefan
+ is jól tudta: belőle soha nem lesz királya a svédeknek.
+ Annyira izgága, szórakozot alak kevés születetett családjában.
+ 
+\end_layout
+
+\begin_layout Standard
+Feleségét nagyon szerette.
+ Elfogadta azt minden titkável, szégyenével együtt.
+ Tudott Alice törvénytelen kislányáról, kiről nagyon kevesen tudtak a királyi
+ udvarnál, de ez nem zavarta meg a királyi család boldogságát.
+ Alice lányának Johannának és másnak kik róla kérdezősködtek, azt mondták,
+ hogy 2.5 évvel meghalt egy női alkalmazott a palotába, árván hagyva a kis
+ Johannát, és hogy elkerüljék a pletykákat, hogy árvaházba teszik a náluk
+ meghalt alkalmazotak gyermekeit, hagyták, hogy a palitába nevelkedjen.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Aztán királynővé koronázták Alicet.
+ Azon a héten nagy öröm, és hatalmas bánat látogatta meg a királyi családot:
+ megszületet Stefan és Alice első gyermeke, egy fiú gyermek, aki szent keresztsé
+gben a György nevet kapta, akinek együtt örült a királyi család, és a népeik.
+ Rá két nappal hatalmas gyász is szállt a királyi udvarra: Alice apja elhalálozo
+tt.
+\end_layout
+
+\begin_layout Standard
+A koronázás a törvények szerint megtörtént, György pedig hercegi nevelést
+ kapott.
+ Nagy öröm volt szüleinek, mikor látták, hogy hogyan gyarapodik lélekben,
+ értelemben és erőben.
+ A nagy boldogságban Stefannak eszébe se jútott a kis Johanna, Alicenek
+ is csak néha-néha.
+ Vele szinte senki se törődött az udvarnál.
+ Együtt étkezett az alkalmazotakkal, együtt aludt az alkalmazottak lányaival,
+ együtt járt velük iskolába, de azokhoz viszonyítva, ő egy senki volt, neki
+ nem volt neve.
+ 
+\end_layout
+
+\begin_layout Standard
+Pedig tehetséges gyermek volt.
+ Hat évesen már ismerte a négy alapmüveletet több számjeggyel is, folyékonyan
+ olvasta William Shakespeare gyönyörű darabjait.
+ Tehetségéről azonban csak nagyon kevesen tudtak.
+ Apjához hasonlóan ő is elkerülte az embereket, amire volt is oka, a palotába
+ ő csak egy megtürt személy volt, egy meghalt alkalmazottnak a lánya.
+\end_layout
+
+\begin_layout Standard
+Pedig milyen szívesen megölelte volna ezt-azt a gyönyörű hölgyet a palotába,
+ és 
+\begin_inset Quotes pld
+\end_inset
+
+anyukámnak
+\begin_inset Quotes prd
+\end_inset
+
+ szólítani, de ezt csak egyszer tette meg, mikor még csak négy éves volt.
+\end_layout
+
+\begin_layout Standard
+Alice és Stefan fogadott Alice mellé valami babysitter félét, akiről szerencsétl
+en kislány azt hitte, hogy az anyja.
+ Hiszen évekig ő állt hozzá a legközelebb, pedig egyáltalán nem értett a
+ gyerekekhez.
+ Egy napon mikor a gyermek mikor nagyon örült az édességeknek, mit a babysitter
+ vásárolt neki, átölelte a hölgyet, és boldogan 
+\begin_inset Quotes pld
+\end_inset
+
+anyukámnak
+\begin_inset Quotes prd
+\end_inset
+
+ szólította.
+ Anyiszor végig gondolta már ezt a pillanatot, egészen addig csak nevén
+ nevezte a babysittert, de az oviban bizonygatták neki a gyerekek, hogy
+ ha a babysitter a hozzá legközelebb álló felnőtt nő, akkor az nem lehet
+ más mint az anyukája.
+ 
+\end_layout
+
+\begin_layout Standard
+A babysitter mintha kigyóhoz ért, úgy taszította el magától a négy éves
+ gyermeket.
+ 
+\begin_inset Quotes pld
+\end_inset
+
+Én nem vagyok az anyád, az anyád meghalt vagy elhagyott, csak a király jóvoltábó
+l élhetsz a kastélyban.
+ 
+\begin_inset Quotes prd
+\end_inset
+
+ Ezek után senkit se nevezett édesanyjának, a babysittert se, pedig azóta
+ is ő viseli a gondját.
+\end_layout
+
+\begin_layout Standard
+Vajon milyen lehetett az édesanyja? Ki lehetett az édesapja? Ha az édesanyja
+ meghalt vagy elhagyta őt, vajon mi lehet az édesapjával? Bár valóban megszerett
+e volna ismerni édesapját, de bármit megadott volna azért, ha egyiket azokból
+ a gyönyörű hölgyekből édesanyjának nevezhetne, az pedig megsimogatná, kedvesen
+ rámosolyogna, és kislányomnak nevezné.
+\end_layout
+
+\begin_layout Standard
+Néha szemtől- szembe találkozott Alice hercegnővel is, de az annyira magasan
+ állt fölötte, anyira gyönyörű volt, hogy még álmodni se mert arról, hogy
+ bármi köze lenne hozzá..
+\end_layout
+
+\begin_layout Standard
+Hat éves volt, mikor mindenki annak örvendezett a palotában, hogy a trónörökös,
+ a kis György herceg megszületett.
+ Johanna együtt örült a többiekkel, csak tőlük távol.
+ Egyre jobban elszigetelődött a környezetétől.
+ Az utolsó döfést az emberek iránt szeretetében az adta, mikor elcsipte
+ a szakácsnő beszédét:
+\end_layout
+
+\begin_layout Standard
+-- Az a kis fattyú is repülni fog hamarosan.
+ Magától a komornyíktól hallottam, hogy egy isten háta mögötti országba
+ lesz küldve bentlakásos iskolába.
+ Valami éhesek királyságába vagy hová.
+ (Magyarország...)
+\end_layout
+
+\begin_layout Standard
+Ezt már ő is sejtette, mert babysitterje már többször említette előtte,
+ hogy csak addig marad a palotánál, míg elég idős lesz ahhoz, hogy bentlakásos
+ iskolába küldhessék.
+ Természetesen az alkalmazottak gyerekeivel nem tették ezt, azok elitt londoni
+ iskolákba mehettek, de a kis árvának, a senkilányának mennie kell.
+\end_layout
+
+\begin_layout Part
+Magyarországon
+\end_layout
+
+\begin_layout Chapter
+Az utazás
+\end_layout
+
+\begin_layout Standard
+Babysitterje kisérte a repülőhöz.
+ Mindkettőjüknek fontos volt ez a pillanat, hisz az elmúlt hat évben összeszokta
+k valamennyire.
+ Megfértek egymástól, Johannának pedig ő volt az egyetlen ember, akit valamennyi
+re közel engedett magához.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Aztán vigyázz magadra -- mondta hideg angolsággal babysitter.
+ -- Ha gondolod, írhaszt is nekem.
+\end_layout
+
+\begin_layout Standard
+Johanna csak bolíntott.
+ Ennél azért tudat alatt valamivel többet várt.
+ Talán azt várta, hogy elvállásuk legalább egy aprócska könnyet csal a dajkája
+ szemeiben, de ez nem történt meg.
+ Arra is vágyott, hogy átölelje, de abból se lett semmi.
+\end_layout
+
+\begin_layout Standard
+-- Mielőtt elválnánk, elmondanák neked egy titkot, amiről a sírig hallgatnod
+ kell -- suttogta a babysitter halkan.
+ 
+\end_layout
+
+\begin_layout Standard
+Johanna esküre emelte kis kezecskéjét.
+\end_layout
+
+\begin_layout Standard
+-- Egyszer azt mondtam, hogy az édesanyád meghalt vagy elhagyott.
+ Most már bizton tudom, hogy elhagyot, bár egészen eddig a közelébe voltál.
+ Mostanra azonban terhessé vált a jelenléted.
+\end_layout
+
+\begin_layout Standard
+-- Ki ő? -- kérdezte a kislány izgatottan.
+\end_layout
+
+\begin_layout Standard
+-- Hallkabban hallod -- tette újját a dajka szájára.
+ -- A te édesanyád a királynő.
+ Ezt soha se feled.
+\end_layout
+
+\begin_layout Standard
+-- A királynő? -- akarta kiáltani Johanna, de gyorsan a szájára szorította
+ a kezeit.
+ Ezt a titkot nem mondhatja el senkinek egészen a sírig.
+\end_layout
+
+\begin_layout Standard
+-- A királynő születésed előtt hajótörést szenvedett egy Décsey János nevű
+ magyarral, aki abból az országból való ahová éppen tartasz.
+ Sokáig együtt éltek azon a szigeten.
+ Elszabadultak a szigetről, de akkorára te már édesanyjád méhében voltál,
+ és kockázatos lett volna tőled megszabadulni.
+ Emiatt egy ideig a palotába nevelkedhettél.
+ A királynét azonban zavarta a jelenléted, hiszen fiatal, ártatlan önmagára
+ emlékeztetted, aki egy rossz hírű barátnőjét is felkereste egyszer egy
+ olyan helyen, ahová úrinő soha nem lépne be.
+ Emiatt apád országába küldött téged tanulni.
+ Ha az apáddal akarsz lenni, keresd meg azt a Décsey Jánost, kit még a királyság
+ legjobb kopói se találtak meg eddig.
+ Ha jól értesültem a palotában terjedő hírekről, az apád mág azt se tudja,
+ hogy létezel, a királynő soha nem mondta el apádnak, hogy megszülettél.
+\end_layout
+
+\begin_layout Standard
+-- Décsey János? -- suttogta halkan a kislány.
+\end_layout
+
+\begin_layout Standard
+-- Igen -- felelte a babysitter.
+ -- És most már menj.
+ Én nem szeretlek, nekem te senki se vagy.
+\end_layout
+
+\begin_layout Standard
+A kislánynak fájtak-e szavak, de akkorára már megtanult uralkodni az érzésein.
+ Senki se láthatja, hogy neki fáj az, hogy ez a nő, ki nálla az édesanyját
+ helyetesítette, ilyen könyedén elvállik tőle.
+ De miért is lepődőtt meg? Hiszen ez a nő soha se szerette, ahogy az édesanyja
+ se...
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+-- Megtalálom Décsey Jánost, megtalálom Décsey Jánost.
+ Érdekes emberek ezek a magyarok, keresztnevük hátul van, a vezetéknevük
+ pedig elől.
+ Akkor őt magyarosan Décsey Johanna hívják, szóval van neve, egy apja, aki
+ egy létező személy, van egy édesanyja is, aki 17 országnak a királynője.
+\end_layout
+
+\begin_layout Standard
+Ekkor odalépett hozzá egy gyönyörű fiatal hölgy, gyönyörű meleg barna szemei
+ voltak, és derékig érő hosszú hullámos haja.
+\end_layout
+
+\begin_layout Standard
+-- Szia, Kiss Margit vagyok.
+ Te vagy Johanna Smith? 
+\end_layout
+
+\begin_layout Standard
+-- Igen -- felelte a kislány, pedig már az ajkára tódult, hogy ő nem Johanna
+ Smith, hanem Décsey Johanna.
+\end_layout
+
+\begin_layout Standard
+-- A palotából fogadtak fel, hogy egy ideig melletted maradjak mint fevigyázód.
+\end_layout
+
+\begin_layout Standard
+-- Ah -- gondolta a kislány, de csak csendesen elmosolyodott.
+ -- Köszönöm szépen.
+\end_layout
+
+\begin_layout Standard
+-- Ha akarod mesélek neked Magyarországról -- mondta Margit kisasszony mosolyogv
+a.
+\end_layout
+
+\begin_layout Standard
+-- Kérlek -- mondta Johanna.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+Magyarország a Magyar-Horvát Föderációnak a nagyobbik része.
+ Magyarországot magyarok, horvátok, ruszinok, ukránok, szlovákok, és más
+ rengeteg kisebb-nagyobb népcsoport lakja, bár a kisebbségi népek éppen
+ úgy részévé váltak a magyar népnek mint a székelyek, kunok, jászok, már
+ réges-régen feledték anyanyelvüket, és felvették helyette a magyart.
+\end_layout
+
+\begin_layout Standard
+Az országban virágzik a tudomány, a tudámány egyik zászlóshajója Japán és
+ az Egyesült Államok mellett.
+ Történelme több mint ezer éves, kúltúrája még ennél is ősibb.
+ Szinte minden évben Magyar-Horvát Föderáció városai nyerik el a legszebb
+ európai város címét: Pécs, Zegráb, Pozsony, Kolozsvár és mások.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Nagyjából ennyit mondott el a kislánynak, csak sokkal jobban kifejtve.
+ Nem felejtve el beszélni a magyarok történelméről se.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+-- Mond Margit, hogyan is lettél te a felügyelőm? -- kérdezte egy idő után
+ Johanna a barátságos lánytól.
+\end_layout
+
+\begin_layout Standard
+-- Én tanárnő vagyok egy pécsi bentlakásos iskolában.
+ Két héttel ezelőtt megkeresett egy mogorva angol fehérnép, és megkérdezte,
+ hogy hajlandó volnák támasza lenni egy hat éves gyermeknek Magyarországon,
+ ki teljesen egyedül van a világban?
+\end_layout
+
+\begin_layout Standard
+-- És te mit feleltél? -- kérdezte Johanna érdeklődöen.
+\end_layout
+
+\begin_layout Standard
+-- Már hosszú ideje szerettem volna gyereket, de saját gyerekem nem lehet,
+ emiatt a férjem elhagyott.
+ Ne gondold, hogy panaszkodni akarok -- jegyezte meg a lány mosolyogva --
+ nem olyan nagy dolog, jobb is, hogy megszabadultam tőle.
+ Árvaházból is szívesen örökbe fogadtam volna egy aranyos magyar kislányt.
+ Árvák Magyarországon is vannak, mint mindenhol, de az illetékes szervek
+ szerint nem vagyok édesanyjának való -- szomorkodott el emlékei miatt Margit.
+ -- Természetesen rögtön igent mondtam annak a mogorva nőnek.
+ 
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+A repülő út nem tartott sokáig, de a két lány az út alatt nagyon összebarátkozot
+t.
+ Beszéltek egymásról az addigi életülről, bánataikról, örömeikről, vágyaikról.
+\end_layout
+
+\begin_layout Standard
+-- Szeretném megtalálni az édesapámat! -- mondta sóhajtva a kislány.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Édesapádat? -- kérdezte Margit kedvesen.
+\end_layout
+
+\begin_layout Standard
+-- Décsey Jánost -- mondta a Johanna.
+ -- A babysitterem azt mondta, hogy az a Décsey János lehet az édesapám.
+\end_layout
+
+\begin_layout Standard
+-- És az édesanyád? -- kérdezte Margit.
+ -- Ő nem érdekel téged?
+\end_layout
+
+\begin_layout Standard
+-- A babysitterem elmondta nekem elbúcsuzásunk előtt, hogy ki az édesanyám,
+ aki végig mellettem volt, de soha egy szót nem szólt hozzám.
+ Számára nemlétező voltam.
+ Sajnos azt nem mondhatom el neked, hogy kicsoda az édesanyám, mert megesküdtem,
+ hogy ezt soha senkinek nem mondom meg.
+\end_layout
+
+\begin_layout Standard
+-- Az igéreteket be kell tartani -- mondta Margit mosolyogva.
+ -- Ha akarod szívesen segítek neked felkutatni azt a Décsey Jánost, bár
+ nem hiszem, hogy meg is találjuk Magyarország száz-millió lakója között.
+\end_layout
+
+\begin_layout Standard
+-- Köszönöm szépen -- suttogta Johanna átölelve Margitot, aki nem taszította
+ el magától, hanem mosolyogva megsimogatta buksiját, és hagyta, hogy a kislány
+ az ölébe elszenderüljön.
+\end_layout
+
+\begin_layout Chapter
+Az iskola
+\end_layout
+
+\begin_layout Standard
+Egészen más volt mint otthon a mogorva londoni elittsuliban.
+ Ott a tanárok mogorvák voltak, az osztálytársai felvágosak, lenézőek, itt
+ a tanárok kedvesek, mosolygosak, egy bizonyos mértékig a mókákba is belementek,
+ az osztálytársai pedig hangosan, jókedvűek, barátkozóak.
+\end_layout
+
+\begin_layout Standard
+Ott senki se kérdezte tőle, hogy ki fia, ki borja, senki se kérdezte, hogy
+ honnan jött és miért.
+ Kezdetben nehezen ment a beileszkedés az idegen nyelv miatt, de annyira
+ vágyott arra, hogy elsajátítsa a magyar nyelvet, az édesapjának az anyanyelvét,
+ hogy csak úgy ragadtak rá a magyar szavak, tanárai, osztálytársai pedig
+ teljes mértékben mellette álltak.
+\end_layout
+
+\begin_layout Standard
+Osztálytársai a nehezen kiejthető Johanna helyett csak Júliának szólították,
+ és ez neki jobban tetszett mint a mogorva hangzású Johanna.
+ Még a tanár is, mikor a névsort olvasta Szmisz Júliának ovasta a nevét,
+ ilyenkor Johanna mindig elmondta magában, hogy nem Szmisz Júlia, hanem
+ Décsey Júlia az ő becsületes neve, de ezt hangosan egyenlőre nem mondta
+ ki.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Az egyik napon megbetegedett az öreg számtantanárnő, az öreg 
+\begin_inset Quotes pld
+\end_inset
+
+krétaevő
+\begin_inset Quotes prd
+\end_inset
+
+.
+ A gyerekek abba reménykedtek, hogy nem lesz senki aki helyettesíthetné,
+ és kapnak egy jó kis lyukasórát.
+ Teljesen lesokkolta őket mikor belépett egy sovány barnahajú férfi.
+ A gyerekek gyorsan a helyükre szaladtak, és felálltak.
+ Még soha se látták az ajtón belépő tanárt, de sejtették, hogy ő a helyettesítő
+ tanár.
+\end_layout
+
+\begin_layout Standard
+-- Üljetek le -- mondta mély hangon.
+ 
+\end_layout
+
+\begin_layout Standard
+A gyerekek leültek.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Sziasztok, a nevem Szájtó Béla.
+ Mostantól egy jó hónapig én tanítom nektem a matematika nemes tudományát.
+ Remélem jól kijövünk egymással.
+\end_layout
+
+\begin_layout Standard
+Semmi vicc, semmi jókedv.
+ A gyerekek megkövülve néztek a tanárra.
+ Néhány héttel ezelőtt már kaptak egy helyettesítő tanárt a biológia tanár
+ helyetesítésére, de az jókedvüen elbeszélgetett a gyerekekkel az első órán,
+ ez pedig...
+\end_layout
+
+\begin_layout Standard
+Talán ő is észrevette a csalódott arcokon, hogy nem ilyen bemutatkozást
+ vártak tőle, de ez nem érdekelte.
+ Előszedte a névsort, és sorra olvasta a benne lévő neveket.
+\end_layout
+
+\begin_layout Standard
+-- Ancsics Mihály?
+\end_layout
+
+\begin_layout Standard
+-- Jelen.
+\end_layout
+
+\begin_layout Standard
+Czégenyi Márta?
+\end_layout
+
+\begin_layout Standard
+-- Jelen.
+\end_layout
+
+\begin_layout Standard
+Dencsák László?
+\end_layout
+
+\begin_layout Standard
+-- Itt vagyok -- ugrott ki padjából az osztály legnépszerőbb diákja.
+\end_layout
+
+\begin_layout Standard
+-- Foglalj helyett, elég, ha csak felemeled a kezed.
+\end_layout
+
+\begin_layout Standard
+-- Egressy Zoltán? 
+\end_layout
+
+\begin_layout Standard
+-- Itt vagyok.
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+-- Johanna Smith? -- olvasta, és ránézett az osztályra, várva, hogy ki lesz
+ az a gyermek, akinek a neve ennyire idegen.
+\end_layout
+
+\begin_layout Standard
+-- Angliából jöttem, és mint tudod az angolok máshogy írják a nevüket, mint
+ ahogy olvasni kell -- állt fel egy aprócska barnahajú soványka nyolc éves
+ kislány.
+ -- Johanna Smithnek írják, de Szmisz Júliának kell olvasni.
+\end_layout
+
+\begin_layout Standard
+A tanár végignézett a kislányon.
+ Talán beugrott volna valami emlék a régmúltról.
+ Ez a lányka úgy emlékezteti valakire, akire emlékezni nem akart, kitől
+ annyit szenvedett.
+ Szívére, ajkára csak egy név tódult: Alice, de hangosan nem mondta ki.
+\end_layout
+
+\begin_layout Standard
+-- Jól van, akkor Szmisz Júlia, köszi szépen az angol leckét.
+\end_layout
+
+\begin_layout Standard
+Veres László?
+\end_layout
+
+\begin_layout Standard
+-- Itt vagyok.
+\end_layout
+
+\begin_layout Standard
+-- Zámboly Gyula?
+\end_layout
+
+\begin_layout Standard
+-- Jelen.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+És kezdődött a matematika óra.
+ Szájtó Béla egyáltalán nem volt az az ember, aki élvezetessé tette volna
+ a matematika órát.
+ Ő az érthetőségre hajtott.
+ Ha kellett ötször-hatszor is elmegyarázta a nehezen érthető dolgokat.
+ Csak a szünetben volt hajlandó egy kicsit elbeszélgetni az osztállyal.
+\end_layout
+
+\begin_layout Standard
+-- Tudom, hogy nehéz a matek, az is lehet, hogy soha semmi hasznát nem veszítek
+ a matematikának az életben, de ettől függetlenül meg kell tanulni a matematika
+ leckéket, mivel a tananyag ezt előírja, enélkül nem vizsgázhattok le 8,
+ 13.
+ után egyik iskolába sem.
+ Én gyerekként nagyon szerettem a matematikát, később azonban beleszerettem
+ a programozásban, csak ez az oka annak, hogy végül nem lettem se tanár,
+ se matematikus, hanem programozó.
+\end_layout
+
+\begin_layout Standard
+-- Akkor most miért tanít mégis matematikát az osztálynak? -- kérdezte a
+ kópé Dencsák László.
+\end_layout
+
+\begin_layout Standard
+A tanár szigorúan ránézett a fiúra.
+\end_layout
+
+\begin_layout Standard
+-- Rengeteget programoztam, jelenleg is programozok, de csak otthon.
+ Jelenleg azonban szabadságon vagyok, és hiányzik a munka, emiatt jelentkeztem
+ a helyettestanári állásra az iskolátokban.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Milyen programozónak lenni? -- kérdezte Júlia.
+\end_layout
+
+\begin_layout Standard
+-- A matematika egy hatalmas, megfejthetetlen univerzum, és emiatt bizony
+ sokan szakítanak vele.
+ A programozás pedig gyakorlati matematika, ami szórakozás.
+ Több mint tíz éve programozok, de egyáltalán nem untam rá, ahogy a matematikára
+ az egyetemen.
+\end_layout
+
+\begin_layout Standard
+Aztán elkezdett beszélni a gyerekeknek a matematika, a programozás érdekességeir
+ől.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Ugye tudjátok, hogy mikor osztható eg szám 2, 3, 5, 7, 9-el? Gondolom,
+ hogy igen, mivel ezt tanítják az iskolában is.
+ Azt tudjátok, hogy mikor osztható egy szám 11-el? Ha a számjegyeit összeadjuk
+ váltakozó előjellel, és az összeg osztható 11-el.
+ Például: 121 azért osztható 11-el mivel 1 - 2 + 1 = 0 az pedig osztható
+ 11-el.
+\end_layout
+
+\begin_layout Standard
+Néhány gyerek a táblánál ellenőrízte, hogy a 121 valóban osztható 11-el.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Most mit programozik jelenleg? -- kérdezte Júlia.
+\end_layout
+
+\begin_layout Standard
+-- Hogy mit programozók munkaadóimnak, arról nem beszélhetek, de néha magamnak
+ is szoktam programozni, arról nyugodtan beszélhetek.
+ Jelenleg egy olyan programon dolgozom, ami ha megkapja a programozási feladatot
+/folyamatábrát -- amelyek fontosak a programozásban -- akkor megírja a programot.
+ Vagyis egy programokat író programon dolgozom -- mondta nevetve.
+\end_layout
+
+\begin_layout Standard
+-- És fog sikerülni?
+\end_layout
+
+\begin_layout Standard
+-- Egyenlőre az elején járok, és rengetek időbe kerül, de ha ez sikerül,
+ akkor több programozási munkát vállalhatok, mivel a programom leprogramozza.
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+Ezen kívül rengeteg érdekességről beszélt a gyerekekneknek szakterületéről.
+ Ezen a napon sok-sok gyerek döntötte el, hogy ha felnő, akkor matematikával
+ vagy informatikával fog foglalkozni.
+\end_layout
+
+\begin_layout Chapter
+Az édesanya
+\end_layout
+
+\begin_layout Standard
+Kiss Margit, ez a 26-27 éves nő, lassan azzá vált a kislány számára, akit
+ édesanyjának nevezhetne.
+ Megdicsérte a jó eredményeiért, megszídta, ha rendetlen volt, együtt nevetett
+ vele örömein, együtt érzett vele, ha valami fájdalom érte.
+\end_layout
+
+\begin_layout Standard
+Már három éve élnek együtt boldogan, és közös megegyezés alapján Júlia már
+ jó ideje 
+\begin_inset Quotes pld
+\end_inset
+
+anyának
+\begin_inset Quotes prd
+\end_inset
+
+, 
+\begin_inset Quotes pld
+\end_inset
+
+anyukának
+\begin_inset Quotes prd
+\end_inset
+
+ szólítja a kedves asszonyt, aki emiatt még soha se haragudott meg, sőt
+ mikor a kislány először nevezte édesanyjának, Margit oda-vissza volt az
+ örömtől.
+\end_layout
+
+\begin_layout Standard
+Azonban tudta jól, hogy kislánya boldogságához még hiányzik valaki: az édesapja,
+ aki semmit se tud róla.
+ Hűtlen édesanyját egyszerűen, minden könny nélkül felcserélte vele, de
+ senkit se lett volna édesapjának nevezni mint az igazit.
+\end_layout
+
+\begin_layout Standard
+Margit rengeteg időt eltőltött azzal, hogy Décsey János nyomára bukkanjon.
+ Sajnos ilyen nevű emberből a mai Magyarországon él összesen huszonkettő.
+ Vagyis az országos telefonkönyv szerint.
+ Margit az összeset felhívta, elbeszélgetett velük, de az összesen kizártnak
+ tartották, hogy születhessen angol nőtöl gyermekük Londonban.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Júlia hazajött az iskolából.
+ Megölelte édesanyját, megcsókolta, és ment is számítógépezni.
+\end_layout
+
+\begin_layout Standard
+-- Hát az étel? -- kérdezte Margit.
+ -- Az egereknek vagy madaraknak főztem talán?
+\end_layout
+
+\begin_layout Standard
+-- Bocsi anya -- mondta Júlia, felállt a számítógép melől, és édesanyjával
+ megebédelt.
+\end_layout
+
+\begin_layout Standard
+-- Mostanában túl sok időt töltesz el a számítógép előtt -- jegyezte meg
+ az édesanyja.
+ -- Tudom, hogy semmilyen szemét weboldalra nem mész fel, de mégis mivel
+ foglalkozol ennyi ideig? Ezt a rengeteg időt programozással tőltöd?
+\end_layout
+
+\begin_layout Standard
+-- Tudod anyúka, hogy milyen hatással volt Szájtó Béla egy évvel ezelőtt
+ az osztályra -- felelte Júlia.
+ -- Az osztályban azóta mindenki maximális pontot ír matematikából, és rengetege
+n kezdtek önszorgalomból programozni tanulni.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Egy programozó -matekzseni osztály -- nevetett Margit.
+ -- Tudok róla, a matektanárnőtök nem tud hová lenni az ámulatból, hogy
+ egy hét alatt megtáltosodtatok.
+\end_layout
+
+\begin_layout Standard
+-- Ez amiatt volt, mivel Szájtó Béla nagyon komolyan vette az órákat, és
+ minden szüneten beszélt velünk a matematika, a programozás szépségeiről.
+ Azóta mindenki az osztályból önszorgalmi feladatokat old meg, és mindenki
+ odafigyel a matematika órán, még Dencsák László, pedig Szájtó Béla előtt
+ bizony többször is állt bukásra szinte mindenből, de ebben az évben ő is
+ csak 10-eseket kapott matematikából, így ebben az évben mindenből mégse
+ áll bukásra.
+\end_layout
+
+\begin_layout Standard
+-- És hányan programoztok? -- kérdezte Margit.
+\end_layout
+
+\begin_layout Standard
+-- Legfeljebb 2-3-an nem a 24 tagú osztályból -- felelte Júlia kacagva.
+ -- Egyszer még a múlt évben hallottam, ahogy az igazgatónő és a matematika
+ tanárnő beszélget.
+ Valahogy így hangzott:
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+-- Nem értem, hogy mi történhetett az osztályommal -- mondta a tanárnő hadarva.
+ -- Mostanában sokkal jobban igyekszem hibákat találni a dolgozataikban,
+ de nem sikerül, még egy aprócska hibát se ejtenek.
+ Mégis mitől változhattak meg? Mikor a gyerekeket kérdeztem, akkor az összesen
+ azt felelték, hogy Szájtó Béla volt rájuk ilyen jó hatással, de ez képtelenség.
+ Ezek a gyerekek előre tanulják a tananyagot, és csak röhögnek rajtam, ahogy
+ magyarázni próbálom nekik a nehezebb részeket.
+ Képzelje el igazgató úr.
+ A mai napon magyaráztam az osztályomnak a két ismeretlenes egyenletrendszerek
+ megoldását az osztálynak, és hát látom, hogy az a Dencsák László egyáltalán
+ nem figyel arra, amit magyarázok neki.
+ Egy másik füzetbe ír valamit, rá se hederítve arra, amiről beszélek.
+ Kihivom, megnézem a füzetét.
+ Képzelje el, hogy mi volt abban a füzetben.
+ Az a kölyök a több ismeretlenes egyenleteket oldott meg mátrixok használatával,
+ ami 10-es anyag, nem 4-es.
+\end_layout
+
+\begin_layout Standard
+Egy másik napon azt látom, hogy az osztályunk legjobb matekosa, az a Szmisz
+ Júlia, szüneten valami füzetbe ír, odalopakodom a hátához, és belenézek
+ a füzetjében.
+ Képzelje el igazgató úr: másodfokú diferenciális egyenleteket oldogat ott
+ szüneten.
+ Ez pedig egyetemi anyag, a matematika egyetemen.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Hmm, hmm -- mormolta az igazgató.
+ -- Ezek a gyerekek egy kicsit túl sokat foglalkoznak a matematikával.
+ Egy napon bejött panaszkodni Dencsák László édesapja, hogy a fia otthon
+ semmit se csinál, folyamatosan a számítógép előtt ül, és matematika feladatokat
+/könyveket keres, illetve néha programozni is szokott.
+ Már készített olyan grafikus programot, amiben egy kis emberke mozog kurzorbill
+entyűk megnyomására.
+ Nos ez se semmi egy 9 éves kölyöktől.
+ Mintha Szájtó Béla szelleme szállta volna meg az egész osztályt.
+\end_layout
+
+\begin_layout Standard
+-- Mégis ki ez a Szájtó Béla? Miért lehetett ilyen hatással az egész osztályra?
+ -- kérdezte a tanárnő haraposan.
+\end_layout
+
+\begin_layout Standard
+-- Szájtó Béla egy programozó zseni -- felelte az igazgató.
+ -- A világ legnagyobb progrmaozó cégei úgy tartják számon, mint a legjobb
+ programozót, aki a legjobban átlát bármelyik programozási nyelven, éd nagyon
+ jól ismeri a számítógépeket.
+ Az egyetemen is jártam, hogy megnézzem azt, hogy milyen sikereket ért el
+ az egyetemen.
+ Mesterséges intelligenciából doktorált, egyetemi évei alatt pedig csupa
+ 10-eseket kapott matematikából és informatikából.
+\end_layout
+
+\begin_layout Standard
+-- A probléma az, hogy a többi tanár arra panaszkodik, hogy a gyerekek az
+ óráin egyáltalán nem figyelnek.
+ Többször is rajta kapta a gyerekeket, hogy miközben a legjobban magyaráz,
+ aközben a gyerekek matematika feladatokon dolgoznak.
+ Nos, nem az iskolai matematika házin, mert azt már aznap szüneten el is
+ felejtették, amikor feladták nekik, hanem magasrendű matematikán.
+ A többi tanár azt szeretné, ha a gyerekek inkább gyerekek legyenek az iskolában
+, mint begyöpösödött matekzsenik.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+-- Tudod anya -- mondta Júlia.
+ -- Nem szoktunk ám minden szüneten matematika feladatokat oldani, de néha
+ mikor valamit nem tudunk megoldani az órán (például polgári ismeretek órán),
+ akkor a szüneten fejezük be.
+ Néha egyik-másikunk dolgozik egy nehéz matematika problémán, és segítséget
+ kér a többiektől, ilyenkor mi is azon a problémán, feladaton dolgozunk.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Tudom kislányom, a matektanárnőtők a szülőiértekezleten nem arról beszél,
+ hogy milyen rosszak vagytok matematikából, hanem arra, hogy egyáltalán
+ nem figyeltek az óráin és mégis 10-re meritek megírni a matematika felmérőtöket.
+\end_layout
+
+\begin_layout Standard
+-- A felmérő olyan egyszerű azokhoz a feladatokhoz képest amelyeken dolgozunk
+ úgy általában, hogy a kisújjunkból rázzuk ki a megoldását.
+\end_layout
+
+\begin_layout Standard
+-- Azért a többi órán is kéne figyeljetek -- mondta Margit.
+ -- A matematika attól még lehet életcélotok, hogy odafigyeltek a többi
+ órán is.
+ Régen is jó voltál matematikából, de más tantárgyakból mégse kaptál rossz
+ jegyeket.
+ Most meg elég gyakran hozol hazza nem éppen jó jegyeket.
+\end_layout
+
+\begin_layout Standard
+-- Az átlagom mégis jó -- mondta Margit.
+ -- Minek figyelnék oda a történelemre? Abból elég a második legjobb jegy
+ is, az irodalom is fontos, de abból is elég a második-harmadik legjobbik
+ jegy, a földrajzból szintén.
+ Még fontos lesz majd a későbbi osztályokban a fizika, a kémia, mert azok
+ a matematikára építenek, azokra jól oda fogunk figyelni, de azokból a tantárgya
+kból, amelyekből rossz jegyeket kapunk, csak azért vannak benne a tananyagban,
+ hogy néhány nyomorult, semmire se való tanárnak legyen munkája.
+ 
+\end_layout
+
+\begin_layout Standard
+Nem nevetséges az, hogy rajzra, zenére is tanárt tartanak fent? Miért nem
+ lehet megoldani azt, hogy csak azt tanuljunk az iskolában amit akarunk.
+ Az osztályunkban szinte mindenki járna matematika, programozás, kémia,
+ fizika, biológia órákra, akár irodalomra, történelemre, földrajzra is és
+ mondjuk tornára is, mondjuk az is fontos, hogy néha-néha mozogjunk is egy
+ kicsit, de a többi tantárgy mehetne a szemétbe.
+\end_layout
+
+\begin_layout Standard
+-- Más tantárgyaknak is megvannak a szépségei -- mondta Margit.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Nos, mi érdekes van például a zene tantárgyban? -- miért kell azt a sok
+ hülyeséget tudni, amit ott tanít a tanár? Zenét otthon is szoktunk hallgatni,
+ komoly zenét is, mivel az segít a koncentrálásban, de mire való a rajz?
+ Régen szinte mindenki szeretette a rajz órát, mivel könnyen megszerezhető
+ rá a maximális jegy, de amilyen egyszerű éppen olyan felesleges is.
+ Ahelyett például berakhatnának +1 matematika órát.
+\end_layout
+
+\begin_layout Chapter
+Az elit osztály
+\end_layout
+
+\begin_layout Standard
+Már hét éve jár Johanna Smith Magyarországon iskolában.
+ A mai nap öröm nap számára.
+ A szülők, az osztálytársai, a tanáraik kérésére, az igazgató elérte azt
+ a minisztériumnál, hogy a diákjaik különvizsgát tehessenek, és amennyiben
+ a vizsga sikeres lesz az összes diák számára, akkor számukra létrehoznak
+ egy elit osztályt, ahol csak matematikát, programozást, biológiát, kémiát
+ és fizikát tanítanának egyetemi szinten.
+\end_layout
+
+\begin_layout Standard
+Ehhez azonban az volt szükséges, hogy a gyerekek rendelkezenek annyi ismeretségg
+el a fenti tantárgyakból, hogy egyetemi felvételi vizsgákon átmehessenek
+ azokból a tantárgyakból.
+ Nos hát rendelkeztek.
+ Bár nem sikerült az összes tantárgyból 10-es vizsgát írniuk, de az összes
+ gyereknek az átlaga meghaladta a 8-ast.
+\end_layout
+
+\begin_layout Standard
+Hát létre is jött Magyaország első speciális osztálya, ahol a gyerekek egyetemi
+ tanároktól tanulhatták a matematikát, a programozást, a kémiát, a biológiát
+ és a fizikát, napi 6-7 órában.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+A programozási tanáruk pedig ki is lehett volna más mint Szájtó Béla? Őt
+ maga az oktatásügyi miniszter kereste fel, és kérte meg arra, hogy vállalja
+ el a speciális osztály tanítását.
+ Elvállalta.
+ Hiszen egyre nagyobb sikereket ért el a programokat író program segítségével,
+ és lassanként már-már csak annyi dolga marad, hogy a program által írott
+ programokat átnézze, és kijavította.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Még soha nem tapasztalt boldogság söpört végig az osztályon, mikor Szájtó
+ Béla belépet az osztályba, hogy megtartsa első programozási óráját.
+ Ő volt az a cél, akit az osztály minden tagja elszeretett volna érni.
+ Szájtó Bélának már jól utánanéztek az elmúlt hetek alatt: a legtöbb nyelvben
+ jártas programozózseni, ki mások neve alatt programoz, mivel nem szeretne
+ sztár lenni.
+ Ezt még mostanában is rengetegen tartják hazugságnak, és pletykának, de
+ kik ismerik Szájtó Béla zsenialítását, jól tudják, hogy ez egyáltalán nem
+ lehetetlen.
+\end_layout
+
+\begin_layout Standard
+Szájtó Béla pedig elkezdte tanítói pályáját.
+ Megtanította a gyerekeknek, hogy mit jelent zseninek lenni.
+ Egy zseni csakis zsenikkel érezheti jól magát, és a diákok, Szájtó nagyon
+ jól érezték magukat egymás társaságában.
+ Hiszen az összesen elszenvedhették már a megnem értett zseni szerepét,
+ a tökéletességet, a tökéletes tudást elsajátítni vágyó zseni vágyait.
+\end_layout
+
+\begin_layout Standard
+Természetesen nem ő volt az egyetlen zseni ki tanította az osztály: Gelencser
+ István fizika-kémia zseni, Kolunbán Ferencz matematika zseni, Veres Zelyke
+ biológia zseni.
+ A zsenik a zsenik tulajdonságai ellenére boldogan oktatták a zseniosztályt,
+ nem őrízték előttük féltékenyen a tudásukat.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+A gyerekek közben felnőttek.
+ Észre se vették, hogy milyen hamar.
+ És csak 16 évesen vették észre, hogy őket elkerülte a szerelem, és erre
+ is szükségük volt.
+ Idegen lányokkal/fiúkkal nem nagyon volt kedvük barátkozni, azok úgy se
+ értették volna meg állmaikat, vágyaikat, de maguk között megtalálták az
+ igazit, kivel akár az egész életüket képesek lettek volna leélni.
+ Dencsák László és Júlia is csak arra vár, hogy betőltsék a törvényes kort,
+ hogy összeházasodhassanak.
+ Már mindkettőjüknek volt munkája, már mindkettő elvolt ismerve a programozási
+ szakma nagyjaiként.
+ Ők nem dolgoztak más neve alatt, ahogy Szájtó Béla tette, ők hírnévre,
+ elismerésre vágytak a társadalomtól.
+ Erre mindkettőjüknek megvolt a saját oka.
+\end_layout
+
+\begin_layout Standard
+Johanna Smith ezzel édesanyjának akart üzenni: látod lettem valaki, akkor
+ is, ha te eldobtál.
+\end_layout
+
+\begin_layout Standard
+Dencsák László pedig azoknak akart bizonyítani, akik gyerkekorában lenézték
+ őt, és azt mondták neki, hogy belőle maximum csak sírásó/építőanyag szállító
+ lehetne.
+\end_layout
+
+\begin_layout Standard
+Johanna Smithnek azonban volt még egy álma.
+ Megtalálni az édesapját.
+ Úgy szerette volna, ha édesapja ottlehetne az esküvőjén Margit anyuka oldalán.
+\end_layout
+
+\begin_layout Part
+Ismét Londonban
+\end_layout
+
+\begin_layout Chapter*
+Alice királynő
+\end_layout
+
+\begin_layout Standard
+A királynő csendben olvasgatja a híreket, melyeket eldobot kislányáról kapott.
+ Nem sokat törődött vele születése óta, amilyen hamar csak tudta idegenbe,
+ apja országába küldte, és igyekezett elfelejteni.
+ De a lányka ezt nem hagyta.
+ Folyamatosan felbukkant egyik-másik újságba a neve:
+\end_layout
+
+\begin_layout Standard
+-- Magyarországon elsőként a világon reál-zseni osztály nyílik, a következő
+ tanulókból: ..., Johanna Smith, ...
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+-- A fiatal dr.
+ Johanna Smith résztvesz a kvantum számítógépek tervezésében.
+\end_layout
+
+\begin_layout Standard
+- A fiatal dr.
+ Johanna Smith az új operációs rendszeren dolgozik, ami alkalmazkodik a
+ számítógép magjainak számához.
+\end_layout
+
+\begin_layout Standard
+-- A fiatal dr.
+ Johana Smith a fénysebessénél gyorsabb ürutazás teoriáján dolgozik Magyarország
+ legnagyobb tudósaival együtt.
+\end_layout
+
+\begin_layout Standard
+-- dr.
+ Smith szerint hamarosan elészülhetnek az első mesterséges emberek.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Az első hírt lányáról mérgesen olvasta, hogy nem tud az a lány nyugton ülni,
+ a másodikat már kevesebb haraggal.
+ A végén azon kapta magát, hogy nyugtalanul várja a Magyarországról érkező
+ hírlapokat, hogy lányáról olvashasson.
+\end_layout
+
+\begin_layout Standard
+Természetes királynői feladatait se hanyagolta el.
+ Törődött az országaival, a fiával György yorki herceggel is.
+ Nagyon szerette a fiát, de néha-néha összehasonlítgatta fiát és lányát
+ egymással.
+ A fia szelid ember, kiből talán soha se lehet uralkodó.
+ Még 16 évesen is megőríze gyermeteg lelkét, és sokkal jobban érdekelte
+ a játék 9-10-éves pajtásaival mint bármelyik tudomány.
+ Lánya pedig 16 évesen már doktorált reál tudományokból.
+\end_layout
+
+\begin_layout Standard
+Ettől függetlenül még lehetne jó uralkodója egy aprócska országnak, de nem
+ 17 ország uralkodója.
+ Néha az újságokban melyekben lányáról olvas képeket, látja, hogy mennyire
+ hasonlít a lányka korábbi önmagára, a fia inkább az apjára hasonít, a szelebudr
+i hercegre.
+\end_layout
+
+\begin_layout Standard
+-- Óh, ha akkor nem talált volna meg minket az a hajó azon a kedves kis
+ szigeten, akkor együtt élhetnék életem szerelmével Décsey Jánossal, és
+ kislányunkkal Johannával.
+ 
+\end_layout
+
+\begin_layout Standard
+De gyorsan el is veti magától ezt a gondolatot.
+ Hiszen ha a szigeten maradtak volna, akkor György se született volna meg,
+ akire az összes anyai érzését árasztja, és férjétől se tudna megválni már
+ a Décsey miatt.
+ 
+\end_layout
+
+\begin_layout Standard
+Néha elgondolkozik azon, hogy vajon ki is lehet Johanna apja? Décseyről
+ se a Brit Birodalom, se ő nem kapott semmilyen információt.
+\end_layout
+
+\begin_layout Standard
+Apja szerint mikor a segélykérő palackot megtalálták, próbálták felkutatni
+ úgy a Décsey mint a Kis családot, de Décsey János családjáról, ki a hajón
+ utazott, soha nem kaptak információt.
+ Décsey miután megérkeztek Londonba, hamar felszívódott, nyomtalanul eltűnt.
+ Azóta se bír a nyomára akadni, pedig a brit korona titkosügynökei titokban
+ felkutatták az összes Décsey Jánost, kit Magyarországon fellelhettek, de
+ egyik se volt az ő Décsey Jánosa.
+\end_layout
+
+\begin_layout Standard
+Aztán tudomásukra jútott, hogy a Décsey János csak egy álnév, ami alatt
+ valaki utazott, kinek igazi nevét nem lehetett felderíteni.
+ 
+\end_layout
+
+\begin_layout Standard
+Alice néha elgondolkozott, hogy kivel élt annyi ideig együtt szerelemben,
+ boldogságban azon az aprócska szigetecskén.
+ Décsey első perctől hazudott neki.
+ Décsey János nem létezik.
+ Talán azért nem árulta el soha az igazi nevét, mert megsejthette, hogy
+ az egész szerelmük szétfoszlik azzal, ha bárki is látalál arra a szigetecskére.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+György rohant be a szobába.
+\end_layout
+
+\begin_layout Standard
+-- Szia anya!!! -- és szelesen átölelte édesanyját.
+\end_layout
+
+\begin_layout Standard
+Mikor senki se látja őket, úgy viselkednek egymás között mint egy átlagos
+ család.
+ Az etiketet a világ megtévesztésére hagyják.
+\end_layout
+
+\begin_layout Standard
+-- György! -- mondta Alice mosolyogva, megsimogatva fia arcát.
+\end_layout
+
+\begin_layout Standard
+-- Anya, szerelmes vagyok!!! -- mondta György.
+\end_layout
+
+\begin_layout Standard
+-- Hát aztán kibe? -- kérdezte mosolyogva Alice, aki hozzászokott ahhoz,
+ hogy fia egyre-másra platói szerelmet érez különböző alkalmazottak iránt.
+\end_layout
+
+\begin_layout Standard
+-- Margit hercegnőbe -- mondta György.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Micsoda? -- kérdezte Alice boldogan.
+ -- Végre igazi lányok iránt is kezdesz érdeklődni?
+\end_layout
+
+\begin_layout Standard
+-- Margit hercegnő annyira jó, annyira gyönyörű, nélküle nem tudnék élni.
+ Már meg is kértem a kezét, és megígérte, hogy megkomolyodom, és végre elkezdek
+ igazi trónörökösként viselkedni, akkor hozzámjön feleségül, és aztán meg
+ is csókolt.
+ Neki is tetszem anyuka.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Alice örült a hírnek.
+ Már régóta sejtette, hogy a kedves dán hercegnő már régóta érdeklődik György
+ iránt.
+ Még 14 éves se volt a két gyermek, mióta először találkoztak, azóta Alice
+ szüleitől tudja, hogy Margit hőseként tekint Györgyre, mióta a fiú elzavart
+ melőle egy nagy dühös kutyát mikor Dániában voltak kirándulni.
+ Jobb feleséget el se tudna képzelni Györgynek, talpraesett, kis okos nő
+ az a Margit, ki talán hatással lesz szeleburdi fiára.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+Ismét jött egy hír Magyarországról.
+ A híres reáltudós dr.
+ Johanna Smith és férje Dencsák László előadást fognak tartanak az ürutazásról
+ a University of Cambridge, az egytem felkérésére.Alice körül megfordult
+ a szoba.
+ A lánya ismét közel lesz hozzá, Alig lesz távolabb tőle 80-90 km-nél.
+ Kihagyhatja a lehetőséget? 
+\end_layout
+
+\begin_layout Standard
+Nem nem hagyhatja ki, ő is megfog jelenni azon az előadáson -- döntötte
+ el.
+\end_layout
+
+\begin_layout Chapter
+Az előadás
+\end_layout
+
+\begin_layout Standard
+Johanna meglepett örömmel hallotta a hírt, hogy előadását nem csak a szakma
+ nagyjai hallgatják végig, hanem királynő is, az ő édesanyja.
+ Hogy a királynő az édesanyja, még nem beszélt senkinek se, még férjének
+ se, akit mindenkinél jobban imád.
+\end_layout
+
+\begin_layout Standard
+Ki ne imádná, a tudóst, kivel kidolgozták a biztonságos utazás elvét galaxisok
+ között, akinek tervei szerint megépülhet az első űrhajó, ami 24 óra alatt
+ el megteszi a távolságot az Androméda-galaxisig, emi egy hatalmas végtelennek
+ tűnő távolság, 2,5 millió fényév.
+ Ők ketten mindig is kiegészítették egymást.
+ Most is.
+ Johanna bizonyította, hogy lehetséges megtenni ezt a távolságot 24 óra
+ alatt, ha megfelelő űrhajó van építve hozzá, férje pedig meg is tervezte
+ azt a járművet, ami felesége teoriáját bizonyíthatná.
+ Az űrhajó beprogramozója pedig Szájtó Béla lesz, a programozó zseni.
+ Ő sajnos nem lesz velük az előadáson, utálja az embereket.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+A tudósok már régóta vitatkoznak Johanna elméletének bizonyításán.
+ Sokan úgy gondolják, hogy kell ott lennie egy tévedésnek, ami miatt az
+ a 2,5 millió fényév mégse tehető meg 24 földi óra altt, mások kardoskodtak
+ amelett, hogy egy olyan tudós mint dr.
+ Johanna Smith és férje dr.
+ Dencsák László nem beszélnek félre.
+\end_layout
+
+\begin_layout Standard
+Az űrhajó meg is épülhet Dencsák László tervei szerint, mihelyt elengedő
+ támogatás összegyűlik rá.
+ 
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+Rengetegen voltak, tudósok a föld minden pontjáról.
+ Mindenki látni akarta azt a házaspárt, kik ha sikerre viszik terveiket,
+ akkor a Föld-Mars közti távolság is nevetségesen lezsugorodik néhány másodperce
+s útra.
+\end_layout
+
+\begin_layout Standard
+-- Milyen fiatalok! -- sóhajtott fel egy emberként az összes ember, mikor
+ megláttak belépni egy alig 24-éves férfit, és egy 23 éves nőt.
+ Ők ketten már 5 éve élnek boldog házasságban, bár a házasságukból még hiányzott
+ még valami, mi a házasságot tökéletessé teheti: a gyermek.
+ Már hosszú ideje próbálkoznak vele, de sajnos egyenlőre nem jött össze.
+ A férj és a feleség azonban optimista, bár az orvosok csak 1% esélyt látnak
+ arra, hogy saját gyerekük születhessen, mégpedig természetes úton.
+\end_layout
+
+\begin_layout Standard
+Júliát és Lászlót ez egyáltalán nem fogta vissza.
+ Kevesebb mint 1% esély van arra, hogy a Föld-Androméda galaxis közötti
+ távolságot 24 óra alatt tegyék meg, mégis megfogják, csak gyűljön össze
+ elenegendű támogatás.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+Az 6 órás előadás rengeteg tudóst elgondolkoztatott.
+ Akik úgy gondolták, hogy tévedés a többszörös fénysebeség fölöttti sebesség
+ elérése, most úgy gondolták, hogy talán lehet benne valami, ha megfelelő
+ eszköz készül amivel ezt a sebességet el lehet érni.
+ De egy ilyen eszköz dollár, forint, font milliókat emészhet fel, amit nem
+ lesz olyan könnyű megszerezni.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Alice egész végig a lányát figyelte.
+ Milyen komoly, milyen okosan beszél, hogyan felel meg a világ tudósainak
+ elenvetéseire, mivel udvarias a tudományba megőszült tudósok előtt, milyen
+ magabiztosan beszél arról az utazásról, ami más tudósok csak tévelyegnek.
+\end_layout
+
+\begin_layout Standard
+A világ tudósaira ráragadt az eszme, amit László és Júlia hirdetett.
+ Támogatást kell szerezni ehhez a projekthez.
+ Csak pénz kell, a munkást meg az űrhajó megépítéshez szükséges anyagot,
+ részeket majd László is megtudja szerezni.
+ De vajon melyik ország lenne hajlandó együttműködni más államokkal ebben
+ a projektben.
+ Hiszen a földön milliók éhheznek, először az éhezőknek kéne kenyeret adni,
+ nem pedig luxusutazni az andromédára?
+\end_layout
+
+\begin_layout Standard
+Talán-e nagy tervből se lesz semmi.
+ Ezt mindannyian érezték, talán Júlia és László is, de nem adták fel.
+ Sorolni kezdték az utazásból származó nyerességeket, talán még idegen élettel
+ is felvehetik a kapcsolatot az Andromédában.
+\end_layout
+
+\begin_layout Standard
+-- Ha az ürlények nem jöttek hozzánk, megyünk mi hozzájuk -- mondta egy
+ elismert ausztráliai tudós a mellette álló kollégájának.
+\end_layout
+
+\begin_layout Standard
+-- Kitudja mit tanulhatunk Andromédiában, aminek talán hasznát vehetjük
+ a Földön.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+Alice hallotta ezeket és hasonló beszédeket a háta mögött, de ő csak a lányát
+ nézte.
+ Hogy ragyog, milyen boldog a férjével.
+ Visszaemlékszik arra, hogy réges-régen talán ő is éppen így ragyogott,
+ éppen ilyen boldog volt Décseyvel.
+ Milyen boldog volt, mikor megsejtette azt első gyermekének megszületését.
+ És hogy elhajította szegényt országai miatt.
+ Szerette és gyűlölte is lányát.
+ Ki ne szerette volna ezt a géniuszt, ki ember, de mégsem ember, emberek
+ fölött jár, és gondolkozik.
+ Hogyan gyűlölte, hogyan irigyelte boldogsága, ragyogása miatt.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+A királyné meghívást küldött a híres tudóspárnak.
+ Ezen senki se lepődött meg, hiszen híres emberek társasága nem hozz szégyent
+ egy királynőre sem.
+\end_layout
+
+\begin_layout Standard
+A királyné, a fia György, yourki herceg, Stefan Gustaf av Sverig svéd herceg,
+ és az udvar nagyjai várták a híres pár megjelenését.
+\end_layout
+
+\begin_layout Standard
+Nem kellett sokáig várniuk.
+ Hamarosan belépett a barnaszemű, ragyogó Johanna és férje.
+ A terembe az emberek önkétlenül tapsolni kezdtek.
+ Talsolni azon embereknek, kiknek gondolatai talán jelenleg is az Androméda
+ körül forogtak.
+\end_layout
+
+\begin_layout Standard
+-- Öröm számunkra, hogy az emberi tudomány nagyjait palotámba köszönthetem
+ -- köszöntötte kettőjüket.
+\end_layout
+
+\begin_layout Standard
+-- Számunkra öröm a meghívás -- felelte László tisztelettel.
+\end_layout
+
+\begin_layout Standard
+-- Mikor azt olvastam, hogy világhírű tudományos konfenrencia lesz, nem
+ sejtettem volna, hogy ennyire fiatalok -- mondta a királynő.
+\end_layout
+
+\begin_layout Standard
+-- A tudományban földi évek nem számítanak -- mondta Johanna udvariasan.
+ -- A tudományban nem az évek számítanak, hanem az elért tudás.
+ Férjemmel azért küzdünk, hogy bővítsük tudásunk, amit az emberíség hasznára
+ fordíthatunk.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Nagyon szép beszédeket mondtatok az egyetemen, az összes tudóst meggyőztétek
+ elméletetek helyességéről.
+ De vajon tényleg az emberiség hasznára válhatna ez az utazás? -- kérdezte
+ a királynő, azt várva, hogy erre is Johanna fog megfelelni, de tévedett,
+ itt Dencsák László felelt.
+\end_layout
+
+\begin_layout Standard
+-- A tudomány nem mindig tűnt az emberíség jó barátjának, de rengeteg jót
+ köszönhet neki.
+ Nobel a gránátjával a bányászoknak akart segíteni, segítette ehelyett inkább
+ a háborút.
+ Eistein a tudásával az egész emberíségnek akart hasznára válni, de mégis
+ ő volt az, ki irányt mutatott Teler Edenek honfitársunknak az atombomba
+ megteremtéséhez, amit 1945-ben az európai hatalmak bevetettek az USA ellen,
+ aki emiatt letette a fegyvereit, melyekkel az egész világ ellen tört.
+ Természetesen nem volt jó az atombomba, több százezer ember halálát okozta,
+ New Yourk azóta is lakhatatlan a sugárfertőzés miatt.
+ Az atombomba mégis jó volt, mivel azóta megszüntek a háborúk.
+ Egyre több ország szerzett magának Magyarország után atombombát: Japán,
+ Németország, Nagy Britannia, Franciaország, Lengyelország, Oroszország,
+ stb., stb., hogy már-már nem is ország az, amelyik nem rendelkezik ezzel
+ a fegyverzettel.
+ 2050-ban szintén egy honfitársam Nagy István fizikus elkészítette azt az
+ eszközt, amivel az atomsugárzást ezzel együtt pedig az atombombákat hatástalaní
+tani lehet.
+ Ez se volt rossz, mert emiatt az USA ismét megpróbálkozott hatalma alá
+ hajtani a világot, nevetve a világ atombombáin.
+ Egy britt tudos, sir Cameron Diaz azonban felfedezett valamit, amivel hatástala
+nítani lehet bármilyen fegyvert.
+ Ezek után az USA kénytelen volt ismét letenni hatástalan fegyvereit az
+ európai hatalmak előtt.
+ Azóta béke van.
+ A háború megszünt az egész világon.
+ Bízunk benne, hogy-e kutatásunk ismét hozz valamit, amivel ismét az emberiség
+ hasznára lehet.
+\end_layout
+
+\begin_layout Standard
+-- Ez mind szép és jó, de rengeteg dolog van, amit még saját bolygónkról
+ se tudunk, miért mennénk más bolygóra, másik galaxisba? -- kérdezte a királynő.
+ 
+\end_layout
+
+\begin_layout Standard
+-- A földet nagyjából ismerjük -- felelte Johanna.
+ -- Ismerjük a bolygó összes szigetét, összes eldugot szegletét.
+ Nem tagadom valóban vannak olyan titkok a földön, amit még nem ismerjük,
+ az ember még magát se ismeri tökéletesen, nemhogy a világot.
+ Azonban az ember már ősidők óta vágyik az űrbe.
+ 1969-ben értük el az első sikerünket, mikor is Neil Armstrong britt űrhajós,
+ lábával a Holdra lépet, és kitűzte Britannia lobogóját a Holdra.
+\end_layout
+
+\begin_layout Standard
+Ezek után több mint 10 nemzet szállt le a Holdra, és hoztak közetet a Holdról:
+ magyarok, japánok, lengyelek, oroszok, stb..
+ 
+\end_layout
+
+\begin_layout Standard
+2017-ben egy horvát a Magyar-Horvát föderációból, Tihomir Grabar-Kitarović
+ volt az első ember a Titánon, ezzel dicsőséget hozva Horvátországnak, de
+ bővebb hazájának a Magyar-Horvát főderációnak is.
+\end_layout
+
+\begin_layout Standard
+Ezek után már semmit se jelentett megjárni a Marsot, több holdjait a Jupiternek,
+ de ettől függetlenül az országokban, az emberekben éget a vágy, hogy olyan
+ bolygóra lépjen, ahová előtte ember még nem tette a lábát.
+\end_layout
+
+\begin_layout Standard
+Jelenleg kevés bolygó, hold van a galaxisunba, ahol ember még soha nem járt.
+ Természetesen vannak olyan bolygók, amelyekre ember a hatalmas gravitáció,
+ a szilárd talaj hiánya, vagy más akadályozó tényezők miatt egyenlőre nem
+ léphetett.
+\end_layout
+
+\begin_layout Standard
+Most menjünk egy kicsit messzebre, menjünk az Androméda galaxisba.
+ Férjemmel megmutattuk az utat, egy másik galaxisba.
+ Ezt a naprendszert már úgy ismerjük mint a tenyerünket.
+ Mi elmerünk menni a szomszéd galaxisba, ki támogat? Ki merne követni minket
+ az ismeretlenbe? Talán találunk bolygókat a galaxisban, amelyeket könnyű
+ szerrel lakhatóvá tehetjük, ahogy honfitársam Tihomir Grabar-Kitarović
+ leszármazottjai 2070-re Magyarország dicsőségére a Marsot.
+ 
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+A királyi pár, György és Margit teljesen a tudós pár bűvkörébe került.
+ Ezek az emberek rendelkeztek azzal a képességgel, hogy bárkit képessek
+ hatásuk alá vonni.
+ Természetesen Alice egyenlőre nem igérhetett semmit, bár úgy tervezte,
+ hogy mindent megfog tenni azért, hogy Britannia és a többi 16 országa támogassa
+ az Androméda-projektet.
+\end_layout
+
+\begin_layout Standard
+György egész beszéde alatt rajongva nézte a nőt, kit szenvedélye a többi
+ nő fölé emelt.
+ Ez a rajongás nem szerelem volt, hanem inkább hódolat.
+ A butaság behodolása a tudomány előtt.
+ 
+\end_layout
+
+\begin_layout Standard
+Margit pedig rajongva nézte a férfit, ki felesége ötleteit megvizsgálva,
+ hogy azt alátámassza, megtervezi az űrhajót, hogy bizonyítsa, hogy a felesége
+ elmélete nem tévedés, egy kis erővel és ésszel megvalósítható.
+ Olyan férfinak látszott, aki felesége kedvéért lehozta volna az égről a
+ legszebb csillagot is, annak csak kivánnia kellett volna.
+ Hát nem ilyen férfire vágyik minden nő? Nem vágyik minden nő arra, hogy
+ a férje szeresse, támogassa, biztassa?!
+\end_layout
+
+\begin_layout Standard
+Stefan Gustaf av Sverig is felelkesült Johanna beszéde alatt.
+ Az ész diadalmaskodik a butaság felett, pedig Stefan előre elhatározta,
+ hogy találni fog valamit, amivel megalázhatja felesége első gyermekét,
+ de nem talált.
+ 
+\end_layout
+
+\begin_layout Standard
+Hogy kitől tanulta Júlia és László azt a képességet, hogy mindenkit megbűvöljene
+k, maguk mellé állítsanak? Ezt a képességet is Szájtó Béla tanította nekik,
+ aki mestere volt a meggyőzésnek, az emberek saját bűvkörébe vonásának.
+ Ezen képesség miatt sikerült a tudomány oldalára állítania egy egész osztályt,
+ emiatt lett László és Johanna az aki most: elismert tudósai az összes reál
+ tudománynak.
+ 
+\end_layout
+
+\begin_layout Chapter
+Décsey János
+\end_layout
+
+\begin_layout Standard
+Szájtó Béla késő este érkezett meg Londonba.
+ Éppen abba a szálódába bérelt szobát, ahol kedvenc tanítványai, akikre
+ mérhetetlenül büszke volt.
+ Többre vitték mint ő.
+ Ő csak az informatikában, a matematikában jeleskedik, kedvencei pedig mindenben
+, minek bármi köze is van a matematikához.
+\end_layout
+
+\begin_layout Standard
+Sokat változott azóta mióta Alicevel azt a boldog három évet eltőltötte
+ azon a boldog kis szigeten.
+ Azóta több mint 20 év telt el, Szájtó jelenleg 49 éves, de még mindig vezető
+ szakértője a számítástechnikának.
+ Haja még mindig barna, de látszik rajta, hogy már nem fiatalember.
+\end_layout
+
+\begin_layout Standard
+Részben két célja volt amiért Londoba jött: felkeresni kedvenceit, hogy
+ egyeztessen velük az jövőbeli űrhajón futó programról, illetve, hogy ismét
+ élőbe láthassa élete egyetlen igazi szerelmét Alicet.
+\end_layout
+
+\begin_layout Standard
+Alicenek már az utolsó találkozásukkor elmondta László, hogy hamarosan Londonba
+ érkezik a tanárjuk Szájtó Béla, ki őket a tudomány utjára terelte.
+ A királyné pedig személyesen is kivánta megismerni a programozó zsenit.
+ Szájtó először arra gondolt, hogy rögtön visszautazik Kolozsvárra, figyelmenkiv
+ül hagyva a királynő meghívását, de annyira elhatalmasodott rajta a vágy,
+ hogy Alicet élőbe láthassa, hogy nem tudott parancsolni a szívének.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+László és Júlia első palotai szereplésük óta, mindennapos vendégei lettek
+ a királyi udvarnak egész ottartozkodásuk alatt.
+ Örömmel fogadták, mikor elmondták a királynőnek, hogy tanárjuk Szájtó Béla
+ is Londomba tartozkodik, akkor a királynő őt is meghívta magához.
+ Először Szájtó el se akarta fogadni ezt a meghívást, de ezt a szerelmes
+ pár csak mesterük antiszociális gondolkodásának tudták be.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+Szájtó Béla tanítványaitól kisérve belépett a királynő fogadószobályába.
+ A királynő, fia, szűk udvara fogadta őket.
+\end_layout
+
+\begin_layout Standard
+-- Szóval, ahogy kértem, elhoztátok magatokkal mestereteket is, akiről sokan
+ úgy tartják a nagyvilágban, hogy híres programozók munkáját végzi el.
+\end_layout
+
+\begin_layout Standard
+-- Igen -- mondta László.
+ -- Elhoztuk a világ legjobb programozóját, Szájtó Bélát, akiről méltán
+ tartja úgy a világ, hogy pancserek helyett programozik, felveszi a fizetésnek
+ egy részét, a dicsőséget pedig a pancserekre hagyja.
+\end_layout
+
+\begin_layout Standard
+Szájtó közelebb lépett Alice székéhez, és meghajolt, majd ránézett Lászlóra.
+\end_layout
+
+\begin_layout Standard
+-- Bocsásson meg felség, egy aprócska gonddal küzd mesterünk, angolul legfeljebb
+ csak köszönni tud, csakis magyarul tud beszélni, emiatt ha megengedi, tolmácsol
+nám szavait.
+\end_layout
+
+\begin_layout Standard
+A királynőt ez meglepte.
+ Szájtó a második magyar, akivel találkozik és nem tud angolul.
+\end_layout
+
+\begin_layout Standard
+-- Kérlek -- intette Lászlónak.
+\end_layout
+
+\begin_layout Standard
+Szájtó László fordításával megszólalt:
+\end_layout
+
+\begin_layout Standard
+-- Köszönöm a megtiszteltetést amit fenséged rám méltatlanra pazarolt.
+ Valóban tanítottam ezt a két fiatalt, de most már inkább én mondhatnám
+ őket mestereimnek mint ők engem.
+ A programozáson kívül szinte semmihez se értek, ők pedig az összes reáltudomány
+ba jártasak.
+ Én csak egy lökést adtam nekik egyszer, amitől megindulhattak pályájukon,
+ de amit elértek, az már nem az én sikerem, hanem az övék.
+ Örömmel fogadtam, mikor arra kértek, hogy az Androméda ürhajón futó programokat
+ én tervezzem el, és írjam meg, de a program csakis azért fog tökéletesen
+ futni, mert Dencsák László, e ifjú jól megtervezte azt a technológiát,
+ amin a programjaim futhatnak.
+ Azért fog tökéletesen működni, mert a teoria amit Johanna Smith tervezett
+ nem hibádzik.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Alice meglepődve ismert rá Décsey Jánosra, élete első szerelmére.
+ Hogy megváltozott, de még mindig tagadja azt, hogy tudna angolul.
+ És ő volt az, ki lányát és annak férjét elindította azon a pályán, aminek
+ jelenleg előhírnökei.
+ Vajon tudja-e a lány, hogy a férfi ott mellette az édesapja? Vajon Szájtó
+ Béla, az ő Décsey Jánosa vajon tudja azt, hogy lányát segítette mikor Johannána
+k segített?
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Alice visszaemlékezett a régi boldog időkre.
+ Amikor János szerelmet vallott neki.
+ Mennyire boldog volt, hogy a srác eldobva félelmeit, megmerte vallani neki
+ a szerelmét, ki emberek milliói felett uralkodhat majd egyszer.
+\end_layout
+
+\begin_layout Standard
+-- Egy senki vagyok melletted, tudom, hogy szerelmedre érdemes nem vagyok,
+ és talán soha se leszek, de én ennek ellenére szeretlek téged, úgy ahogy
+ nőt még soha se szerettem.
+ Nem igérem, hogy boldoggá tehetlek szerelmemmel, de azt igen, hogy mindent
+ megteszek, hogy ez meglegyen.
+\end_layout
+
+\begin_layout Standard
+Akkor Alice rögtön a férfi karjaiba ugrott, és forró csókokban, és ölelésben
+ egyesült vele.
+ Óh, mikor rájött arra, hogy szíve alatt Décsey János gyermekét hordja,
+ mennyire boldog volt, mennyire megijedt.
+ Décseynek soha nem mondta el, hogy gyereke lett, igaz a szigetről való
+ szabadulás után nem is talált erre alkalmat.
+\end_layout
+
+\begin_layout Standard
+Lányát is azért küldette Magyarországra, mivel remélte, hogy egyszer lánya
+ rátalál apjára, akivel boldog lehet.
+ De hogy is találhatott volna Décseyre Johanna? Hiszen egyikük se tudott
+ a másik létezéséről?!
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Stefan Gustaf av Sverig meglepődve nézett a feleségére.
+ Érezte, hogy felesége közel van a síráshoz, bár ez egyáltalán nem látszik
+ rajta.
+ Vajon ki lehet ez az ember, aki puszta megjelenésével, és tisztelettejes
+ szavaival sírásra ösztönzi a felségét.
+ Johanna és László látása se váltott ki belőle semmit, pedig az egyik a
+ lánya, a másik pedig a lánya férje, kit minden percében boldognak szeretne
+ látni.
+ 
+\end_layout
+
+\begin_layout Standard
+Az első találkozásnál félt, hogy Alice megfeledkezik magáról, és boldog
+ öleléssel öleli magához a korábban eltaszított lányát, és forró könnyekkel
+ kéri bocsánatát mint megtévelyedett édesanya.
+ Szerencsére Alice se fogadta nagyobb örömmel Johannát, mint bárki az udvarnál.
+ Nem annak örült, hogy visszontlátta lányát, hanem, hogy beszélhet a különc
+ zsenivel.
+ 
+\end_layout
+
+\begin_layout Standard
+Azt nem tudta a boldogtalan herceg, hogy az egyetemen már kiöntötte örömkönnyeit
+, amiatt, hogy lányát viszontláthatta.
+ Ő nem feledkezhet meg magáról az udvar szeme látára.
+ Ő 17 királyság királynője, több millió embernek az édesanyja, nem ejthet
+ könnyet egyetlen eltaszított gyermekéért.
+\end_layout
+
+\begin_layout Standard
+A herceg a férfira nézett.
+ Sovány napbarnított arcú férfi.
+ Mintha látta volna valaha ezt a férfit.
+ Persze azóta rengeteget öregedett, de ez ő, ebben tévedés nincs.
+ Csak hol láthatta?
+\end_layout
+
+\begin_layout Standard
+Hirtelen eszébe villan egy újságcikk a svéd napilapban, ami örömmel számolt
+ be arról, hogy Alice Windsor előkerült, nem halt meg.
+ Egy képen a most előtte látható férfit is látta.
+ Az újságok csak annyit írtak róla, hogy a trónörökösnővel ő is hajótörést
+ szenvedett, és most ő is megmenekült.
+ 
+\end_layout
+
+\begin_layout Standard
+Elfogta a féltékenység.
+ A férfi előtte Alice első szerelme, Johanna apja, aki boldog órákat töltött
+ el feleségével, mielőtt ő elvehette volna.
+\end_layout
+
+\begin_layout Standard
+De nem mondott semmit, féltékenységét se mutatta ki az első szerető előtt.
+ Kedvesen, barátságosan viselkedett vele, hogy az udvar lássa, hogy ezt
+ az embert se tartja sokkal többre mint bárkit a jelenlévők közül.
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+-- Szándékszik még eltőlteni néhány napot gyönyörű országunkban? -- kérdezte
+ Alice Szájtó Bélától.
+ -- Szívesen látjuk palotánban, önt, dr.
+ Dencsákot és dr.
+ Johanna Shmithet is.
+\end_layout
+
+\begin_layout Standard
+-- Fenséged, én szívesen maradnék, dehát vár a munka.
+ Temérdek munkám van, amelyeket tovább nem halaszthatok.
+ E két fiatalt is magammal viszem, a magyarországi tudomány nem sokáig nélkülözh
+eti kettőjüket.
+ Mindazonáltal nagyon hálás vagyok fenséged meghivása miatt.
+ 
+\end_layout
+
+\begin_layout Standard
+....
+\end_layout
+
+\begin_layout Standard
+Hogy mit beszéltek mindeközben Alice és Béla szemei azt csak ők ketten hallották
+, csak ők ketten tudták.
+ A szigeten eltőltött három év alatt három formáját tulajdonították el az
+ egymással való kommunikációnak: a beszédet (a magyar nyelvet), a jelbeszédet
+ (kézzel-lábbal való magyarázkodást), és a szemekkel való beszédet (mit
+ rajtuk kívül senki se érthet, nem hallhat, nem láthat semmit).
+\end_layout
+
+\begin_layout Standard
+-- Te itt? -- kérdezte Alice szeme.
+\end_layout
+
+\begin_layout Standard
+-- Itt -- felelték Décsey János szemei.
+ -- Már régóta vágyom arra,hogy ismét láthassalak mielőtt meghalok.
+ Nagyon ritkán van alkalmam arra, hogy elhagyjam országomat, de ha már szükséges
+, és meg is hívtál, gondoltam nem hagyom ki az alkalmat.
+ Ilyen alkalmam eddig soha se volt, lehet, hogy soha se lesz több.
+\end_layout
+
+\begin_layout Standard
+-- Úgy megörültem, mikor megláttalak, azt hittem, hogy rögtön elsírom magam
+ -- mondták rajongva Alice szemei.
+\end_layout
+
+\begin_layout Standard
+-- Életemnek egyik legbecsesebb emléke lesz ez a találkozás -- bozonygatták
+ János szemei.
+\end_layout
+
+\begin_layout Standard
+-- Óh, miért is kellett jönnie annak a hajónak, a mi szigetünkhöz? -- kérdezte
+ Alice.
+\end_layout
+
+\begin_layout Standard
+-- A sors úgy rendelte, hogy mi soha nem lehetünk együtt.
+ Téged a sors 17 királyság vezetőjének szánt, engem pedig rejtélyes programozóna
+k.
+\end_layout
+
+\begin_layout Standard
+-- Sokszor hiányoztál -- mondta Alice szemei.
+\end_layout
+
+\begin_layout Standard
+-- Mikor elváltunk egymástól utoljára, úgy gondoltam, hogy soha többé nem
+ fogjuk egymást többé látni -- mondta János szemei.
+ -- Nekem is nagyon hiányoztál.
+ 
+\end_layout
+
+\begin_layout Standard
+-- Van egy titok, amit nem mondtam el neked soha, pedig az a te titkod is
+ -- mondták Alice szemei.
+\end_layout
+
+\begin_layout Standard
+-- Én se mondtam el soha, hogy Décsey János csak egy álnév, amivel Szájtó
+ Béla kívánja elkerülni a feltűnést.
+\end_layout
+
+\begin_layout Standard
+-- Én meg Johannát titkoltam el tőled, ő a lányod, a lányom! -- mondták
+ Alice szemei szomorúan.
+\end_layout
+
+\begin_layout Standard
+-- Johanna az én lányom, tőled? -- kiáltották örömmel Szájtó szemei.
+\end_layout
+
+\begin_layout Standard
+-- Igen -- felelték lemondóan Alice szemei.
+ -- Sajnos nem tarthattam magam mellett.
+ A királynőknek nincs meg az az egyszerű joguk mint más nőnek, egy királynőnek
+ nem lehetnek törvénytelen gyermekei.
+ Emiatt soha nem ölelhettem meg, soha nem nevezhettem lányomnak.
+ 
+\end_layout
+
+\begin_layout Standard
+Apám azt akarta, hogy még az előtt szabadujak meg tőle, mielőtt megszületne,
+ de erre nem voltam képes.
+ Titokba, minden segítség nélkül megszültem a kislányt, és mint egy meghalt
+ alkalmazottunk lányát dajkára bíztam.
+ Óh, mennyire fájt, hogy soha se ölelhettem meg, mennyire fájt, hogy soha
+ nem nevezhettem lányomnak.
+ Mennyire fájt, mikor fülembe jútott az, hogy az alkalmazottak, és porontyaik
+ lenézik az én kislányomat, a szemem fényét.
+ Mikor a fájdalom már akkorára nőt, hogy elviselni már nem tudtam, kerestettem
+ egy becsületes magyar lányt, akire rábíztam kislányom nevelését, és lányomat
+ magam melől, Magyarországra küldtem, a te országodba.
+\end_layout
+
+\begin_layout Standard
+-- Tudja azt, hogy én vagyok az apja? -- kérdezte János szemei.
+\end_layout
+
+\begin_layout Standard
+-- Nem, ahogy azt se, hogy én vagyok az anyja -- felelték Alice szemei.
+ (kb.
+ itt érezte azt Alice férje, hogy felesége könnyezne, ha nem lenne ott az
+ udvar, ki minden megnyilvánulását, minden megmozdulását keményen figyel)
+\end_layout
+
+\begin_layout Standard
+-- Az a magyar lány, kire lányodat biztad nagyon megbízható édesanya lett
+ lányodnak.
+ Soha nem hallottam Johannát másként említeni Kiss Margitot mint édesanyját.
+ Jó személyre bíztad lányunkat.
+\end_layout
+
+\begin_layout Standard
+-- Ha akarod elmondhatod neki, hogy te vagy az apja -- mondták Alice szemei
+ szomorúan.
+ -- Nekem nincs jogom édesanyjának nevezni magam.
+\end_layout
+
+\begin_layout Standard
+-- El fogom neki mondani, de rólad nem beszélek -- mondta Szájtó Béla.
+ -- Most csak adjunk meg minden támogatást lányunknak, én Magyarországot
+ és Japán ráveszem arra, hogy támogassák lányunk és férjének projektjét.
+\end_layout
+
+\begin_layout Standard
+-- Én pedig a 17 királyságot veszem rá, hogy adakozon erre a célra.
+\end_layout
+
+\begin_layout Standard
+-- Ha összefogunk, titokba támogathatjuk lányunkat.
+\end_layout
+
+\begin_layout Standard
+-- Legalább érezni fogja azt, hogy ha igazi anyja nem is lehettem, jó szponzora
+ leszek.
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+Még aznap este Szájtó magához hívta Lászlót és Júliát, és elmondta nekik
+ azt, hogy ő Décsey János, Júlia apja.
+ Júlia édesanyjáról nem beszélt nekik, csak annyit mondott róla, hogy rendes
+ asszony, akinek nagyon fáj, hogy nem viselkedhet Júlia édesanyjaként.
+ Ezek után hármojuk közötti kapcsolat még szorosabbá vállt.
+\end_layout
+
+\end_body
+\end_document
