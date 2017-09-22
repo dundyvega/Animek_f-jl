@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="504.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyControllerClass">
+   <top>
+      <MenuBar layoutX="4.0" layoutY="3.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+        <menus>
+          <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="newMenu" mnemonicParsing="false" onAction="#NewOnAction" text="New">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem fx:id="openMenu" mnemonicParsing="false" onAction="#OpenOnAction" text="Open">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+              <MenuItem fx:id="closeMenu" mnemonicParsing="false" onAction="#CloseOnAction" text="Close">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="ESCAPE" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+          <Menu fx:id="editMenu" mnemonicParsing="false" text="Edit">
+            <items>
+                  <Menu fx:id="a1" disable="true" mnemonicParsing="false" text="Add">
+                    <items>
+                      <MenuItem fx:id="addMenuItem" mnemonicParsing="false" text="Add">
+                           <graphic>
+                              <TextField fx:id="adElement" onAction="#elementAddAction" />
+                           </graphic>
+                        </MenuItem>
+                    </items>
+                  </Menu>
+                  <MenuItem fx:id="a2" disable="true" mnemonicParsing="false" onAction="#SaveOnAction" text="Save">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="F" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+              <MenuItem fx:id="a3" disable="true" mnemonicParsing="false" onAction="#DeleteOnAction" text="Delete">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="DELETE" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+            <Menu fx:id="searchMenu" mnemonicParsing="false" text="Search">
+               <items>
+                  <Menu fx:id="a5" disable="true" mnemonicParsing="false" text="Search by Name">
+                    <items>
+                      <MenuItem fx:id="searchMenuItem" mnemonicParsing="false" text="Search">
+                           <graphic>
+                              <TextField fx:id="searchField" onAction="#searchOnAction" />
+                           </graphic>
+                        </MenuItem>
+                    </items>
+                  </Menu>
+                  <Menu fx:id="a6" disable="true" mnemonicParsing="false" text="Search By Category">
+                    <items>
+                      <MenuItem fx:id="allMenu" mnemonicParsing="false" onAction="#onAllItems" text="All">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT1" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="finishedMenu" mnemonicParsing="false" onAction="#finishOnAction" text="Finished">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT2" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="activeMenu" mnemonicParsing="false" onAction="#activeOnAction" text="Active">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT3" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="plannedMenu" mnemonicParsing="false" onAction="#plannedOnAction" text="Planned">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT4" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="suspendedMenu" mnemonicParsing="false" onAction="#suspendOnAction" text="Suspended">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT5" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="thrownMenu" mnemonicParsing="false" onAction="#thorwnOnAction" text="Thrown">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT6" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="otherMenu" mnemonicParsing="false" onAction="#otherOnAction" text="Other">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT7" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                    </items>
+                  </Menu>
+               </items>
+            </Menu>
+          <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem fx:id="a4" disable="true" mnemonicParsing="false" onAction="#statOnAction" text="Statistics" />
+              <MenuItem fx:id="aboutMenu" mnemonicParsing="false" onAction="#aboutOnAction" text="About">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem fx:id="contentAnimeMenu" mnemonicParsing="false" onAction="#createContentAnimeOnAction" text="ContentAnime" />
+            </items>
+          </Menu>
+        </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MenuBar>
+   </top>
+   <right>
+      <BorderPane prefHeight="475.0" prefWidth="0.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <ImageView fitHeight="266.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+            	<image>
+            		<Image url="@Kacsa.png" />
+        		</image>
+        	</ImageView>
+         </bottom>
+      </BorderPane>
+   </right>
+   <left>
+      <ListView fx:id="listView" disable="true" onKeyPressed="#onKeyPressedList" onKeyReleased="#onKeyReleasedList" onMouseClicked="#onClickedList" prefHeight="200.0" prefWidth="200.0" visible="false" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="152.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.0" minWidth="10.0" prefWidth="280.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="283.0" minHeight="10.0" prefHeight="283.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Label fx:id="titleLabel" nodeOrientation="LEFT_TO_RIGHT" text="Title" visible="false" />
+               </children>
+            </HBox>
+            <TextField fx:id="title" onAction="#SaveOnAction" visible="false" GridPane.columnIndex="1" />
+            <HBox alignment="CENTER_RIGHT" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="lengthLabel" text="Length" visible="false" GridPane.rowIndex="1" />
+               </children>
+            </HBox>
+            <TextField fx:id="length" onAction="#SaveOnAction" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <HBox alignment="CENTER_RIGHT" GridPane.rowIndex="2">
+               <children>
+                  <Label fx:id="commentLabel" text="Comment" visible="false" GridPane.rowIndex="2" />
+               </children>
+            </HBox>
+            <TextField fx:id="comment" onAction="#SaveOnAction" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <HBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <ComboBox fx:id="comboBox" prefHeight="25.0" prefWidth="271.0" visible="false" GridPane.rowIndex="3" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
