@@ -274,14 +274,16 @@ int caretCurent = textArea.getCaretPosition();
 	   
 	   
 			   
-//	   int length = images.length;
+	   int length = images.length;
 	   try {
 	  
-	   URI uri = Series.class.getResource("/smiles/").toURI();
+	 /*  URI uri = Series.class.getResource("/smiles/").toURI();
 	   Path myPath;
+	   FileSystem fileSystem = null;
 	   
 	   if (uri.getScheme().equals("jar")) {
-		   FileSystem fileSystem = FileSystems.newFileSystem(uri, Collections.<String, Object>emptyMap());
+		   fileSystem = FileSystems.newFileSystem(uri, Collections.<String, Object>emptyMap());
+		   fileSystem.close();
            myPath = fileSystem.getPath("/smiles");
 	   } else {
 		   myPath = Paths.get(uri);
@@ -294,14 +296,14 @@ int caretCurent = textArea.getCaretPosition();
        for (; it.hasNext();) {
          //  System.out.println(it.next().getFileName());
     	  // System.out.println("1" + nama);
-           nama = it.next().getFileName().toString();
+         //  nama = it.next().getFileName().toString();*/
           // System.out.println("2"+nama);
 		   
-	  // for (int i = 0; i < length; ++i) {
+	   for (int i = 0; i < length; ++i) {
 		   btn = new Button();
 		  // System.out.println("\"" + f.getName() + "\",");                                   images[i] 
 		   
-		 backgroundImage = new BackgroundImage( new Image( getClass().getResource("/smiles/" + nama).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+		 backgroundImage = new BackgroundImage( new Image( getClass().getResource("/smiles/" + images[i]).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
 		   
 		  background = new Background(backgroundImage);
 		 // System.out.println("3" + nama);
@@ -339,7 +341,7 @@ int caretCurent = textArea.getCaretPosition();
 	            }
 	        });
 		   
-		   btn.setId(nama);
+		   btn.setId(images[i]);
 		  
 		   if (szamlalo < 10) {
 			  szamlalo++;
@@ -350,8 +352,10 @@ int caretCurent = textArea.getCaretPosition();
 		   grid.add(btn, szamlalo, nevezo);
 		   
 	   }
+      // fileSystem.close();
+       
 	   } catch (Exception ex) {
-		   System.out.println(ex);
+		  // System.out.println(ex);
 	   }
 	  // getAllFiles(curlFile);
 	   
