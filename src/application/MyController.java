@@ -142,6 +142,8 @@ public class MyController implements Initializable {
     		"icon_e_geek.gif",
     		"icon_lol.gif"};
 
+	private ResourceBundle tr;
+
     @FXML
     void bOnAction(ActionEvent event) {
     	int caretCurent = textArea.getCaretPosition();
@@ -236,7 +238,7 @@ int caretCurent = textArea.getCaretPosition();
     	String str1 = text.substring(0, caretCurent);
     	String str2 = text.substring(caretCurent, text.length());
     	
-    	String newText = str1 + "[h]";
+    	String newText = str1 + "[h=http://???]";
     	caretCurent = newText.length();
     	newText += "[/h]" + str2;
     	
@@ -253,6 +255,9 @@ int caretCurent = textArea.getCaretPosition();
     	
     	
     	Alert alert = new Alert(Alert.AlertType.INFORMATION);
+    	alert.setTitle(tr.getString("key.Icons"));
+    	alert.setHeaderText(tr.getString("key.selecticonmessage"));
+    	
     	
     	ImageView view= new ImageView();
    	   // view.setImage(new Image(Series.class.getResource("favicon-96x96.png").toExternalForm()));
@@ -587,7 +592,7 @@ int caretCurent = textArea.getCaretPosition();
 	    	        			
 	    	        			if (nodes.get(i).isLink()) {
 	    	        			
-	    	        			linker = new Hyperlink("(kattintás)");
+	    	        			linker = new Hyperlink(nodes.get(i).getText());
 	    	        			
 	    	        			
 	    	        			linker.setOnAction(new myHyperLinkListener(nodes.get(i)));
@@ -827,17 +832,22 @@ int caretCurent = textArea.getCaretPosition();
 					   actual.setText(atmeneti);
 					   atmeneti = new String("");
 					   szamlalo++;
+					   String csalad = "";
+					   for (int j = i + 3; i < text.length() && text.charAt(j) != ']'; ++j) {
+						   csalad += text.charAt(j);
+					   }
 					   
 					    actual = new TextNode(secunder.getFamily(), secunder.getColor(), secunder.getSize(), secunder.isBold(), true, secunder);
 					   
 					   actual.setId(szamlalo);
 					   actual.setLink(true);
+					   actual.setHyperlink(csalad);
 					   
 					   secunder.setAsChildren(actual);
 					   
 					   secunder = actual;
 					   //myTexts.add(first);
-					   i += 3;
+					   i += csalad.length() + 1 + 3;
 					   break;  
 					   
 					  
@@ -944,7 +954,7 @@ int caretCurent = textArea.getCaretPosition();
 	                    }
 	                };
 				 
-                 a.getHostServices().showDocument(node.getText());
+                 a.getHostServices().showDocument(node.getHyperlink());
          }
 			
 		}
@@ -965,6 +975,12 @@ int caretCurent = textArea.getCaretPosition();
 	
 	public void setSelectable (boolean select) {
 		editable.setSelected(select);
+	}
+
+	public void setTR(ResourceBundle tr) {
+		// TODO Auto-generated method stub
+		this.tr = tr;
+		
 	}
 		
 }

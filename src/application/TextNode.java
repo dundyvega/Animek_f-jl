@@ -23,6 +23,8 @@ public class TextNode {
 	
 	private boolean link;
 	
+	private String hyperlink;
+	
 	private ArrayList<TextNode> children;
 	private TextNode parent;
 	private int id;
@@ -154,6 +156,14 @@ public class TextNode {
 		// TODO Auto-generated method stub
 		icon = icon2;
 		
+	}
+
+	public String getHyperlink() {
+		return hyperlink;
+	}
+
+	public void setHyperlink(String hyperlink) {
+		this.hyperlink = hyperlink;
 	}
 
 }

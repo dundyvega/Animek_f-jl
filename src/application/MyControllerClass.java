@@ -379,6 +379,9 @@ public class MyControllerClass implements Initializable {
     
     private void textAreaShow() {
     	Alert area = new Alert(Alert.AlertType.CONFIRMATION);
+    	String name = listView.getSelectionModel().getSelectedItem().getAnimeNev();
+    	area.setTitle(tr.getString("key.Content"));
+    	area.setHeaderText(name);
     	Parent root = null;
     	 MyController control = null;
     	try {
@@ -388,6 +391,7 @@ public class MyControllerClass implements Initializable {
     		//root.setStyle("applocation.css");
     		 control = loader.getController();
     		 control.setText(listView.getSelectionModel().getSelectedItem().getAnimeTartalom());
+    		 control.setTR(tr);
     		 control.setSelectable(true);
     		 
     	} catch(Exception ex) {
