@@ -2,11 +2,20 @@ package application;
 
 import java.awt.GraphicsEnvironment;
 import java.io.File;
+import java.net.URI;
 import java.net.URL;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Stack;
+import java.util.stream.Stream;
 
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
@@ -255,27 +264,47 @@ int caretCurent = textArea.getCaretPosition();
 	   	grid.setPadding(new Insets(20, 150, 10, 10));
 	   	
 	   	
-	    URL curURL = Series.class.getResource("/smiles/");
-	   File curlFile = new File(curURL.getFile());
-	   File []files = curlFile.listFiles();
 	   int szamlalo = 0;
 	   int nevezo = 0;
 	   Button btn = null;
 	   Image img = null;
 	   BackgroundImage backgroundImage = null;
 	   Background background  = null;
-			   
-	   int length = images.length;
 	   
+	   
+	   
+			   
+//	   int length = images.length;
+	   try {
+	  
+	   URI uri = Series.class.getResource("/smiles/").toURI();
+	   Path myPath;
+	   
+	   if (uri.getScheme().equals("jar")) {
+		   FileSystem fileSystem = FileSystems.newFileSystem(uri, Collections.<String, Object>emptyMap());
+           myPath = fileSystem.getPath("/smiles");
+	   } else {
+		   myPath = Paths.get(uri);
+	   }
+	   String nama = "";
+	   
+	   Stream<Path> walk = Files.walk(myPath, 1);
+	   Iterator<Path> it = walk.iterator();
+	   it.next();
+       for (; it.hasNext();) {
+         //  System.out.println(it.next().getFileName());
+    	  // System.out.println("1" + nama);
+           nama = it.next().getFileName().toString();
+          // System.out.println("2"+nama);
 		   
-	   for (int i = 0; i < length; ++i) {
+	  // for (int i = 0; i < length; ++i) {
 		   btn = new Button();
-		  // System.out.println("\"" + f.getName() + "\",");
+		  // System.out.println("\"" + f.getName() + "\",");                                   images[i] 
 		   
-		 backgroundImage = new BackgroundImage( new Image( getClass().getResource("/smiles/" + images[i]).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+		 backgroundImage = new BackgroundImage( new Image( getClass().getResource("/smiles/" + nama).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
 		   
 		  background = new Background(backgroundImage);
- 
+		 // System.out.println("3" + nama);
 		   btn.setBackground(background);
 		   
 		   btn.setOnAction(new EventHandler<ActionEvent>() {
@@ -310,7 +339,7 @@ int caretCurent = textArea.getCaretPosition();
 	            }
 	        });
 		   
-		   btn.setId(images[i]);
+		   btn.setId(nama);
 		  
 		   if (szamlalo < 10) {
 			  szamlalo++;
@@ -320,6 +349,9 @@ int caretCurent = textArea.getCaretPosition();
 		   }
 		   grid.add(btn, szamlalo, nevezo);
 		   
+	   }
+	   } catch (Exception ex) {
+		   System.out.println(ex);
 	   }
 	  // getAllFiles(curlFile);
 	   

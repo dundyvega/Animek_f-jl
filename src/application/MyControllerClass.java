@@ -647,6 +647,10 @@ public class MyControllerClass implements Initializable {
     		if (event.getButton() == MouseButton.SECONDARY && event.getClickCount() == 1) {
     			//System.out.println("kettp");
     			listView.getContextMenu().show(listView,  event.getScreenX(), event.getScreenY());
+    		} else {
+    			if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
+    				this.textAreaShow();
+    			}
     		}
     }
     	
