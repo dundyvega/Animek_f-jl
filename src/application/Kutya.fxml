@@ -112,7 +112,6 @@
                      <accelerator>
                         <KeyCodeCombination alt="DOWN" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                      </accelerator></MenuItem>
-                  <MenuItem fx:id="contentAnimeMenu" mnemonicParsing="false" onAction="#createContentAnimeOnAction" text="ContentAnime" />
             </items>
           </Menu>
         </menus>
