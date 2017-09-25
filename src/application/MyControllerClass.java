@@ -723,7 +723,7 @@ public class MyControllerClass implements Initializable {
 		newMenu.setText(tr.getString("key.newMenu"));
 		openMenu.setText(tr.getString("key.openMenu"));
 		closeMenu.setText(tr.getString("key.CloseMenu"));
-		a1.setText(tr.getString("key.addMenu"));
+		a1.setText(tr.getString("key.addMenuItem"));
 		addMenuItem.setText(tr.getString("key.addMenuItem"));
 		a2.setText(tr.getString("key.saveMenu"));
 		a3.setText(tr.getString("key.deleteMenu"));

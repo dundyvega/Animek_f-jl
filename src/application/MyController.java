@@ -1,7 +1,10 @@
 package application;
 
 import java.awt.GraphicsEnvironment;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URL;
 import java.nio.file.FileSystem;
@@ -11,12 +14,15 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Stack;
 import java.util.stream.Stream;
 
+import components.DoubleString;
+import components.TextNode;
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -39,8 +45,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.Tooltip;
+import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BackgroundPosition;
@@ -85,6 +94,8 @@ public class MyController implements Initializable {
     
     @FXML
     private GridPane gridPane;
+    
+    private HashMap<String, DoubleString> hashMap = new HashMap<String, DoubleString>();
     
     
     final String[] images = {"alert.gif",
@@ -232,7 +243,7 @@ public class MyController implements Initializable {
     
     @FXML
     void linkOnAction(ActionEvent e) {
-int caretCurent = textArea.getCaretPosition();
+    	int caretCurent = textArea.getCaretPosition();
     	
     	String text = textArea.getText();
     	String str1 = text.substring(0, caretCurent);
@@ -250,18 +261,17 @@ int caretCurent = textArea.getCaretPosition();
     
     @FXML
     void iconOnAction(ActionEvent e) {
+    //	Alert alert = new Alert(Alert.AlertType.INFORMATION);
+    	//alert.showAndWait();
+    	String args = "";
+   	
     	
-    	
-    	
-    	
-    	Alert alert = new Alert(Alert.AlertType.INFORMATION);
-    	alert.setTitle(tr.getString("key.Icons"));
-    	alert.setHeaderText(tr.getString("key.selecticonmessage"));
-    	
+    	try {
+   	Alert alert = new Alert(Alert.AlertType.INFORMATION);
     	
     	ImageView view= new ImageView();
    	   // view.setImage(new Image(Series.class.getResource("favicon-96x96.png").toExternalForm()));
-   	    alert.setGraphic(view);
+  // 	    alert.setGraphic(view);
   
    	    GridPane grid = new GridPane();
 	   	grid.setHgap(10);
@@ -269,55 +279,40 @@ int caretCurent = textArea.getCaretPosition();
 	   	grid.setPadding(new Insets(20, 150, 10, 10));
 	   	
 	   	
+	    URL curURL = Series.class.getResource("/smiles/");
+	   File curlFile = new File(curURL.getFile());
+	  // System.out.println(curURL);
+	   //System.out.println(curlFile.getName());
+	   //File []files = curlFile.listFiles();
+	   //System.out.println("files: " + files);
 	   int szamlalo = 0;
 	   int nevezo = 0;
 	   Button btn = null;
 	   Image img = null;
 	   BackgroundImage backgroundImage = null;
 	   Background background  = null;
-	   
-	   
-	   
-			   
 	   int length = images.length;
-	   try {
-	  
-	 /*  URI uri = Series.class.getResource("/smiles/").toURI();
-	   Path myPath;
-	   FileSystem fileSystem = null;
 	   
-	   if (uri.getScheme().equals("jar")) {
-		   fileSystem = FileSystems.newFileSystem(uri, Collections.<String, Object>emptyMap());
-		   fileSystem.close();
-           myPath = fileSystem.getPath("/smiles");
-	   } else {
-		   myPath = Paths.get(uri);
-	   }
-	   String nama = "";
-	   
-	   Stream<Path> walk = Files.walk(myPath, 1);
-	   Iterator<Path> it = walk.iterator();
-	   it.next();
-       for (; it.hasNext();) {
-         //  System.out.println(it.next().getFileName());
-    	  // System.out.println("1" + nama);
-         //  nama = it.next().getFileName().toString();*/
-          // System.out.println("2"+nama);
 		   
-	   for (int i = 0; i < length; ++i) {
+	 //  for (int i = 0; i < length; ++i) {
+	   
+	   for (String object: hashMap.keySet()) {
 		   btn = new Button();
-		  // System.out.println("\"" + f.getName() + "\",");                                   images[i] 
+		  // System.out.println("\"" + f.getName() + "\",");
 		   
-		 backgroundImage = new BackgroundImage( new Image( getClass().getResource("/smiles/" + images[i]).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+		//  System.out.println("/smiles/" + object);
+		 
 		   
+		 backgroundImage = new BackgroundImage( new Image( getClass().getResource((args="/smiles/" + object)).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+		   //System.out.println(args);  
+		// System.out.println("/smiles/" + object);
 		  background = new Background(backgroundImage);
-		 // System.out.println("3" + nama);
 		   btn.setBackground(background);
 		   
 		   btn.setOnAction(new EventHandler<ActionEvent>() {
 	            @Override
 	            public void handle(ActionEvent event) {
-	                System.out.println(((Button)event.getSource()).getId());
+	            //    System.out.println(((Button)event.getSource()).getId());
 	                
 	                String color = ((Button)event.getSource()).getId();
 	            	
@@ -329,7 +324,7 @@ int caretCurent = textArea.getCaretPosition();
 	            	
 
 	            	
-	            	String newText = str1 + "[m=" + color + "]" + str2;
+	            	String newText = str1 + color  + str2;
 	            	caretCurent = newText.length();
 	            	//newText += "[/m]" + str2;
 	            	
@@ -346,9 +341,40 @@ int caretCurent = textArea.getCaretPosition();
 	            }
 	        });
 		   
-		   btn.setId(images[i]);
+		   
+		   
+		   DropShadow shadow = new DropShadow();
+		   
+		   
+		   Tooltip tt = new Tooltip();
+		   tt.setText(hashMap.get(object).getShower());
+		   tt.setFont(Font.font(null , FontWeight.BOLD, FontPosture.ITALIC, 16));
+			  
 		  
-		   if (szamlalo < 10) {
+		 tt.setPrefSize(200, 50);
+		  btn.setTooltip(tt);
+		   
+		   btn.addEventHandler(MouseEvent.MOUSE_ENTERED,
+			        new EventHandler<MouseEvent>() {
+			          @Override
+			          public void handle(MouseEvent e) {
+			            ((Button)e.getSource()).setEffect(shadow);
+			          }
+			        });
+
+			   btn.addEventHandler(MouseEvent.MOUSE_EXITED,
+			        new EventHandler<MouseEvent>() {
+			          @Override
+			          public void handle(MouseEvent e) {
+			        	  ((Button)e.getSource()).setEffect(null);
+			          }
+			        });
+
+		   
+		   
+		   btn.setId(hashMap.get(object).getWriter());
+		  
+		   if (szamlalo < 15) {
 			  szamlalo++;
 		   } else {
 			   szamlalo = 0;
@@ -356,18 +382,14 @@ int caretCurent = textArea.getCaretPosition();
 		   }
 		   grid.add(btn, szamlalo, nevezo);
 		   
-	   }
-      // fileSystem.close();
-       
-	   } catch (Exception ex) {
-		  // System.out.println(ex);
-	   }
+	   } 
 	  // getAllFiles(curlFile);
 	   
 	 
 	   	alert.getDialogPane().setContent(grid);
 	   	
 	    alert.showAndWait();
+    	} catch (Exception ex) {System.out.println("dasd");}
     }
 
     @FXML
@@ -483,7 +505,7 @@ int caretCurent = textArea.getCaretPosition();
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		
-		
+		//createHashMap();
 		// TODO Auto-generated method stub
 		for (int i = 16; i < 80; i += 4) {
 			
@@ -541,7 +563,7 @@ int caretCurent = textArea.getCaretPosition();
 	    	        	
 	    	        	String text = textArea.getText();
 	    	        	
-	    	        	Text texter = new Text(text);
+	    	        	text = emotionText(text);
 	    	        	
 	    	        	ArrayList<TextNode> nodes =  getModifydTexts(text, family, toRgbString(Color.BLACK), width);
 	    	        	
@@ -595,6 +617,38 @@ int caretCurent = textArea.getCaretPosition();
 	    	        			linker = new Hyperlink(nodes.get(i).getText());
 	    	        			
 	    	        			
+	    	        			 DropShadow shadow = new DropShadow();
+	    	        			   
+	    	        			   
+	    	        			   Tooltip tt = new Tooltip();
+	    	        			   tt.setText(nodes.get(i).getHyperlink());
+	    	        			   tt.setFont(Font.font(null , FontWeight.BOLD, FontPosture.ITALIC, 16));
+	    	        				  
+	    	        			  
+	    	        			 tt.setPrefSize(300, 50);
+	    	        			  linker.setTooltip(tt);
+	    	        			   
+	    	        			   linker.addEventHandler(MouseEvent.MOUSE_ENTERED,
+	    	        				        new EventHandler<MouseEvent>() {
+	    	        				          @Override
+	    	        				          public void handle(MouseEvent e) {
+	    	        				            ((Hyperlink)e.getSource()).setEffect(shadow);
+	    	        				          }
+	    	        				        });
+
+	    	        				   linker.addEventHandler(MouseEvent.MOUSE_EXITED,
+	    	        				        new EventHandler<MouseEvent>() {
+	    	        				          @Override
+	    	        				          public void handle(MouseEvent e) {
+	    	        				        	  ((Hyperlink)e.getSource()).setEffect(null);
+	    	        				          }
+	    	        				        });
+
+	    	        			   
+
+	    	        			   
+	    	        			
+	    	        			
 	    	        			linker.setOnAction(new myHyperLinkListener(nodes.get(i)));
 	    	        			
 	    	        			
@@ -623,11 +677,13 @@ int caretCurent = textArea.getCaretPosition();
 	    	        		}
 	    	        	  else {
 	    	        			if (nodes.get(i).isIcon()) {
+	    	        				try {
 	    	        				ImageView imageView = new ImageView((getClass().getResource("/smiles/" + nodes.get(i).getIconText())).toExternalForm());
 	    	        		    	
 	    	        				imageView.setFitHeight(nodes.get(i).getSize());
 	    	        				imageView.setFitWidth(nodes.get(i).getSize());
 	    	        				textFlow.getChildren().add(imageView);
+	    	        				} catch (Exception ex) {}
 	    	        			}
 	    	        	  }
 	    	        		}
@@ -980,7 +1036,83 @@ int caretCurent = textArea.getCaretPosition();
 	public void setTR(ResourceBundle tr) {
 		// TODO Auto-generated method stub
 		this.tr = tr;
+		createHashMap();
 		
 	}
+	
+	
+	
+	public String emotionText(String text) {
+		
+		boolean is = false;
+		// TODO Auto-generated method stub
+		if (text != "" && text != null) {
+			//text = text.replaceAll(")", "/)");
+	
+		for (String o: hashMap.keySet()) {
+			//System.out.println(hashMap.get(o).getWriter());
+			if (text.contains(hashMap.get(o).getWriter())) {
+				
+			is = true;
+			//System.out.println(hashMap.get(o).getWriter());
+				
+			text = text.replaceAll(paranthese(hashMap.get(o).getWriter()), "[m=" + o + "]");
+			
+			}
+		}
+		
+		
+		}
+
+		return text;
+	}
+
+	private void createHashMap() {
+		// TODO Auto-generated method stub
+		try {
+			File f = new File(getClass().getResource("/data/smiles.dat").getFile());
+			
+		    InputStream is = getClass().getResourceAsStream("/data/smiles.dat");
+		    InputStreamReader isr = new InputStreamReader(is);
+			
+		    BufferedReader inputF = new BufferedReader(isr);
+			
+			String readString;
+			String splitter[] = null;
+			String tre = "";
+			
+			while ((readString = inputF.readLine()) != null) {
+				
+				splitter = readString.split("#");
+				tre = tr.getString(splitter[2]);
+				
+				System.out.println(tre);
+				hashMap.put(splitter[0], new DoubleString(splitter[1], tr.getString(splitter[2])));
+				//System.out.println(readString);
+			}
+			
+			inputF.close();
+		    isr.close();
+		    is.close();
+		} catch (Exception ex) {
+			System.out.println(ex);
+			System.exit(0);
+		}
+		
+	}
+	
+	
+	public String paranthese(String s) {
+		String k = "";
+		for (int i = 0; i < s.length(); ++i) {
+			if (s.charAt(i) == '(' || s.charAt(i) == ')' || s.charAt(i) == '?' || s.charAt(i) == '\\' || s.charAt(i) == '|') {
+				k+= "\\" + s.charAt(i);
+			} else {
+				k+= s.charAt(i);
+			}
+		}
+		return k;
+	}
+
 		
 }
