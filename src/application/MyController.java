@@ -56,6 +56,7 @@ import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -518,6 +519,7 @@ public class MyController implements Initializable {
 			  //    GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
 		 
 		List<String> font = javafx.scene.text.Font.getFamilies();
+		
 		 
 		 for (int i = 0; i < font.size(); ++i) {
 			 fonts.getItems().add(font.get(i));
@@ -554,7 +556,7 @@ public class MyController implements Initializable {
 	    	        	//System.out.println("pipa");
 	    	        	gridPane.getChildren().remove(textArea);
 	    	        	textFlow = new TextFlow();
-	    	        	
+	    	        	textFlow.setPrefWidth(800);
 	    	        	
 	    	       
 	    	        	VBox vb = new VBox();
@@ -590,6 +592,7 @@ public class MyController implements Initializable {
 	    	        			
 	    	        			
 	    	                    textFlow.getChildren().addAll(txt);
+	    	                   
 	    	        			//txt.setFill(Color.RED);
 	    	        			
 	    	        			
