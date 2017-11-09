@@ -40,8 +40,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.ContextMenu;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextArea;
@@ -49,6 +51,8 @@ import javafx.scene.control.Tooltip;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundImage;
@@ -76,6 +80,8 @@ public class MyController implements Initializable {
     @FXML
     private CheckBox editable;
     
+    private ContextMenu cmenu = new ContextMenu();
+    
     
     final WebView browser = new WebView();
     final WebEngine webEngine = browser.getEngine();
@@ -86,6 +92,8 @@ public class MyController implements Initializable {
     private ScrollPane scrollPane = new ScrollPane();
     
     private TextFlow textFlow;
+    
+    public Hyperlink linker;
     
     @FXML
     private ComboBox<Integer> slider;
@@ -187,8 +195,7 @@ public class MyController implements Initializable {
     	String str1 = text.substring(0, caretCurent);
     	String str2 = text.substring(caretCurent, text.length());
     	
-    	//System.out.println(str1);
-    	//System.out.println(str2);
+    	
     	
     	String newText = str1 + "[c=" + color + "]";
     	caretCurent = newText.length();
@@ -488,11 +495,7 @@ public class MyController implements Initializable {
     private Color fromString(String color) {
     	String substring = color.substring(4, color.length() - 1);
     	String[] subs = substring.split(",");
-    	System.out.print("színek: ");
-    	for (int i = 0; i < 3; ++i) {
-    		System.out.print(subs[i]);
-    	}
-    	System.out.println("");
+    	
     	
     			
     			return Color.rgb(Integer.parseInt(subs[0]), Integer.parseInt(subs[1]), Integer.parseInt(subs[2]));
@@ -523,6 +526,7 @@ public class MyController implements Initializable {
 		 
 		 for (int i = 0; i < font.size(); ++i) {
 			 fonts.getItems().add(font.get(i));
+			// System.out.println(font.get(i));
 		 }
 		 
 		 fonts.getSelectionModel().select(27);
@@ -530,7 +534,8 @@ public class MyController implements Initializable {
 		 colorPicker.setValue(Color.BLACK);
 		 
 		 int width = slider.getSelectionModel().getSelectedItem();
-		 String family = fonts.getSelectionModel().getSelectedItem();
+		// String family = fonts.getSelectionModel().getSelectedItem();
+		 String family = "Verdana";
 		 
 		 textArea.setFont(Font.font(family, FontWeight.NORMAL, width)); 
 		 textArea.setStyle(
@@ -573,7 +578,7 @@ public class MyController implements Initializable {
 	    	        	
 	    	        	Text txt;
 	    	        	
-	    	        	Hyperlink linker;
+	    	        	
 	    	        	
 	    	        	for (int i = 0; i <= nodeSize; ++i) {
 	    	        		if (!nodes.get(i).getText().equals("")) {
@@ -621,7 +626,18 @@ public class MyController implements Initializable {
 	    	        			
 	    	        			
 	    	        			 DropShadow shadow = new DropShadow();
-	    	        			   
+	    	        			 
+	    	        			 
+	    	        			 cmenu = new ContextMenu();
+	    	        			 MenuItem printer = new MenuItem(tr.getString("key.masol"));
+	    	        			
+	    	        			 printer.setOnAction(new myPrinterListener(nodes.get(i)));
+	    	        			 
+	    	        			 cmenu.getItems().add(printer);
+	    	        			 
+	    	        			 linker.setContextMenu(cmenu);
+	    	        			
+	    	        			
 	    	        			   
 	    	        			   Tooltip tt = new Tooltip();
 	    	        			   tt.setText(nodes.get(i).getHyperlink());
@@ -989,6 +1005,28 @@ public class MyController implements Initializable {
 		
 			
 	}
+	
+	
+	class myPrinterListener implements EventHandler<ActionEvent> {
+
+		private TextNode node;
+		public myPrinterListener(TextNode node) {
+			this.node = node;
+		}
+		@Override
+		public void handle(ActionEvent event) {
+			// TODO Auto-generated method stub
+			
+			
+			 final Clipboard clipboard = Clipboard.getSystemClipboard();
+		        final ClipboardContent content = new ClipboardContent();
+		        content.putString(node.getHyperlink());
+		        content.putHtml("<b>Some</b> text");
+		        clipboard.setContent(content);
+			
+		}
+		
+	}
 
 	
 	
@@ -1089,7 +1127,7 @@ public class MyController implements Initializable {
 				splitter = readString.split("#");
 				tre = tr.getString(splitter[2]);
 				
-				System.out.println(tre);
+				//System.out.println(tre);
 				hashMap.put(splitter[0], new DoubleString(splitter[1], tr.getString(splitter[2])));
 				//System.out.println(readString);
 			}
