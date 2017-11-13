@@ -129,6 +129,9 @@ public class MyControllerClass implements Initializable {
 
     @FXML
     private MenuItem a3;
+    
+    @FXML
+    private MenuItem content;
 
     @FXML
     private Label lengthLabel;
@@ -193,6 +196,7 @@ public class MyControllerClass implements Initializable {
                	a4.disableProperty().set(false);
                	a5.disableProperty().set(false);
                	a6.disableProperty().set(false);
+               	content.disableProperty().set(false);
                	betolt(0);
                 }
 			} catch (Exception e) {
@@ -220,6 +224,7 @@ public class MyControllerClass implements Initializable {
 	    	a4.disableProperty().set(false);
 	    	a5.disableProperty().set(false);
 	    	a6.disableProperty().set(false);
+	    	content.disableProperty().set(false);
 	    	listView.disableProperty().set(false);
 	    	
 	    	
@@ -292,6 +297,7 @@ public class MyControllerClass implements Initializable {
 	            		 title.disableProperty().set(true);
 	            		 length.disableProperty().set(true);
 	            		 comboBox.disableProperty().set(true);
+	            		 content.disableProperty().set(true);
 	        		 } else {
 	        			 listElementSelected();
 	        			 OneAnime kanime = listView.getSelectionModel().getSelectedItem();
@@ -316,10 +322,16 @@ public class MyControllerClass implements Initializable {
     		betolt(animeSTR);
     	}
     }
+    
+    @FXML
+    void contentOnAction(ActionEvent event) {
+    	//System.out.println("alt + t");
+    	this.textAreaShow();
+    }
 
     @FXML
     void DeleteOnAction(ActionEvent event) {
-    	
+    	//System.out.println("kacsa delete");
     	int n = FileAdministrator.animekSzamaXML(0);
     	if (n > 1) {
     	 Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -348,6 +360,7 @@ public class MyControllerClass implements Initializable {
         		 title.disableProperty().set(true);
         		 length.disableProperty().set(true);
         		 comboBox.disableProperty().set(true);
+        		 content.disableProperty().set(true);
         
         
     			 
@@ -557,6 +570,7 @@ public class MyControllerClass implements Initializable {
          listView.disableProperty().set(false);
          title.disableProperty().set(false);
          comboBox.disableProperty().set(false);
+         content.disableProperty().set(false);
    		 title.visibleProperty().set(true);
    		 comment.disableProperty().set(false);
    		 comment.visibleProperty().set(true);
@@ -599,6 +613,7 @@ public class MyControllerClass implements Initializable {
         	if (!listView.getSelectionModel().isEmpty()) {
         		listView.disableProperty().set(false);
         		comboBox.disableProperty().set(false);
+        		content.disableProperty().set(false);
         		listView.getItems().clear();
         		listView.getItems().addAll(animek);
         		listView.getSelectionModel().select(0);
@@ -668,6 +683,7 @@ public class MyControllerClass implements Initializable {
     	if (animek.size() > 0 && animek != null) {
     		listView.disableProperty().set(false);
     		comboBox.disableProperty().set(false);
+    		content.disableProperty().set(false);
     		listView.getItems().clear();
     		listView.getItems().addAll(animek);
     		listView.getSelectionModel().select(0);
@@ -693,7 +709,7 @@ public class MyControllerClass implements Initializable {
     		 title.disableProperty().set(true);
     		 length.disableProperty().set(true);
     		 comboBox.disableProperty().set(true);
-			 
+    		 content.disableProperty().set(true);
     		 comment.setText("");
 			 length.setText("");
     		listView.getItems().clear();
@@ -727,6 +743,7 @@ public class MyControllerClass implements Initializable {
 		addMenuItem.setText(tr.getString("key.addMenuItem"));
 		a2.setText(tr.getString("key.saveMenu"));
 		a3.setText(tr.getString("key.deleteMenu"));
+		content.setText(tr.getString("key.Content"));
 		searchMenu.setText(tr.getString("key.searchMenu"));
 		searchMenuItem.setText(tr.getString("key.searchMenuItem"));
 		a5.setText(tr.getString("key.searchByName"));
@@ -753,6 +770,7 @@ public class MyControllerClass implements Initializable {
 	    	a4.disableProperty().set(false);
 	    	a5.disableProperty().set(false);
 	    	a6.disableProperty().set(false);
+	    	content.disableProperty().set(false);
 	    	listView.disableProperty().set(false);
 	    	if (!FileAdministrator.isContentAnime()) {
 				FileAdministrator.makeContentAnime();
@@ -776,7 +794,7 @@ public class MyControllerClass implements Initializable {
 		
 		
 		
-     MenuItem print3 = new MenuItem(tr.getString("key.content") + " igazi");
+     MenuItem print3 = new MenuItem(tr.getString("key.content"));
 		
 		print3.setOnAction(new EventHandler<ActionEvent>() {
 			@Override

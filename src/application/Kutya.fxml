@@ -57,6 +57,11 @@
                      <accelerator>
                         <KeyCodeCombination alt="ANY" code="DELETE" control="UP" meta="UP" shift="UP" shortcut="UP" />
                      </accelerator></MenuItem>
+                  <MenuItem fx:id="content" disable="true" mnemonicParsing="false" onAction="#contentOnAction" text="Unspecified Action">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="T" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
             </items>
           </Menu>
             <Menu fx:id="searchMenu" mnemonicParsing="false" text="Search">
