@@ -85,6 +85,20 @@ public class MyController implements Initializable {
     
     final WebView browser = new WebView();
     final WebEngine webEngine = browser.getEngine();
+    
+    @FXML
+    private Button colorButton;
+    @FXML
+    private Button linkButton;
+    @FXML
+    private Button iconButton;
+    @FXML
+    private Button ioButton;
+    @FXML
+    private Button sizeButton;
+    
+    @FXML
+    private Button bButton;
 
     @FXML
     private ColorPicker colorPicker;
@@ -92,6 +106,9 @@ public class MyController implements Initializable {
     private ScrollPane scrollPane = new ScrollPane();
     
     private TextFlow textFlow;
+    
+    @FXML
+    private Button fontsButton;
     
     public Hyperlink linker;
     
@@ -559,6 +576,28 @@ public class MyController implements Initializable {
 	    	        	//scrollPane.getChildrenUnmodifiable().remove(textArea);
 	    	        	//scrollPane.getChildrenUnmodifiable().add(textFlow);
 	    	        	//System.out.println("pipa");
+	    	        	
+	    	        	
+	    	        	/*visibility of*/
+	    	        	
+	    	        	fonts.setVisible(false);
+	    	        	colorPicker.setVisible(false);
+	    	        	colorButton.setVisible(false);
+	    	        	ioButton.setVisible(false);
+	    	        	linkButton.setVisible(false);
+	    	        	sizeButton.setVisible(false);
+	    	        	iconButton.setVisible(false);
+	    	        	bButton.setVisible(false);
+	    	        	fontsButton.setVisible(false);
+	    	        	slider.setVisible(false);
+	    	        	
+	    	        	
+	    	        	/*visibility of*/
+	    	        	
+	    	        	
+	    	        	
+	    	        	
+	    	        	
 	    	        	gridPane.getChildren().remove(textArea);
 	    	        	textFlow = new TextFlow();
 	    	        	textFlow.setPrefWidth(800);
@@ -728,6 +767,19 @@ public class MyController implements Initializable {
 	    	        } else {
 	    	        	gridPane.add(textArea, 0, 0);
 	    	        	gridPane.getChildren().remove(scrollPane);
+	    	        	
+	    	        	fonts.setVisible(true);
+	    	        	colorPicker.setVisible(true);
+	    	        	colorButton.setVisible(true);
+	    	        	ioButton.setVisible(true);
+	    	        	linkButton.setVisible(true);
+	    	        	sizeButton.setVisible(true);
+	    	        	iconButton.setVisible(true);
+	    	        	bButton.setVisible(true);
+	    	        	fontsButton.setVisible(true);
+	    	        	slider.setVisible(true);
+	    	        	
+	    	        	
 	    	        }
 	    	    }
 		 });
@@ -952,7 +1004,12 @@ public class MyController implements Initializable {
 						   i += csalad.length() + 1 + 3;
 						   break;
 					   }
-						   
+					   
+					   default: {
+						   atmeneti += text.charAt(i);
+							i++;
+					   }
+					  
 						   
 					   }
 					

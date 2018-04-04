@@ -172,6 +172,19 @@ public class MyControllerClass implements Initializable {
     private Stage stage;
     private Series series;
     private ContextMenu cmenu = new ContextMenu();
+    
+    
+    
+    @FXML
+    private Menu contentMenuName;
+
+    @FXML
+    private MenuItem search5MenuItem;
+
+
+    @FXML
+    private TextField searchContent;
+    
 
 	
     @FXML
@@ -195,7 +208,9 @@ public class MyControllerClass implements Initializable {
                	a3.disableProperty().set(false);
                	a4.disableProperty().set(false);
                	a5.disableProperty().set(false);
+               	contentMenuName.disableProperty().set(false);
                	a6.disableProperty().set(false);
+               	
                	content.disableProperty().set(false);
                	betolt(0);
                 }
@@ -224,6 +239,7 @@ public class MyControllerClass implements Initializable {
 	    	a4.disableProperty().set(false);
 	    	a5.disableProperty().set(false);
 	    	a6.disableProperty().set(false);
+	    	contentMenuName.disableProperty().set(false);
 	    	content.disableProperty().set(false);
 	    	listView.disableProperty().set(false);
 	    	
@@ -599,6 +615,14 @@ public class MyControllerClass implements Initializable {
     	
     }
     
+    
+    @FXML
+    void search2OnAction(ActionEvent event) {
+    	betoltTartalom(searchContent.getText());
+    	
+    	
+    }
+    
     private void betolt(String s) {
     	animeSTR = s;
     	cat = false;
@@ -642,6 +666,58 @@ public class MyControllerClass implements Initializable {
         		listView.disableProperty().set(true);
         	}
     }
+    
+    
+    
+    
+    
+    
+    private void betoltTartalom(String s) {
+    	animeSTR = s;
+    	cat = false;
+    	ArrayList<OneAnime> animek = FileAdministrator.keresAnimekTartalomXML(s);
+    	if (animek.size() >= 1 && animek != null) {
+        	listView.getItems().clear();
+        	listView.getItems().addAll(animek);
+        	listView.getSelectionModel().select(2);
+        	listView.getSelectionModel().select(0);
+        	listView.disableProperty().set(false);
+        	
+        	if (!listView.getSelectionModel().isEmpty()) {
+        		listView.disableProperty().set(false);
+        		comboBox.disableProperty().set(false);
+        		content.disableProperty().set(false);
+        		listView.getItems().clear();
+        		listView.getItems().addAll(animek);
+        		listView.getSelectionModel().select(0);
+        		listView.requestFocus();
+        		title.disableProperty().set(false);
+       		 title.visibleProperty().set(true);
+       		 comment.disableProperty().set(false);
+       		 comment.visibleProperty().set(true);
+       		 title.disableProperty().set(false);
+       		 title.visibleProperty().set(true);
+       		 length.disableProperty().set(false);
+       		 length.visibleProperty().set(true);
+       		 listView.setVisible(true);
+       		 comboBox.setVisible(true);
+       		titleLabel.setVisible(true);
+    		 lengthLabel.setVisible(true);
+    		 commentLabel.setVisible(true);
+        		listElementSelected();
+        	} 
+        	searchField.setText("");
+        	} else {
+        		 title.setText("");
+    			 comment.setText("");
+    			 length.setText("");
+        		listView.getItems().clear();
+        		listView.disableProperty().set(true);
+        	}
+    }
+    
+    
+    
     
     @FXML
     void onKeyPressedList(KeyEvent event) {
@@ -747,6 +823,9 @@ public class MyControllerClass implements Initializable {
 		searchMenu.setText(tr.getString("key.searchMenu"));
 		searchMenuItem.setText(tr.getString("key.searchMenuItem"));
 		a5.setText(tr.getString("key.searchByName"));
+		contentMenuName.setText(tr.getString("key.searchInContent"));
+		search5MenuItem.setText(tr.getString("key.searchMenuItem"));
+		
 		a6.setText(tr.getString("key.searchByCategory"));
 		allMenu.setText(tr.getString("key.all"));
 		finishedMenu.setText(tr.getString("key.finished"));
@@ -770,6 +849,7 @@ public class MyControllerClass implements Initializable {
 	    	a4.disableProperty().set(false);
 	    	a5.disableProperty().set(false);
 	    	a6.disableProperty().set(false);
+	    	contentMenuName.disableProperty().set(false);
 	    	content.disableProperty().set(false);
 	    	listView.disableProperty().set(false);
 	    	if (!FileAdministrator.isContentAnime()) {

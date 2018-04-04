@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="504.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyControllerClass">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="504.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyControllerClass">
    <top>
       <MenuBar layoutX="4.0" layoutY="3.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
         <menus>
@@ -108,11 +108,23 @@
                         </MenuItem>
                     </items>
                   </Menu>
+                  <Menu fx:id="contentMenuName" mnemonicParsing="false" text="Search In Content">
+                    <items>
+                      <MenuItem fx:id="search5MenuItem" mnemonicParsing="false" text="Search">
+                           <graphic>
+                              <TextField fx:id="searchContent" onAction="#search2OnAction" />
+                           </graphic>
+                        </MenuItem>
+                    </items>
+                  </Menu>
                </items>
             </Menu>
           <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
             <items>
-                  <MenuItem fx:id="a4" disable="true" mnemonicParsing="false" onAction="#statOnAction" text="Statistics" />
+                  <MenuItem fx:id="a4" disable="true" mnemonicParsing="false" onAction="#statOnAction" text="Statistics">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
               <MenuItem fx:id="aboutMenu" mnemonicParsing="false" onAction="#aboutOnAction" text="About">
                      <accelerator>
                         <KeyCodeCombination alt="DOWN" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
