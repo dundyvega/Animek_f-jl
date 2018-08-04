@@ -1,4 +1,4 @@
-cat $1 | grep indavideo |grep "#" |cut -d "]" -f 1 |grep "\[h" |
+cat $1 |grep indavideo|grep "#" |cut -d "]" -f 1 |grep "\[h" |
 cut -d "[" -f 2 |cut -d "=" -f 2 |cut -d "#" -f 1| 
 sed -r 's/http/https/' |sed -r 's/httpss/https/' |
 sed -r 's/indavideo/https:\/\/indavideo/' |
