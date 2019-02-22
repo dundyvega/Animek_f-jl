@@ -592,4 +592,36 @@ public static void setTartalom(int index, String text) {
 }
 
 
+public static ArrayList<OneAnime> keresAnimekTartalomXML(String karakterLanc) {
+	ArrayList<OneAnime> animk = new ArrayList<OneAnime>();
+	try {
+		File fXmlFile = file;
+		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+		Document doc = dBuilder.parse(fXmlFile);
+		NodeList nlist = doc.getElementsByTagName("tartalom");
+		for (int i = 0; i < nlist.getLength(); ++i) {
+			Element id = (Element)nlist.item(i);
+			String idS = id.getTextContent();
+			//System.out.println(idS);
+			if (idS.toLowerCase().contains(karakterLanc.toLowerCase())) {
+				Element parent = (Element)id.getParentNode();
+				//parent.getParentNode().removeChild(parent);
+				parent.getElementsByTagName("animeNev").item(0).getTextContent();
+				int animeID = Integer.parseInt(parent.getElementsByTagName("animeID").item(0).getTextContent());
+				//int animeAllapot = Integer.parseInt(parent.getElementsByTagName("nezem").item(0).getTextContent());
+				int animeReszek = Integer.parseInt(parent.getElementsByTagName("reszek").item(0).getTextContent());
+				int animeAllapot = Integer.parseInt(parent.getElementsByTagName("nezem").item(0).getTextContent());
+				String animeNev = parent.getElementsByTagName("animeNev").item(0).getTextContent();
+				String megjegyzes = parent.getElementsByTagName("megjegyzes").item(0).getTextContent();
+				String tartalom = parent.getElementsByTagName("tartalom").item(0).getTextContent();
+				animk.add(new OneAnime(animeID, animeReszek, animeAllapot, animeNev, megjegyzes, tartalom));
+			}
+		}
+		Collections.sort(animk);
+		} catch (Exception ex) {}
+		return animk;
+}
+
+
 }

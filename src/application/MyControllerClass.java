@@ -26,6 +26,7 @@ import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
@@ -141,6 +142,9 @@ public class MyControllerClass implements Initializable {
     
     @FXML
     private MenuItem addMenuItem;
+    
+    @FXML
+    private Button saveButton;
 
     @FXML
     private Menu a5;
@@ -315,19 +319,25 @@ public class MyControllerClass implements Initializable {
 	            		 comboBox.disableProperty().set(true);
 	            		 content.disableProperty().set(true);
 	        		 } else {
-	        			 listElementSelected();
-	        			 OneAnime kanime = listView.getSelectionModel().getSelectedItem();
-	       	             kanime.setAnimeNev(title.getText());
+//	        			 listElementSelected();
+//	        			 OneAnime kanime = listView.getSelectionModel().getSelectedItem();
+//	       	             kanime.setAnimeNev(title.getText());
 	       	             
-	       	             if (listView.getItems().size() > 1) {
-	        			    listView.fireEvent(new ListView.EditEvent<OneAnime>(listView,
-	        			    		ListView.editCommitEvent(), kanime, index));
-	       	             } else betoltes();
-	        			listElementSelected();
+//	       	             if (listView.getItems().size() > 1) {
+//	        			    listView.fireEvent(new ListView.EditEvent<OneAnime>(listView,
+//	        			    		ListView.editCommitEvent(), kanime, index));
+//	        			    System.out.println("kacsa");
+//	       	             } else betoltes();
+//	        			listElementSelected();
 	        		 }
 	    
 	         } catch (Exception e) {}
 	         betoltes();
+	         listView.getSelectionModel().select(index);
+	         if (index > 0) {
+	         System.out.println(index);
+	         }
+	         listElementSelected();
 	         
     }
     
@@ -596,9 +606,11 @@ public class MyControllerClass implements Initializable {
    		 length.visibleProperty().set(true);
    		 listView.setVisible(true);
    		 comboBox.setVisible(true);
+   		 saveButton.setVisible(true);
    		titleLabel.setVisible(true);
 		 lengthLabel.setVisible(true);
 		 commentLabel.setVisible(true);
+		 saveButton.setVisible(true);
          adElement.setText("");
          searchOnAction(event);
     }
@@ -611,6 +623,7 @@ public class MyControllerClass implements Initializable {
     @FXML
     void searchOnAction(ActionEvent event) {
     	betolt(searchField.getText());
+    	searchField.setText("");
     	
     	
     }
@@ -619,6 +632,7 @@ public class MyControllerClass implements Initializable {
     @FXML
     void search2OnAction(ActionEvent event) {
     	betoltTartalom(searchContent.getText());
+    	searchContent.setText("");
     	
     	
     }
@@ -652,9 +666,11 @@ public class MyControllerClass implements Initializable {
        		 length.visibleProperty().set(true);
        		 listView.setVisible(true);
        		 comboBox.setVisible(true);
+       		 saveButton.setVisible(true);
        		titleLabel.setVisible(true);
     		 lengthLabel.setVisible(true);
     		 commentLabel.setVisible(true);
+    		 saveButton.setVisible(true);
         		listElementSelected();
         	} 
         	searchField.setText("");
@@ -701,6 +717,7 @@ public class MyControllerClass implements Initializable {
        		 length.visibleProperty().set(true);
        		 listView.setVisible(true);
        		 comboBox.setVisible(true);
+       		 saveButton.setVisible(true);
        		titleLabel.setVisible(true);
     		 lengthLabel.setVisible(true);
     		 commentLabel.setVisible(true);
@@ -774,6 +791,7 @@ public class MyControllerClass implements Initializable {
    		 length.visibleProperty().set(true);
    		 listView.setVisible(true);
    		 comboBox.setVisible(true);
+   		 saveButton.setVisible(true);
    		titleLabel.setVisible(true);
 		 lengthLabel.setVisible(true);
 		 commentLabel.setVisible(true);
@@ -818,6 +836,7 @@ public class MyControllerClass implements Initializable {
 		a1.setText(tr.getString("key.addMenuItem"));
 		addMenuItem.setText(tr.getString("key.addMenuItem"));
 		a2.setText(tr.getString("key.saveMenu"));
+		saveButton.setText(tr.getString("key.saveMenu"));
 		a3.setText(tr.getString("key.deleteMenu"));
 		content.setText(tr.getString("key.Content"));
 		searchMenu.setText(tr.getString("key.searchMenu"));
