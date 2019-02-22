@@ -41,7 +41,8 @@ public class Series extends Application  {
     	
         stage.setTitle(rb.getString("key.titleBar"));
         
-        Scene scene = new Scene(root, 800, 800);
+        Scene scene = new Scene(root, 1200, 800);
+        stage.setResizable(false);
         
         stage.setScene(scene);
         stage.getIcons().add(new Image(Series.class.getResource("favicon-96x96.png").toExternalForm()));

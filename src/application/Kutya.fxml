@@ -19,7 +19,8 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="504.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyControllerClass">
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyControllerClass">
    <top>
       <MenuBar layoutX="4.0" layoutY="3.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
         <menus>
@@ -28,15 +29,18 @@
                   <MenuItem fx:id="newMenu" mnemonicParsing="false" onAction="#NewOnAction" text="New">
                      <accelerator>
                         <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
-                     </accelerator></MenuItem>
+                     </accelerator>
+                  </MenuItem>
                   <MenuItem fx:id="openMenu" mnemonicParsing="false" onAction="#OpenOnAction" text="Open">
                      <accelerator>
                         <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
-                     </accelerator></MenuItem>
+                     </accelerator>
+                  </MenuItem>
               <MenuItem fx:id="closeMenu" mnemonicParsing="false" onAction="#CloseOnAction" text="Close">
                      <accelerator>
                         <KeyCodeCombination alt="DOWN" code="ESCAPE" control="UP" meta="UP" shift="UP" shortcut="UP" />
-                     </accelerator></MenuItem>
+                     </accelerator>
+                  </MenuItem>
             </items>
           </Menu>
           <Menu fx:id="editMenu" mnemonicParsing="false" text="Edit">
@@ -53,11 +57,13 @@
                   <MenuItem fx:id="a2" disable="true" mnemonicParsing="false" onAction="#SaveOnAction" text="Save">
                      <accelerator>
                         <KeyCodeCombination alt="DOWN" code="F" control="UP" meta="UP" shift="UP" shortcut="UP" />
-                     </accelerator></MenuItem>
+                     </accelerator>
+                  </MenuItem>
               <MenuItem fx:id="a3" disable="true" mnemonicParsing="false" onAction="#DeleteOnAction" text="Delete">
                      <accelerator>
                         <KeyCodeCombination alt="ANY" code="DELETE" control="UP" meta="UP" shift="UP" shortcut="UP" />
-                     </accelerator></MenuItem>
+                     </accelerator>
+                  </MenuItem>
                   <MenuItem fx:id="content" disable="true" mnemonicParsing="false" onAction="#contentOnAction" text="Unspecified Action">
                      <accelerator>
                         <KeyCodeCombination alt="ANY" code="T" control="UP" meta="UP" shift="UP" shortcut="UP" />
@@ -81,27 +87,33 @@
                       <MenuItem fx:id="allMenu" mnemonicParsing="false" onAction="#onAllItems" text="All">
                            <accelerator>
                               <KeyCodeCombination alt="DOWN" code="DIGIT1" control="UP" meta="UP" shift="UP" shortcut="UP" />
-                           </accelerator></MenuItem>
+                           </accelerator>
+                        </MenuItem>
                         <MenuItem fx:id="finishedMenu" mnemonicParsing="false" onAction="#finishOnAction" text="Finished">
                            <accelerator>
                               <KeyCodeCombination alt="DOWN" code="DIGIT2" control="UP" meta="UP" shift="UP" shortcut="UP" />
-                           </accelerator></MenuItem>
+                           </accelerator>
+                        </MenuItem>
                         <MenuItem fx:id="activeMenu" mnemonicParsing="false" onAction="#activeOnAction" text="Active">
                            <accelerator>
                               <KeyCodeCombination alt="DOWN" code="DIGIT3" control="UP" meta="UP" shift="UP" shortcut="UP" />
-                           </accelerator></MenuItem>
+                           </accelerator>
+                        </MenuItem>
                         <MenuItem fx:id="plannedMenu" mnemonicParsing="false" onAction="#plannedOnAction" text="Planned">
                            <accelerator>
                               <KeyCodeCombination alt="DOWN" code="DIGIT4" control="UP" meta="UP" shift="UP" shortcut="UP" />
-                           </accelerator></MenuItem>
+                           </accelerator>
+                        </MenuItem>
                         <MenuItem fx:id="suspendedMenu" mnemonicParsing="false" onAction="#suspendOnAction" text="Suspended">
                            <accelerator>
                               <KeyCodeCombination alt="DOWN" code="DIGIT5" control="UP" meta="UP" shift="UP" shortcut="UP" />
-                           </accelerator></MenuItem>
+                           </accelerator>
+                        </MenuItem>
                         <MenuItem fx:id="thrownMenu" mnemonicParsing="false" onAction="#thorwnOnAction" text="Thrown">
                            <accelerator>
                               <KeyCodeCombination alt="DOWN" code="DIGIT6" control="UP" meta="UP" shift="UP" shortcut="UP" />
-                           </accelerator></MenuItem>
+                           </accelerator>
+                        </MenuItem>
                         <MenuItem fx:id="otherMenu" mnemonicParsing="false" onAction="#otherOnAction" text="Other">
                            <accelerator>
                               <KeyCodeCombination alt="DOWN" code="DIGIT7" control="UP" meta="UP" shift="UP" shortcut="UP" />
@@ -125,11 +137,13 @@
                   <MenuItem fx:id="a4" disable="true" mnemonicParsing="false" onAction="#statOnAction" text="Statistics">
                      <accelerator>
                         <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
-                     </accelerator></MenuItem>
+                     </accelerator>
+                  </MenuItem>
               <MenuItem fx:id="aboutMenu" mnemonicParsing="false" onAction="#aboutOnAction" text="About">
                      <accelerator>
                         <KeyCodeCombination alt="DOWN" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
-                     </accelerator></MenuItem>
+                     </accelerator>
+                  </MenuItem>
             </items>
           </Menu>
         </menus>
@@ -139,7 +153,7 @@
       </MenuBar>
    </top>
    <right>
-      <BorderPane prefHeight="475.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <BorderPane prefHeight="475.0" prefWidth="128.0" BorderPane.alignment="CENTER">
          <bottom>
             <ImageView fitHeight="266.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
             	<image>
