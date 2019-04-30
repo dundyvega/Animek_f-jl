@@ -3,7 +3,7 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QTextStream>
-#include <QDebug>
+
 #include "myactions.h"
 #include <QLineEdit>
 #include <QWidgetAction>
@@ -12,6 +12,7 @@
 #include "contentdialog.h"
 #include <QFileDialog>
 #include "aboutdialog.h"
+
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -149,7 +150,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     try {
-        qDebug() << "gombnyomás";
+        //qDebug() << "gombnyomás";
         //HummelObject* obj = ui->listView->model()->a
         // HummelObject* item = model->getElement(index.row());
 
@@ -164,15 +165,18 @@ void MainWindow::on_pushButton_clicked()
         obj->setComment1(ui->lineComment1->text());
         obj->setComment2(ui->lineComment2->text());
         obj->setCondition(ui->comboBox->currentIndex());
-        qDebug() << ui->lineComment1->text() << "txt - átadva";
+        //qDebug() << ui->lineComment1->text() << "txt - átadva";
         operatorF->modositAnimeXML(obj->getId(), obj->getName(), obj->getComment2(), ui->lineComment1->text(), obj->getCondition());
+        QMessageBox::information(0, "Módosítva", "A módosításokat elmentettem");
 
     } catch (...) {}
 }
 
 void MainWindow::menuAction(int b)
 {
-    qDebug() << "Hello" << b;
+    //qDebug() << "Hello" << b;
+
+    try {
     QList<HummelObject*> obj = operatorF->animekXML(b);
 
     try {
@@ -181,13 +185,17 @@ void MainWindow::menuAction(int b)
         throw "üres";
     }
 
+
     this->model->clear();
      createModel();
+
+
 
     for (int i = 0; i < obj.length(); ++i)
     {
         this->model->addElement(obj.at(i));
     }
+
 
 
     ui->listView->setModel(model);
@@ -197,6 +205,7 @@ void MainWindow::menuAction(int b)
     ui->listView->selectionModel()->select( ui->listView->model()->index(0, 0), QItemSelectionModel::Select);
     on_listView_clicked(ui->listView->model()->index(0, 0));
     } catch (...) {}
+    } catch (QString b) {}
 
 
 }
@@ -204,7 +213,7 @@ void MainWindow::menuAction(int b)
 void MainWindow:: nameChanged()
 {
     try {
-        qDebug() << this->addEdit->text();
+        //qDebug() << this->addEdit->text();
         if (this->addEdit->text() == "")
         {
             throw "tévedés";
@@ -248,7 +257,7 @@ void MainWindow:: getByName()
 void MainWindow:: getByContent()
 {
     try {
-        qDebug() << this->contentEdit->text();
+       // qDebug() << this->contentEdit->text();
          QList<HummelObject*> obj = operatorF->keresAnimekTartalomXML(this->contentEdit->text());
          if (!obj.isEmpty()) {
             this->model->clear();
@@ -366,7 +375,7 @@ void MainWindow::on_actionOpen_triggered()
                     this->model->addElement(obj.at(i));
                 }
 
-                qDebug() << fileName;
+               // qDebug() << fileName;
 
                 ui->listView->setModel(model);
 
@@ -387,7 +396,7 @@ void MainWindow::on_actionOpen_triggered()
 
         } else
         {
-            qDebug() << "nem volt kiválasztva semmi";
+          //  qDebug() << "nem volt kiválasztva semmi";
         }
     } catch (...) {}
 
@@ -396,6 +405,11 @@ void MainWindow::on_actionOpen_triggered()
 void MainWindow::on_actionDelete_triggered()
 {
     // ui->listView->currentIndex() -t kell törölni
+    QMessageBox::StandardButton reply;
+    reply = QMessageBox::question(this, "Törlés", "Biztosan törli?");
+    if (reply == QMessageBox::Yes) {
+        //qDebug() << "yes";
+
 
     try {
 
@@ -416,7 +430,7 @@ void MainWindow::on_actionDelete_triggered()
     } catch (...) {}
 
 
-
+}
 
 }
 
@@ -436,7 +450,7 @@ void MainWindow::on_actionNew_triggered()
     if (fileName != "") {
         operatorF->newFile(fileName);
 
-        qDebug() << fileName;
+
     }
 }
 

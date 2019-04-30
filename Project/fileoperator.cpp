@@ -107,7 +107,7 @@ void FileOperator::newFile(QString filek)
 
     staff.appendChild(tartalom);
 
-    qDebug() << dom.elementsByTagName("animeID").at(0).toElement().text() << "szöveg";
+    //qDebug() << dom.elementsByTagName("animeID").at(0).toElement().text() << "szöveg";
 
     //QTextStream stream (file);
     //stream << dom.toString();
@@ -118,7 +118,7 @@ void FileOperator::newFile(QString filek)
 
     if (!file->open(QIODevice::WriteOnly | QIODevice::Text))
     {
-        qDebug("Failed to open");
+       // qDebug("Failed to open");
         return;
     }
 
@@ -137,14 +137,19 @@ QList<HummelObject*> FileOperator::animekXML(int allapot)
     QDomDocument dom;
     QString error;
     int line, column;
-    qDebug() << "itt még jó ";
+    //qDebug() << "itt még jó ";
 
     if (!dom.setContent(file, &error, &line, &column))
     {
-        qDebug() << "Error";
-        exit(0);
+     //   qDebug() << "Error";
+        QString string = "config not not found";
+        throw string;
+        QList<HummelObject*> animek;
+  //       qDebug() << "Error1";
+        return animek;
+   //      qDebug() << "Error2";
 
-    }
+    } else {
 
 
 
@@ -152,7 +157,7 @@ QList<HummelObject*> FileOperator::animekXML(int allapot)
     QDomNodeList nodes = dom.elementsByTagName("nezem");
 
     if (allapot != 100) {
-        qDebug() << "itt is jó";
+        //qDebug() << "itt is jó";
         for (int i = 0; i < nodes.count(); ++i)
         {
 
@@ -193,7 +198,7 @@ QList<HummelObject*> FileOperator::animekXML(int allapot)
                 allapot = parent.toElement().elementsByTagName("nezem").at(0).toElement().text().toInt();
                 HummelObject *anime = new HummelObject(animeId, animeReszek, allapot, animeNev, megjegyzes, tartalom);
                 animek.append(anime);
-                qDebug() << i << " " << animeNev;
+          //      qDebug() << i << " " << animeNev;
 
         }
 
@@ -207,7 +212,7 @@ QList<HummelObject*> FileOperator::animekXML(int allapot)
 
 
     return animek;
-
+}
 }
 
 bool FileOperator::kisebb (HummelObject *v1,  HummelObject *v2)
@@ -221,11 +226,11 @@ QList<HummelObject*> FileOperator::keresAnimekXML(QString karakterlanc)
     QDomDocument dom;
     QString error;
     int line, column;
-    qDebug() << "itt még jó ";
+   // qDebug() << "itt még jó ";
 
     if (!dom.setContent(file, &error, &line, &column))
     {
-        qDebug() << "Error";
+    //    qDebug() << "Error";
         exit(0);
 
     }
@@ -253,7 +258,7 @@ QList<HummelObject*> FileOperator::keresAnimekXML(QString karakterlanc)
              int allapot = parent.toElement().elementsByTagName("nezem").at(0).toElement().text().toInt();
              HummelObject *anime = new HummelObject(animeId, animeReszek, allapot, animeNev, megjegyzes, tartalom);
              animek.append(anime);
-             qDebug() << i << " " << animeNev;
+          //   qDebug() << i << " " << animeNev;
 
          }
 
@@ -279,11 +284,11 @@ void FileOperator::modositAnimeXML(int index, QString nev, QString megjegyzes, Q
     QDomDocument dom;
     QString error;
     int line, column;
-    qDebug() << "itt még jó ";
+  //  qDebug() << "itt még jó ";
 
     if (!dom.setContent(file, &error, &line, &column))
     {
-        qDebug() << "Error";
+   //     qDebug() << "Error";
         exit(0);
 
     }
@@ -301,7 +306,7 @@ void FileOperator::modositAnimeXML(int index, QString nev, QString megjegyzes, Q
 
         if (idS.toInt() == index)
         {
-            qDebug() << index;
+       //     qDebug() << index;
             QDomElement parent = id.parentNode().toElement();
 
             parent.elementsByTagName("animeNev").at(0).firstChild().setNodeValue(nev);
@@ -318,7 +323,7 @@ void FileOperator::modositAnimeXML(int index, QString nev, QString megjegyzes, Q
     file->close();
     if (!file->open(QIODevice::WriteOnly | QIODevice::Text))
     {
-        qDebug("Failed to open");
+     //   qDebug("Failed to open");
         return;
     }
 
@@ -348,11 +353,11 @@ void FileOperator::ujAnimeXML(int reszek, int allapot, QString animeNevS, QStrin
     QDomDocument dom;
     QString error;
     int line, column;
-    qDebug() << "itt még jó ";
+   // qDebug() << "itt még jó ";
 
     if (!dom.setContent(file, &error, &line, &column))
     {
-        qDebug() << "Error";
+   //     qDebug() << "Error";
         exit(0);
 
     }
@@ -419,7 +424,7 @@ void FileOperator::ujAnimeXML(int reszek, int allapot, QString animeNevS, QStrin
 
     if (!file->open(QIODevice::WriteOnly | QIODevice::Text))
     {
-        qDebug("Failed to open");
+   //     qDebug("Failed to open");
         return;
     }
 
@@ -446,11 +451,11 @@ void FileOperator::torolAnimeXML(int animeID)
    QDomDocument dom;
    QString error;
    int line, column;
-   qDebug() << "itt még jó ";
+//   qDebug() << "itt még jó ";
 
    if (!dom.setContent(file, &error, &line, &column))
    {
-       qDebug() << "Error";
+  //     qDebug() << "Error";
        exit(0);
 
    }
@@ -480,7 +485,7 @@ void FileOperator::torolAnimeXML(int animeID)
    file->close();
    if (!file->open(QIODevice::WriteOnly | QIODevice::Text))
    {
-       qDebug("Failed to open");
+ //      qDebug("Failed to open");
        return;
    }
 
@@ -506,7 +511,7 @@ bool FileOperator::configureCreated()
         this->setFileName(line);
         myFile.close();
 
-        qDebug() << line << "ez lesz";
+  //      qDebug() << line << "ez lesz";
 
     }
 
@@ -527,11 +532,11 @@ void FileOperator::setTartalom(int index, QString text)
    QDomDocument dom;
    QString error;
    int line, column;
-   qDebug() << "itt még jó ";
+//   qDebug() << "itt még jó ";
 
    if (!dom.setContent(file, &error, &line, &column))
    {
-       qDebug() << "Error";
+  //     qDebug() << "Error";
        exit(0);
 
    }
@@ -549,7 +554,7 @@ void FileOperator::setTartalom(int index, QString text)
 
        if (idS.toInt() == index)
        {
-           qDebug() << index;
+ //          qDebug() << index;
            QDomElement parent = id.parentNode().toElement();
 
            parent.elementsByTagName("tartalom").at(0).firstChild().setNodeValue(text);
@@ -561,7 +566,7 @@ void FileOperator::setTartalom(int index, QString text)
    file->close();
    if (!file->open(QIODevice::WriteOnly | QIODevice::Text))
    {
-       qDebug("Failed to open");
+ //      qDebug("Failed to open");
        return;
    }
 
@@ -577,11 +582,11 @@ QList<HummelObject*> FileOperator::keresAnimekTartalomXML(QString karakterLanc)
     QDomDocument dom;
     QString error;
     int line, column;
-    qDebug() << "itt még jó ";
+//    qDebug() << "itt még jó ";
 
     if (!dom.setContent(file, &error, &line, &column))
     {
-        qDebug() << "Error";
+ //       qDebug() << "Error";
         exit(0);
 
     }
@@ -609,7 +614,7 @@ QList<HummelObject*> FileOperator::keresAnimekTartalomXML(QString karakterLanc)
              int allapot = parent.toElement().elementsByTagName("nezem").at(0).toElement().text().toInt();
              HummelObject *anime = new HummelObject(animeId, animeReszek, allapot, animeNev, megjegyzes, tartalom);
              animek.append(anime);
-             qDebug() << i << " " << animeNev;
+       //      qDebug() << i << " " << animeNev;
 
          }
 

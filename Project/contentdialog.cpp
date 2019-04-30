@@ -1,6 +1,5 @@
 #include "contentdialog.h"
 #include "ui_contentdialog.h"
-#include <QDebug>
 #include "dialogtextedit.h"
 #include <QMenu>
 #include <QLabel>
@@ -120,10 +119,9 @@ void ContentDialog::addAnimation(const QUrl &url, const QString filename)
         movie->setFileName(filename);
         movie->setCacheMode(QMovie::CacheAll);
         urls.insert(movie, url);
-        qDebug() << "egy";
         connect (movie, SIGNAL(frameChanged(int)), this, SLOT(animate()));
         movie->start();
-        qDebug() << "kettő";
+
     }
 }
 
@@ -133,7 +131,7 @@ void ContentDialog::adAll(QString datFile)
     QFile file(datFile);
 
     if(!file.open(QIODevice::ReadOnly)) {
-        qDebug()<<"filenot opened"<<endl;
+       // qDebug()<<"filenot opened"<<endl;
         //QMessageBox::information(0,"error",file.errorString());
     }
     else

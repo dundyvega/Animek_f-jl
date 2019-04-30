@@ -132,12 +132,12 @@ void DialogTextEdit::createHashMap(QHash<QString, DoubleString> & hashMap)
     QFile file(fileName);
 
     if(!file.open(QIODevice::ReadOnly)) {
-        qDebug()<<"filenot opened"<<endl;
+    //    qDebug()<<"filenot opened"<<endl;
         QMessageBox::information(0,"error",file.errorString());
     }
     else
     {
-        qDebug()<<"file opened"<<endl;
+   //     qDebug()<<"file opened"<<endl;
 
         QString line = file.readLine();
 
@@ -156,7 +156,7 @@ void DialogTextEdit::createHashMap(QHash<QString, DoubleString> & hashMap)
 
     file.close();
 
-    qDebug() << data;
+   // qDebug() << data;
 }
 
 
@@ -318,7 +318,7 @@ void DialogTextEdit::on_pushButton_4_clicked()
     QColor cl = QColorDialog::getColor(Qt::black, this);
 
     if (cl.isValid()) {
-        qDebug() << cl.red() << " " << cl.blue() << " " << cl.green();
+  //      qDebug() << cl.red() << " " << cl.blue() << " " << cl.green();
 
 
         QTextCursor curs(ui->plainTextEdit->textCursor());
@@ -364,7 +364,7 @@ void DialogTextEdit::on_pushButton_7_clicked()
     QColor cl = QColorDialog::getColor(Qt::black, this);
 
     if (cl.isValid()) {
-        qDebug() << cl.red() << " " << cl.blue() << " " << cl.green();
+     //   qDebug() << cl.red() << " " << cl.blue() << " " << cl.green();
 
         QTextCursor curs(ui->plainTextEdit->textCursor());
         int pos = curs.position();

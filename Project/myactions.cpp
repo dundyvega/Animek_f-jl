@@ -20,7 +20,7 @@ MyActions::MyActions(QObject *parent) : QAction(parent)
  }
 
  void MyActions::clicked(bool checked = false) {
-     qDebug() << num;
+    // qDebug() << num;
      emit(menuChanged(num));
  }
 
