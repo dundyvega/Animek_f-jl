@@ -2,6 +2,8 @@
 #include "ui_dialogtextedit.h"
 #include <QDebug>
 #include <QMessageBox>
+#include <QColorDialog>
+#include <QDateTime>
 
 
 DialogTextEdit::DialogTextEdit(QString htmlString, QWidget *parent) :
@@ -171,7 +173,7 @@ QString DialogTextEdit::emotionText(QString text)
             if (text.contains(hashMap.value(o).getWriter()))
             {
                 is = true;
-                text = text.replace(hashMap.value(o).getWriter(), "<img src=\"" + o + "\">");
+                text = text.replace(hashMap.value(o).getWriter(), "<img src=\"" + o + "\"width=\"30\" height=\"30\">");
                 //<img src="../smiles/cry.gif">
 
 
@@ -213,7 +215,7 @@ QString DialogTextEdit::getText()
 void DialogTextEdit::on_pushButton_clicked()
 {
 
- /*   QTextCursor curs(ui->plainTextEdit->textCursor());
+    QTextCursor curs(ui->plainTextEdit->textCursor());
     int pos = curs.position();
     ui->plainTextEdit->setTextCursor(curs);
 
@@ -223,14 +225,229 @@ void DialogTextEdit::on_pushButton_clicked()
         QString text1 = text.mid(0, pos - 1);
         QString text2 = text.mid(pos, text.length());
 
-        text = text1 + "[b][/b]" + text2;
+        if (text1 != text2) {
+
+            text = text1 + "[b][/b]" + text2;
+            pos += 2;
+
+
+
+        } else {
+            text = "[b][/b]" + text;
+            pos += 3;
+        }
 
         ui->plainTextEdit->setPlainText(text);
         ui->plainTextEdit->setFocus();
+        curs.setPosition(pos);
+         ui->plainTextEdit->setTextCursor(curs);
 
-    }*/
+    }
 
 
+
+
+}
+
+void DialogTextEdit::on_pushButton_2_clicked()
+{
+    QTextCursor curs(ui->plainTextEdit->textCursor());
+    int pos = curs.position();
+    ui->plainTextEdit->setTextCursor(curs);
+
+    QString text = ui->plainTextEdit->toPlainText();
+    if (text.length() > 0) {
+
+        QString text1 = text.mid(0, pos - 1);
+        QString text2 = text.mid(pos, text.length());
+
+        if (text1 != text2) {
+
+            text = text1 + "[i][/i]" + text2;
+            pos += 2;
+
+
+
+        } else {
+            text = "[i][/i]" + text;
+            pos += 3;
+        }
+
+        ui->plainTextEdit->setPlainText(text);
+        ui->plainTextEdit->setFocus();
+        curs.setPosition(pos);
+         ui->plainTextEdit->setTextCursor(curs);
+
+    }
+
+}
+
+void DialogTextEdit::on_pushButton_3_clicked()
+{
+    QTextCursor curs(ui->plainTextEdit->textCursor());
+    int pos = curs.position();
+    ui->plainTextEdit->setTextCursor(curs);
+
+    QString text = ui->plainTextEdit->toPlainText();
+    if (text.length() > 0) {
+
+        QString text1 = text.mid(0, pos - 1);
+        QString text2 = text.mid(pos, text.length());
+
+        if (text1 != text2) {
+
+            text = text1 + "[h=???][/h]" + text2;
+            pos += 6;
+
+
+
+        } else {
+            text = "[h=???][/h]" + text;
+            pos += 7;
+        }
+
+        ui->plainTextEdit->setPlainText(text);
+        ui->plainTextEdit->setFocus();
+        curs.setPosition(pos);
+         ui->plainTextEdit->setTextCursor(curs);
+    }
+}
+
+void DialogTextEdit::on_pushButton_4_clicked()
+{
+    QColor cl = QColorDialog::getColor(Qt::black, this);
+
+    if (cl.isValid()) {
+        qDebug() << cl.red() << " " << cl.blue() << " " << cl.green();
+
+
+        QTextCursor curs(ui->plainTextEdit->textCursor());
+        int pos = curs.position();
+        ui->plainTextEdit->setTextCursor(curs);
+
+        QString text = ui->plainTextEdit->toPlainText();
+        if (text.length() > 0) {
+
+            QString text1 = text.mid(0, pos - 1);
+            QString text2 = text.mid(pos, text.length());
+
+            QString colorText = "";
+
+            if (text1 != text2) {
+
+                colorText = "[c=rgb(" + QString::number(cl.red())+ "," +  QString::number(cl.green()) + "," +  QString::number(cl.blue()) + ")][/c]";
+                 text = text1 + colorText + text2;
+                pos = text1.length() + colorText.length() - 4;
+
+
+
+            } else {
+
+                 colorText = "[c=rgb(" + QString::number(cl.red())+ "," +  QString::number(cl.green()) + "," +  QString::number(cl.blue()) + ")][/c]";
+                 text = colorText+ text2;
+                pos = colorText.length() - 4;
+            }
+
+            ui->plainTextEdit->setPlainText(text);
+            ui->plainTextEdit->setFocus();
+            curs.setPosition(pos);
+             ui->plainTextEdit->setTextCursor(curs);
+        }
+
+
+    }
+
+}
+
+void DialogTextEdit::on_pushButton_7_clicked()
+{
+    QColor cl = QColorDialog::getColor(Qt::black, this);
+
+    if (cl.isValid()) {
+        qDebug() << cl.red() << " " << cl.blue() << " " << cl.green();
+
+        QTextCursor curs(ui->plainTextEdit->textCursor());
+        int pos = curs.position();
+        ui->plainTextEdit->setTextCursor(curs);
+
+        QString text = ui->plainTextEdit->toPlainText();
+        QString colorText = "{c=rgb(" + QString::number(cl.red())+ "," +  QString::number(cl.green()) + "," +  QString::number(cl.blue()) + ")}";
+
+        text += colorText;
+
+        ui->plainTextEdit->setPlainText(text);
+        ui->plainTextEdit->setFocus();
+        curs.setPosition(pos);
+         ui->plainTextEdit->setTextCursor(curs);
+    }
+}
+
+void DialogTextEdit::on_pushButton_5_clicked()
+{
+    QTextCursor curs(ui->plainTextEdit->textCursor());
+    int pos = curs.position();
+    ui->plainTextEdit->setTextCursor(curs);
+
+    QString text = ui->plainTextEdit->toPlainText();
+    if (text.length() > 0) {
+
+        QString text1 = text.mid(0, pos - 1);
+        QString text2 = text.mid(pos, text.length());
+
+        if (text1 != text2) {
+
+            text = text1 + "{s=22}{/s}" + text2;
+            pos += 5;
+
+
+
+        } else {
+            text = "{s=22}{/s}" + text;
+            pos += 6;
+        }
+
+        ui->plainTextEdit->setPlainText(text);
+        ui->plainTextEdit->setFocus();
+        curs.setPosition(pos);
+         ui->plainTextEdit->setTextCursor(curs);
+    }
+}
+
+void DialogTextEdit::on_pushButton_6_clicked()
+{
+    QString data = QString::number(QDateTime::currentDateTime().date().year()) + "." +
+            QString::number(QDateTime::currentDateTime().date().month()) + "." +
+            QString::number(QDateTime::currentDateTime().date().day());
+
+
+
+    QTextCursor curs(ui->plainTextEdit->textCursor());
+    int pos = curs.position();
+    ui->plainTextEdit->setTextCursor(curs);
+
+    QString text = ui->plainTextEdit->toPlainText();
+    if (text.length() > 0) {
+
+        QString text1 = text.mid(0, pos - 1);
+        QString text2 = text.mid(pos, text.length());
+
+        if (text1 != text2) {
+
+            text = text1 + data + text2;
+            pos += text1.length() + data.length();
+
+
+
+        } else {
+            text = data + text;
+            pos = data.length();
+        }
+
+        ui->plainTextEdit->setPlainText(text);
+        ui->plainTextEdit->setFocus();
+        curs.setPosition(pos);
+         ui->plainTextEdit->setTextCursor(curs);
+    }
 
 
 }

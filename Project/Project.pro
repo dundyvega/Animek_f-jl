@@ -38,7 +38,9 @@ SOURCES += \
     doublestring.cpp \
     fileoperator.cpp \
     oneanime.cpp \
-    aboutdialog.cpp
+    aboutdialog.cpp \
+    animatedtextbrowser.cpp \
+    textbrowseranimated2.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -51,7 +53,9 @@ HEADERS += \
     doublestring.h \
     fileoperator.h \
     oneanime.h \
-    aboutdialog.h
+    aboutdialog.h \
+    animatedtextbrowser.h \
+    textbrowseranimated2.h
 
 FORMS += \
         mainwindow.ui \
