@@ -430,10 +430,10 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
+    <widget class="QTextBrowser" name="textBrowser"/>
+   </item>
+   <item>
     <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QTextBrowser" name="textBrowser"/>
-     </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
