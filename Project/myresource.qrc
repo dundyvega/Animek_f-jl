@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>Kinga_Eti.png</file>
+        <file>sm.qrc</file>
+        <file>datfiles.qrc</file>
+    </qresource>
+</RCC>

@@ -445,6 +445,8 @@ public class MyControllerClass implements Initializable {
         
        // Scene scene = new Scene(root, 800, 800);
     	area.getDialogPane().setContent(root);
+    	//Scene scene = new Scene(root, 120, 100);
+    	//area.setWidth(800); area.setHeight(800);
     	 Optional<ButtonType> result = area.showAndWait();
     	 if (result.get() == ButtonType.OK){
     		 String tartalm = control.getText();

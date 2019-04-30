@@ -19,8 +19,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyControllerClass">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyControllerClass">
    <top>
       <MenuBar layoutX="4.0" layoutY="3.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
         <menus>
@@ -164,10 +163,10 @@
       </BorderPane>
    </right>
    <left>
-      <ListView fx:id="listView" disable="true" onKeyPressed="#onKeyPressedList" onKeyReleased="#onKeyReleasedList" onMouseClicked="#onClickedList" prefHeight="475.0" prefWidth="295.0" visible="false" BorderPane.alignment="CENTER" />
+      <ListView fx:id="listView" disable="true" onKeyPressed="#onKeyPressedList" onKeyReleased="#onKeyReleasedList" onMouseClicked="#onClickedList" prefHeight="671.0" prefWidth="360.0" visible="false" BorderPane.alignment="CENTER" />
    </left>
    <center>
-      <GridPane BorderPane.alignment="CENTER">
+      <GridPane prefHeight="711.0" prefWidth="445.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="152.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.0" minWidth="10.0" prefWidth="280.0" />

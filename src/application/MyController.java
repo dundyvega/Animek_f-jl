@@ -55,10 +55,12 @@ import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
@@ -608,8 +610,65 @@ public class MyController implements Initializable {
 	    	        	scrollPane.setContent(vb);
 	    	        	
 	    	        	String text = textArea.getText();
+	    	        	//{c=rgb(255, 200, 200)}
+	    	        	
+	    	        	String subString = "";
+	    	        	 int index1 = 0; boolean talalt1 = false;
+	    	        	 int index2 = 0; boolean talalt2 = false;
+	    	        	for (int i = 0; i < text.length() && !talalt2; ++i) {
+	    	        		if (text.charAt(i) == '{' && i < text.length() - 1) {
+	    	        			if (text.charAt(i+1) == 'c') {
+	    	        				index1 = i;
+	    	        				talalt1 = true;
+	    	        			}
+	    	        			
+	    	        		}
+	    	        		
+	    	        		if (text.charAt(i) == ')' && i < text.length() - 1) {
+	    	        			if (text.charAt(i+1) == '}') {
+	    	        				index2 = i + 1;
+	    	        				talalt2 = true;;
+	    	        			}
+	    	        		}
+	    	        	}
+	    	        	
+	    	        	subString = text.substring(index1, index2);
+	    	        	if (!subString.equals("") && talalt1 && talalt2) {
+	    	        		text = text.replace(subString, "");
+	    	        		subString = subString.replace("{c=rgb(", "");
+	    	        		subString = subString.replace(")}", "");
+	    	        		subString = subString.replace(")", "");
+	    	        		
+	    	        		Background bc;
+	    	        		BackgroundFill bcf;
+	    	        		Color cl;
+	    	        		
+	    	        		subString = subString.replace(" ", "");
+	    	        		
+	    	        		
+	    	        		String[] splitter = subString.split(",");
+	    	        		int red = Integer.parseInt(splitter[0]);
+	    	        		int green = Integer.parseInt(splitter[1]);
+	    	        		int blue = Integer.parseInt(splitter[2]);
+	    	        		
+	    	        		//System.out.println("red: " + red + " blue: " + blue + " green: " + green);
+	    	        		
+	    	        		cl = Color.rgb(red, green, blue);
+	    	        		bcf = new BackgroundFill(cl, CornerRadii.EMPTY, Insets.EMPTY);
+	    	        		bc = new Background(bcf);
+	    	        		textFlow.setBackground(bc);
+	    	        		
+	    	        		//pane.setBackground(new Background(new BackgroundFill(Color.rgb(40, 40, 40), CornerRadii.EMPTY, Insets.EMPTY)));
+	    	        		
+	    	        	}
+	    	        	
+	    	        	text = text.replace("{s=", "[s=");
+	    	        	text = text.replace("{/s}", "[/s]");
+	    	        	text = text.replace("}", "]");
+	    	        	
 	    	        	
 	    	        	text = emotionText(text);
+	    	        	
 	    	        	
 	    	        	ArrayList<TextNode> nodes =  getModifydTexts(text, family, toRgbString(Color.BLACK), width);
 	    	        	
