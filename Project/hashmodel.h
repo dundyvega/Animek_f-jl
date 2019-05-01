@@ -58,6 +58,8 @@ public:
        if (!items.isEmpty()) {
 
         items.removeOne(item);
+        delete item;
+        item = nullptr;
 
        }
    }

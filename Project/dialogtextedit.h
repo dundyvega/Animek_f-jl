@@ -15,14 +15,14 @@ class DialogTextEdit : public QDialog
     Q_OBJECT
 
 public:
-    explicit DialogTextEdit(QString htmlString, QWidget *parent = 0);
+    explicit DialogTextEdit(QString htmlString, QHash<QString, DoubleString> *smiles, QWidget *parent = 0);
     ~DialogTextEdit();
-    QString fromReadableText(QString s);
+    QString fromReadableText(QString s, QHash<QString, DoubleString> *sm);
     QString getText();
 
 
     void createHashMap(QHash<QString, DoubleString> & hashMap);
-    QString emotionText(QString text);
+    QString emotionText(QString text, QHash<QString, DoubleString> *sm);
 signals:
     void textEditing(QString s);
 
@@ -46,6 +46,7 @@ private slots:
 
 private:
     Ui::DialogTextEdit *ui;
+    QHash<QString, DoubleString> *smiles;
 
 };
 

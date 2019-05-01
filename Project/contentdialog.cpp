@@ -4,15 +4,18 @@
 #include <QMenu>
 #include <QLabel>
 #include <QMovie>
+#include <QDebug>
 
-ContentDialog::ContentDialog(HummelObject *humel, FileOperator *operatorF, QWidget *parent) :
+
+ContentDialog::ContentDialog(HummelObject *humel, FileOperator *operatorF, QHash<QString, DoubleString> *smiles, QHash<QMovie*, QUrl> *urls, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ContentDialog)
 {
     mn = parent;
     ui->setupUi(this);
 
-    this->humel = humel;
+    this->humel = new HummelObject(humel->getId(), humel->getComment1(), humel->getCondition(), humel->getName(), humel->getComment2(), humel->getContent(), this);
+    this->humel1 = humel;
     this->operatorF = operatorF;
     text = this->humel->getContent();
 
@@ -22,10 +25,15 @@ ContentDialog::ContentDialog(HummelObject *humel, FileOperator *operatorF, QWidg
 
     ui->textBrowser->setOpenExternalLinks(true);
 
-    ui->textBrowser->setText(editing->fromReadableText(text));
+    this->smiles = smiles;
+    this->urls = urls;
+
+    ui->textBrowser->setText(editing->fromReadableText(text, smiles));
     ui->textBrowser->setVisible(true);
 
-    this->adAll("smiles.dat");
+
+
+    this->adAll();
 
 
 /*    animatedBrowser = new TextBrowserAnimated2(this);
@@ -57,15 +65,13 @@ ContentDialog::ContentDialog(HummelObject *humel, FileOperator *operatorF, QWidg
 
 ContentDialog::~ContentDialog()
 {
-    editing->close();
+    //editing->close();
 
-    QList<QMovie*>listMovies = urls.keys();
-    for (QMovie *o : listMovies) {
 
-        delete o;
-    }
 
-    urls.clear();
+//    urls.clear();
+    delete humel;
+
 }
 
 void ContentDialog::on_buttonBox_accepted()
@@ -78,7 +84,16 @@ void ContentDialog::on_buttonBox_accepted()
         }
 
         humel->setContent(text);
+
         operatorF->setTartalom(humel->getId(), humel->getContent());
+
+
+        humel1->setContent(text);
+
+
+        emit(contentSaved(true));
+
+
     } catch (...) {}
 }
 
@@ -87,7 +102,7 @@ void ContentDialog::on_checkBox_clicked(bool checked)
     if (checked)
     {
 
-        editing = new DialogTextEdit(getHTMLFromContentDialog(), mn);
+        editing = new DialogTextEdit(getHTMLFromContentDialog(), smiles, mn);
         //editing->setWindowFlag(Qt::Dialog);
         editing->move(ui->checkBox->x() + 100, ui->textBrowser->y() + 20);
         editing->show();
@@ -110,68 +125,45 @@ QString ContentDialog::getHTMLFromContentDialog()
 
 }
 
-void ContentDialog::addAnimation(const QUrl &url, const QString filename)
-{
-    QList<QUrl> listUrls = urls.values();
 
-    if (!listUrls.contains(url)) {
-        QMovie *movie = new QMovie(this);
-        movie->setFileName(filename);
-        movie->setCacheMode(QMovie::CacheAll);
-        urls.insert(movie, url);
+
+void ContentDialog::adAll()
+{ //ezt még lehet, hogy átírom úgy, hogy csak azokat a smile-kat animálja, amelyek szerepelnek a szövegben
+
+    QList<QMovie*> listUrls = urls->keys();
+
+    for (QMovie* movie: listUrls) {
+
+
+
         connect (movie, SIGNAL(frameChanged(int)), this, SLOT(animate()));
-        movie->start();
-
-    }
-}
-
-void ContentDialog::adAll(QString datFile)
-{
-    QString data;
-    QFile file(datFile);
-
-    if(!file.open(QIODevice::ReadOnly)) {
-       // qDebug()<<"filenot opened"<<endl;
-        //QMessageBox::information(0,"error",file.errorString());
-    }
-    else
-    {
-        //qDebug()<<"file opened"<<endl;
-
-        QString line = file.readLine();
-
-        while (!file.atEnd())
-        {
-            QStringList fields = line.split("#");
-            DoubleString obj(fields.at(1), fields.at(2));
-            addAnimation("smiles/" + fields.at(0), "smiles/" + fields.at(0));
-            //qDebug() << fields.at(1);
-            line = file.readLine();
-
-        }
+        //movie->start();
 
 
     }
 
-    file.close();
 
 
 }
 
 void ContentDialog::on_ContentDialog_finished(int result)
 {
+
+     emit(contentSaved(true));
     if (editing != NULL) {
         editing->close();
+
+
     }
     //this->close();
 }
 
 void ContentDialog::animate()
 {
-    //qDebug() << "harom";
+    //qDebug() << humel->getName();
     if (QMovie* movie = qobject_cast<QMovie*>(sender())) {
 
-        ui->textBrowser->document()->addResource(QTextDocument::ImageResource, urls.value(movie), movie->currentPixmap());
+        ui->textBrowser->document()->addResource(QTextDocument::ImageResource, urls->value(movie), movie->currentPixmap());
 
         ui->textBrowser->setLineWrapColumnOrWidth(ui->textBrowser->lineWrapColumnOrWidth());
     }

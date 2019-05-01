@@ -41,6 +41,11 @@ public:
      bool isEmpty() {
          return file == NULL;
      }
+
+
+     QString getFileName() {
+         return file->fileName();
+     }
 };
 
 #endif // FILEOPERATOR_H

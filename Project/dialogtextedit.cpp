@@ -6,11 +6,13 @@
 #include <QDateTime>
 
 
-DialogTextEdit::DialogTextEdit(QString htmlString, QWidget *parent) :
+DialogTextEdit::DialogTextEdit(QString htmlString, QHash<QString, DoubleString> *smiles, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DialogTextEdit)
 {
     ui->setupUi(this);
+
+    this->smiles = smiles;
 
    ui->plainTextEdit->setPlainText(htmlString);
    setWindowFlags(Qt::Dialog | Qt::FramelessWindowHint | Qt::WindowTitleHint);
@@ -33,10 +35,10 @@ void DialogTextEdit::on_plainTextEdit_textChanged()
 {
 
    // ui->label->setText(fromReadableText(ui->plainTextEdit->toPlainText()));
-    emit(textEditing(fromReadableText(ui->plainTextEdit->toPlainText())));
+    emit(textEditing(fromReadableText(ui->plainTextEdit->toPlainText(), smiles)));
 }
 
-QString DialogTextEdit::fromReadableText(QString s)
+QString DialogTextEdit::fromReadableText(QString s, QHash<QString, DoubleString> *sm)
 {
 
     QString htmlTest = "";
@@ -58,7 +60,7 @@ QString DialogTextEdit::fromReadableText(QString s)
 
     htmlTest = s;
     //cserék:
-    htmlTest = this->emotionText(htmlTest);
+    htmlTest = this->emotionText(htmlTest, sm);
     htmlTest.replace('\n', "<br>");
     htmlTest.replace("[b]", "<b>");
     htmlTest.replace("[/b]", "</b>");
@@ -127,7 +129,7 @@ QString DialogTextEdit::fromReadableText(QString s)
 
 void DialogTextEdit::createHashMap(QHash<QString, DoubleString> & hashMap)
 {
-    QString data;
+ /*   QString data;
     QString fileName = "smiles.dat";
     QFile file(fileName);
 
@@ -157,23 +159,24 @@ void DialogTextEdit::createHashMap(QHash<QString, DoubleString> & hashMap)
     file.close();
 
    // qDebug() << data;
+   */
 }
 
 
-QString DialogTextEdit::emotionText(QString text)
+QString DialogTextEdit::emotionText(QString text, QHash<QString, DoubleString> *sm)
 {
 
-    QHash<QString, DoubleString> hashMap;
-    createHashMap(hashMap);
+   // QHash<QString, DoubleString> hashMap;
+   // createHashMap(hashMap);
     bool is = false;
     if (text != "" && text != NULL)
     {
-        for (QString o: hashMap.keys())
+        for (QString o: sm->keys())
         {
-            if (text.contains(hashMap.value(o).getWriter()))
+            if (text.contains(sm->value(o).getWriter()))
             {
                 is = true;
-                text = text.replace(hashMap.value(o).getWriter(), "<img src=\"" + o + "\"width=\"30\" height=\"30\">");
+                text = text.replace(sm->value(o).getWriter(), "<img src=\"" + o + "\"width=\"30\" height=\"30\">");
                 //<img src="../smiles/cry.gif">
 
 

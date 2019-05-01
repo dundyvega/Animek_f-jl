@@ -15,6 +15,7 @@
 
 
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -131,6 +132,8 @@ MainWindow::MainWindow(QWidget *parent) :
         menuAction(1);
     }
 
+    createHashMap();
+
 
    this->setWindowIcon(QIcon("favicon.ico"));
 
@@ -144,6 +147,15 @@ MainWindow::~MainWindow()
     delete about;
     delete operatorF;
     delete ui;
+
+    QList<QMovie*>listMovies = urls->keys();
+    for (QMovie *o : listMovies) {
+
+        delete o;
+    }
+
+    delete urls;
+    delete smiles;
 
 }
 
@@ -310,9 +322,19 @@ void MainWindow::on_listView_doubleClicked(const QModelIndex &index)
 {
    //qDebug() << "kaszt";
 
+    delete dialog;
 
-     dialog = new ContentDialog(model->getElement(index.row()), operatorF, this);
+     dialog = new ContentDialog(model->getElement(index.row()), operatorF, smiles, urls, this);
      dialog->show();
+
+
+     /*mindent off-ol*/
+
+     allEnabled(false);
+
+     connect(dialog, SIGNAL(contentSaved(bool)), this, SLOT(allEnabled(bool)));
+
+
 
 
 
@@ -321,6 +343,17 @@ void MainWindow::on_listView_doubleClicked(const QModelIndex &index)
 
 }
 
+
+bool MainWindow::allEnabled(bool activate) {
+    ui->menuBar->setEnabled(activate);
+    ui->listView->setEnabled(activate);
+    ui->lineName->setEnabled(activate);
+    ui->lineComment1->setEnabled(activate);
+    ui->lineComment2->setEnabled(activate);
+    ui->comboBox->setEnabled(activate);
+    ui->pushButton->setEnabled(activate);
+
+}
 
 
 
@@ -473,4 +506,51 @@ void MainWindow::on_actionSave_2_triggered()
 void MainWindow::on_actionContent_triggered()
 {
     this->on_listView_doubleClicked(ui->listView->currentIndex());
+}
+
+
+
+
+
+void MainWindow::createHashMap()
+{
+    QString data;
+    QString fileName = "smiles.dat";
+    QFile file(fileName);
+
+    urls = new QHash<QMovie*, QUrl>();
+    smiles = new QHash<QString, DoubleString>();
+
+
+    if(!file.open(QIODevice::ReadOnly)) {
+    //    qDebug()<<"filenot opened"<<endl;
+        QMessageBox::information(0,"error",file.errorString());
+    }
+    else
+    {
+
+        QString line = file.readLine();
+
+        while (!file.atEnd())
+        {
+            QStringList fields = line.split("#");
+            DoubleString obj(fields.at(1), fields.at(2));
+            smiles->insert("smiles/"+ fields.at(0), obj);
+            //qDebug() << fields.at(1);
+            line = file.readLine();
+
+            QMovie *movie = new QMovie(this);
+            movie->setFileName("smiles/" + fields.at(0));
+            movie->setCacheMode(QMovie::CacheAll);
+            urls->insert(movie, "smiles/" + fields.at(0));
+            movie->start();
+
+        }
+
+
+    }
+
+    file.close();
+
+   // qDebug() << data;
 }

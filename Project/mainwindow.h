@@ -27,6 +27,8 @@ private:
     ContentDialog *dialog = NULL;
     AboutDialog *about = NULL;
     FileOperator *operatorF = new FileOperator();
+    QHash<QMovie*, QUrl> *urls;
+    QHash<QString, DoubleString> *smiles;
 
 public:
     explicit MainWindow(QWidget *parent = 0);
@@ -34,6 +36,7 @@ public:
     void emptyModel();
     void createModel();
 
+    void createHashMap();
 protected:
     bool eventFilter(QObject *watched, QEvent *event);
 
@@ -77,6 +80,8 @@ private slots:
    void on_actionSave_2_triggered();
 
    void on_actionContent_triggered();
+
+    bool allEnabled(bool activate);
 
 private:
     Ui::MainWindow *ui;

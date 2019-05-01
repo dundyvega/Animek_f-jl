@@ -31,6 +31,8 @@ public:
 
     //HummelObject(QWidget *parent = nullptr);
     HummelObject(int ID, QString comment1, int condition, QString name, QString comment2, QString content, QWidget *parent = nullptr);
+
+
     virtual ~HummelObject();
 
 

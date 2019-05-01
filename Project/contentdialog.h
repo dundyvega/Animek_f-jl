@@ -9,6 +9,10 @@
 #include <QWidget>
 #include "animatedtextbrowser.h"
 #include "textbrowseranimated2.h"
+#include <QHash>
+#include <QMovie>
+#include "doublestring.h"
+#include <QUrl>
 
 namespace Ui {
 class ContentDialog;
@@ -23,20 +27,21 @@ private:
     QString text;
     DialogTextEdit *editing = NULL;
     HummelObject* humel;
+    HummelObject* humel1;
     FileOperator *operatorF;
     QWidget *mn;
     //TextBrowserAnimated2 *animatedBrowser;
-    QHash<QMovie*, QUrl> urls;
+    QHash<QMovie*, QUrl> *urls;
+    QHash<QString, DoubleString> *smiles;
 
 
 public:
-    explicit ContentDialog(HummelObject *humel, FileOperator *operatorF, QWidget *parent = 0);
+    explicit ContentDialog(HummelObject *humel, FileOperator *operatorF, QHash<QString, DoubleString> *smiles, QHash<QMovie*, QUrl> *urls, QWidget *parent = 0);
     ~ContentDialog();
     QString getHTMLFromContentDialog();
 
-    void addAnimation(const QUrl& url, const QString filename);
 
-    void adAll(QString datFile);
+    void adAll();
 
 
 private slots:
@@ -50,6 +55,9 @@ private slots:
 
 private:
     Ui::ContentDialog *ui;
+
+signals:
+    void contentSaved(bool activate);
 };
 
 #endif // CONTENTDIALOG_H

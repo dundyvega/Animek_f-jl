@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
 
 
     MainWindow w;
-   // w.setGeometry(0, 0, 900, 900);
-   // w.setSizeIncrement(500, 600);
+    //w.setGeometry(0, 0, 900, 900);
+    //w.setSizeIncrement(500, 600);
 
     QScreen *screen = QGuiApplication::primaryScreen();
     w.setGeometry(screen->geometry());
