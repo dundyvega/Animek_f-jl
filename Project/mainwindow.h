@@ -37,6 +37,8 @@ public:
     void createModel();
 
     void createHashMap();
+public slots:
+    void contentAded(int id, QString cont, ContentDialog *dl);
 protected:
     bool eventFilter(QObject *watched, QEvent *event);
 
@@ -81,7 +83,7 @@ private slots:
 
    void on_actionContent_triggered();
 
-    bool allEnabled(bool activate);
+    void allEnabled(bool activate);
 
 private:
     Ui::MainWindow *ui;

@@ -13,9 +13,10 @@ ContentDialog::ContentDialog(HummelObject *humel, FileOperator *operatorF, QHash
 {
     mn = parent;
     ui->setupUi(this);
+    //ui->buttonBox->setVisible(false);
 
     this->humel = new HummelObject(humel->getId(), humel->getComment1(), humel->getCondition(), humel->getName(), humel->getComment2(), humel->getContent(), this);
-    this->humel1 = humel;
+
     this->operatorF = operatorF;
     text = this->humel->getContent();
 
@@ -74,28 +75,7 @@ ContentDialog::~ContentDialog()
 
 }
 
-void ContentDialog::on_buttonBox_accepted()
-{
-    try
-    {
-        if (text == "")
-        {
-            throw "nem lehet üres";
-        }
 
-        humel->setContent(text);
-
-        operatorF->setTartalom(humel->getId(), humel->getContent());
-
-
-        humel1->setContent(text);
-
-
-        emit(contentSaved(true));
-
-
-    } catch (...) {}
-}
 
 void ContentDialog::on_checkBox_clicked(bool checked)
 {
@@ -108,12 +88,15 @@ void ContentDialog::on_checkBox_clicked(bool checked)
         editing->show();
         connect(editing, SIGNAL(textEditing(QString)), ui->textBrowser, SLOT(setHtml(QString)));
 
-        ui->buttonBox->buttons().at(0)->setEnabled(false);
+        //ui->buttonBox->buttons().at(0)->setEnabled(false);
+        ui->pushButton->setEnabled(false);
+        ui->pushButton_2->setEnabled(false);
     } else
     {
         text = editing->getText();
         editing->close();
-        ui->buttonBox->buttons().at(0)->setEnabled(true);
+        ui->pushButton->setEnabled(true);
+        ui->pushButton_2->setEnabled(true);
 
     }
 }
@@ -146,17 +129,7 @@ void ContentDialog::adAll()
 
 }
 
-void ContentDialog::on_ContentDialog_finished(int result)
-{
 
-     emit(contentSaved(true));
-    if (editing != NULL) {
-        editing->close();
-
-
-    }
-    //this->close();
-}
 
 void ContentDialog::animate()
 {
@@ -167,4 +140,41 @@ void ContentDialog::animate()
 
         ui->textBrowser->setLineWrapColumnOrWidth(ui->textBrowser->lineWrapColumnOrWidth());
     }
+}
+
+void ContentDialog::on_pushButton_clicked()
+{
+    try
+    {
+        if (text == "")
+        {
+            throw "nem lehet üres";
+        }
+
+        humel->setContent(text);
+
+       // operatorF->setTartalom(humel->getId(), humel->getContent());
+
+
+        //emit(contentSaved(true));
+
+        emit(contentAded(humel->getId(), text, this));
+
+
+    } catch (...) {}
+}
+
+void ContentDialog::on_pushButton_2_clicked()
+{
+    // emit(contentSaved(true));
+    if (editing != NULL) {
+        editing->close();
+
+
+    }
+
+      emit(contentAded(-1, text, this));
+    qDebug() << "-1-es elem";
+
+    //this->close();
 }

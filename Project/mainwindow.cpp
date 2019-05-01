@@ -12,6 +12,7 @@
 #include "contentdialog.h"
 #include <QFileDialog>
 #include "aboutdialog.h"
+#include <QDebug>
 
 
 
@@ -153,6 +154,8 @@ MainWindow::~MainWindow()
 
         delete o;
     }
+
+    urls->clear();
 
     delete urls;
     delete smiles;
@@ -322,7 +325,6 @@ void MainWindow::on_listView_doubleClicked(const QModelIndex &index)
 {
    //qDebug() << "kaszt";
 
-    delete dialog;
 
      dialog = new ContentDialog(model->getElement(index.row()), operatorF, smiles, urls, this);
      dialog->show();
@@ -330,11 +332,11 @@ void MainWindow::on_listView_doubleClicked(const QModelIndex &index)
 
      /*mindent off-ol*/
 
-     allEnabled(false);
+    // allEnabled(false);
 
-     connect(dialog, SIGNAL(contentSaved(bool)), this, SLOT(allEnabled(bool)));
+     //connect(dialog, SIGNAL(contentSaved(bool)), this, SLOT(allEnabled(bool)));
 
-
+    connect (dialog, SIGNAL(contentAded(int, QString, ContentDialog*)), this, SLOT(contentAded(int, QString, ContentDialog*)));
 
 
 
@@ -344,7 +346,31 @@ void MainWindow::on_listView_doubleClicked(const QModelIndex &index)
 }
 
 
-bool MainWindow::allEnabled(bool activate) {
+void MainWindow::contentAded(int id, QString cont, ContentDialog *dl) {
+
+
+    if (dl->Accepted) {
+
+    }
+    if (id != -1) {
+        int indexEr = -1;
+        indexEr = model->hasElement(id);
+        if (indexEr != -1) {
+            model->getElement(indexEr)->setContent(cont);
+            operatorF->setTartalom(id, cont);
+            //ui->listView->setModel(modelel
+
+
+        }
+    }
+
+    delete dl;
+
+}
+
+
+
+void MainWindow::allEnabled(bool activate) {
     ui->menuBar->setEnabled(activate);
     ui->listView->setEnabled(activate);
     ui->lineName->setEnabled(activate);

@@ -68,6 +68,20 @@ public:
        return items.length();
    }
 
+   int hasElement(int id) {
+
+       int index = -1;
+       for (int i = 0; i < items.length() && index == -1; ++i) {
+
+           if (items.at(i)->getId() == id) {
+               index = i;
+           }
+
+       }
+
+       return index;
+   }
+
 
 
 

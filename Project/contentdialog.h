@@ -27,7 +27,6 @@ private:
     QString text;
     DialogTextEdit *editing = NULL;
     HummelObject* humel;
-    HummelObject* humel1;
     FileOperator *operatorF;
     QWidget *mn;
     //TextBrowserAnimated2 *animatedBrowser;
@@ -45,19 +44,24 @@ public:
 
 
 private slots:
-    void on_buttonBox_accepted();
+    //void on_buttonBox_accepted();
 
     void on_checkBox_clicked(bool checked);
 
-    void on_ContentDialog_finished(int result);
+   // void on_ContentDialog_finished(int result);
 
     void animate();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::ContentDialog *ui;
 
 signals:
     void contentSaved(bool activate);
+    void contentAded(int, QString, ContentDialog*);
 };
 
 #endif // CONTENTDIALOG_H
