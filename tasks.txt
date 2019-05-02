@@ -1,0 +1,18 @@
+1. return to former version of fileoperator, mainwindow
+2. Delete Összes from config.fil
+3. On menus add on menu tr"all", who calling the action 100
+4. Delete line-s: createModel() or ading delete model tó createModel if not null
+5. Adding if - case to functions : findbyName, findByCondition, findByCategories - what happen if items has no elements   ->(buttons and etc. visible false)
+              - else: -> buttons and etc set visible - true
+              
+6. Deleting console writers -> adding MessageBox, text and title tr()
+
+Repairs:
+7. Add comments line to line
+
+8. if () {
+} -> 
+
+if () 
+{
+}
