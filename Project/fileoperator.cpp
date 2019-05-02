@@ -156,6 +156,7 @@ QList<HummelObject*> FileOperator::animekXML(int allapot)
     QList<HummelObject*> animek;
     QDomNodeList nodes = dom.elementsByTagName("nezem");
 
+
     if (allapot != 100) {
         //qDebug() << "itt is jó";
         for (int i = 0; i < nodes.count(); ++i)
@@ -175,6 +176,7 @@ QList<HummelObject*> FileOperator::animekXML(int allapot)
                 QString tartalom = parent.toElement().elementsByTagName("tartalom").at(0).toElement().text();
                 HummelObject *anime = new HummelObject(animeId, animeReszek, allapot, animeNev, megjegyzes, tartalom);
                 animek.append(anime);
+
 
             }
         }
@@ -200,6 +202,8 @@ QList<HummelObject*> FileOperator::animekXML(int allapot)
                 animek.append(anime);
           //      qDebug() << i << " " << animeNev;
 
+
+
         }
 
     }
@@ -217,7 +221,7 @@ QList<HummelObject*> FileOperator::animekXML(int allapot)
 
 bool FileOperator::kisebb (HummelObject *v1,  HummelObject *v2)
 {
-    return v1->getName() < v2->getName();
+    return v1->getName().toUpper() < v2->getName().toUpper();
 }
 
 QList<HummelObject*> FileOperator::keresAnimekXML(QString karakterlanc)

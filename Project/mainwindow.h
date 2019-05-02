@@ -23,12 +23,13 @@ private:
     QLineEdit *addEdit;
     QLineEdit *nameEdit;
     QLineEdit *contentEdit;
-    HashModel *model;
+    HashModel *model = NULL;
     ContentDialog *dialog = NULL;
     AboutDialog *about = NULL;
     FileOperator *operatorF = new FileOperator();
     QHash<QMovie*, QUrl> *urls;
     QHash<QString, DoubleString> *smiles;
+    int defaultCondition = 0;
 
 public:
     explicit MainWindow(QWidget *parent = 0);
@@ -37,6 +38,7 @@ public:
     void createModel();
 
     void createHashMap();
+    void componentesEnablingMinusMenu(bool bl);
 public slots:
     void contentAded(int id, QString cont, ContentDialog *dl);
 protected:

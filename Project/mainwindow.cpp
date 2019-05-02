@@ -12,7 +12,6 @@
 #include "contentdialog.h"
 #include <QFileDialog>
 #include "aboutdialog.h"
-#include <QDebug>
 
 
 
@@ -32,8 +31,16 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     if(!file.open(QIODevice::ReadOnly)) {
-        QMessageBox::information(0, "error", file.errorString());
+        QString errorMessage = tr("The \"config.fil\" not found");
+        QMessageBox::information(0, "Error", errorMessage);
     }
+
+    MyActions *acter = new MyActions(this, tr("All"), 100);
+    ui->menuFind_by_Categories->addAction(acter);
+
+    connect(acter, SIGNAL(triggered(bool)), acter, SLOT(clicked(bool)));
+    connect(acter, SIGNAL(menuChanged(int)), this, SLOT(menuAction(int)));
+
 
     QTextStream in(&file);
 
@@ -43,8 +50,14 @@ MainWindow::MainWindow(QWidget *parent) :
     int i = 0;
     while(!in.atEnd()) {
         QString line = in.readLine();
+
+        if (line.contains("#")) {
+            defaultCondition = i;
+            line = line.remove(0, 1);
+        }
+
         ui->comboBox->addItem(line);
-        MyActions *acter = new MyActions(this, line, i);
+        acter = new MyActions(this, line, i);
 
         ui->menuFind_by_Categories->addAction(acter);
 
@@ -130,7 +143,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     if (!operatorF->isEmpty()) {
-        menuAction(1);
+        menuAction(defaultCondition);
     }
 
     createHashMap();
@@ -141,12 +154,51 @@ MainWindow::MainWindow(QWidget *parent) :
 
 }
 
+void MainWindow::componentesEnablingMinusMenu(bool bl)
+{
+    ui->listView->setEnabled(bl);
+
+    ui->lineName->setEnabled(bl);
+
+    ui->lineComment1->setEnabled(bl);
+
+    ui->lineComment2->setEnabled(bl);
+
+    ui->comboBox->setEnabled(bl);
+
+    ui->pushButton->setEnabled(bl);
+    ui->label->setEnabled(bl);
+    ui->label_2->setEnabled(bl);
+    ui->label_3->setEnabled(bl);
+
+
+
+    if (!bl) {
+
+     ui->lineName->setText("");
+     ui->lineComment1->setText("");
+     ui->lineComment2->setText("");
+     ui->comboBox->setCurrentIndex(defaultCondition);
+
+    }
+
+
+}
+
 
 MainWindow::~MainWindow()
 {
-    delete dialog;
-    delete about;
-    delete operatorF;
+    if (dialog != NULL)
+        delete dialog;
+
+    if (about != NULL)
+        delete about;
+
+    if (operatorF != NULL)
+        delete operatorF;
+    if (model != NULL)
+        delete model;
+
     delete ui;
 
     QList<QMovie*>listMovies = urls->keys();
@@ -182,7 +234,8 @@ void MainWindow::on_pushButton_clicked()
         obj->setCondition(ui->comboBox->currentIndex());
         //qDebug() << ui->lineComment1->text() << "txt - átadva";
         operatorF->modositAnimeXML(obj->getId(), obj->getName(), obj->getComment2(), ui->lineComment1->text(), obj->getCondition());
-        QMessageBox::information(0, "Módosítva", "A módosításokat elmentettem");
+        QString savedMessage = tr("The \ ") + obj->getName() + "\" file was saved with modifications.";
+        QMessageBox::information(0, tr("Saved"), savedMessage);
 
     } catch (...) {}
 }
@@ -191,35 +244,57 @@ void MainWindow::menuAction(int b)
 {
     //qDebug() << "Hello" << b;
 
+
     try {
     QList<HummelObject*> obj = operatorF->animekXML(b);
-
-    try {
-
-    if (obj.empty()) {
-        throw "üres";
-    }
 
 
     this->model->clear();
      createModel();
 
+     if (!obj.isEmpty()) {
+
+                for (int i = 0; i < obj.length(); ++i)
+                {
+                    this->model->addElement(obj.at(i));
+                }
 
 
-    for (int i = 0; i < obj.length(); ++i)
-    {
-        this->model->addElement(obj.at(i));
-    }
+
+                ui->listView->setModel(model);
+                //ui->listView->setC
+
+
+                ui->listView->setFocus();
+                ui->listView->selectionModel()->select( ui->listView->model()->index(0, 0), QItemSelectionModel::Select);
+                on_listView_clicked(ui->listView->model()->index(0, 0));
 
 
 
-    ui->listView->setModel(model);
-    //ui->listView->setC
 
-    ui->listView->setFocus();
-    ui->listView->selectionModel()->select( ui->listView->model()->index(0, 0), QItemSelectionModel::Select);
-    on_listView_clicked(ui->listView->model()->index(0, 0));
-    } catch (...) {}
+                {
+
+
+
+
+                    //ide jön az, hogy engedélyezzük a listát, a gombot, a....
+
+                }
+
+                componentesEnablingMinusMenu(true);
+
+    }  else {
+
+
+         model->clear();
+         componentesEnablingMinusMenu(false);
+
+
+         //ide jön az, hogy letíltuk a gombot, a ....
+
+     }
+
+
     } catch (QString b) {}
 
 
@@ -264,7 +339,11 @@ void MainWindow:: getByName()
             ui->listView->setFocus();
             ui->listView->selectionModel()->select( ui->listView->model()->index(0, 0), QItemSelectionModel::Select);
             on_listView_clicked(ui->listView->model()->index(0, 0));
-        }
+            componentesEnablingMinusMenu(true);
+            } else {
+
+                componentesEnablingMinusMenu(false);
+            }
     } catch (...) {}
     //ide
 }
@@ -290,7 +369,13 @@ void MainWindow:: getByContent()
             ui->listView->setFocus();
             ui->listView->selectionModel()->select( ui->listView->model()->index(0, 0), QItemSelectionModel::Select);
             on_listView_clicked(ui->listView->model()->index(0, 0));
-         }
+
+            componentesEnablingMinusMenu(true);
+         }  else {
+
+        model->clear();
+        componentesEnablingMinusMenu(false);
+    }
     } catch (...) {}
 }
 
@@ -304,6 +389,10 @@ void MainWindow::emptyModel()
 
 void MainWindow::createModel()
 {
+    if (model != NULL) {
+     delete model;
+    }
+
     model = new HashModel(this);
 }
 
@@ -371,13 +460,11 @@ void MainWindow::contentAded(int id, QString cont, ContentDialog *dl) {
 
 
 void MainWindow::allEnabled(bool activate) {
+
+
+    componentesEnablingMinusMenu(activate);
     ui->menuBar->setEnabled(activate);
-    ui->listView->setEnabled(activate);
-    ui->lineName->setEnabled(activate);
-    ui->lineComment1->setEnabled(activate);
-    ui->lineComment2->setEnabled(activate);
-    ui->comboBox->setEnabled(activate);
-    ui->pushButton->setEnabled(activate);
+
 
 }
 
@@ -425,33 +512,45 @@ void MainWindow::on_actionOpen_triggered()
 
                 operatorF->setFileName(fileName);
 
-                QList<HummelObject*> obj = operatorF->animekXML(1);
+                QList<HummelObject*> obj = operatorF->animekXML(defaultCondition);
                 this->model->clear();
                  createModel();
 
-                for (int i = 0; i < obj.length(); ++i)
-                {
-                    this->model->addElement(obj.at(i));
-                }
+                 if (obj.length() != 0) {
 
-               // qDebug() << fileName;
+                    for (int i = 0; i < obj.length(); ++i)
+                    {
+                        this->model->addElement(obj.at(i));
+                    }
 
-                ui->listView->setModel(model);
+                   // qDebug() << fileName;
 
-
-
-                ui->listView->setFocus();
-                ui->listView->selectionModel()->select( ui->listView->model()->index(0, 0), QItemSelectionModel::Select);
-                on_listView_clicked(ui->listView->model()->index(0, 0));
+                    ui->listView->setModel(model);
 
 
-                // HummelObject *hummel = model->getElement(ui->listView->currentIndex().row());
 
-               // ui->lineName->setText(hummel->getName());
-                //ui->lineComment1->setText(hummel->getComment1());
-                //ui->lineComment2->setText(hummel->getComment2());
+                    ui->listView->setFocus();
+                    ui->listView->selectionModel()->select( ui->listView->model()->index(0, 0), QItemSelectionModel::Select);
+                    on_listView_clicked(ui->listView->model()->index(0, 0));
 
-                //ui->comboBox->setCurrentIndex(hummel->getCondition());
+
+                    // HummelObject *hummel = model->getElement(ui->listView->currentIndex().row());
+
+                   // ui->lineName->setText(hummel->getName());
+                    //ui->lineComment1->setText(hummel->getComment1());
+                    //ui->lineComment2->setText(hummel->getComment2());
+
+                    //ui->comboBox->setCurrentIndex(hummel->getCondition());
+
+                    //model->clear();
+                    //menuAction(1);
+
+
+                    //menuAction(1);
+                    componentesEnablingMinusMenu(true);
+                 } else {
+                     componentesEnablingMinusMenu(false);
+                 }
 
         } else
         {
@@ -464,8 +563,12 @@ void MainWindow::on_actionOpen_triggered()
 void MainWindow::on_actionDelete_triggered()
 {
     // ui->listView->currentIndex() -t kell törölni
+
+    HummelObject *obj = model->getElement(ui->listView->currentIndex().row());
+    QString inf = tr("Are you sure you want to delete the \"") + obj->getName() + tr("\" named object?");
+
     QMessageBox::StandardButton reply;
-    reply = QMessageBox::question(this, "Törlés", "Biztosan törli?");
+    reply = QMessageBox::question(this, tr("Deleting..."), inf);
     if (reply == QMessageBox::Yes) {
         //qDebug() << "yes";
 
@@ -473,7 +576,7 @@ void MainWindow::on_actionDelete_triggered()
     try {
 
 
-         HummelObject *obj = model->getElement(ui->listView->currentIndex().row());
+
 
          if (obj == NULL) {
              throw "nincs kiválasztva";
@@ -486,6 +589,16 @@ void MainWindow::on_actionDelete_triggered()
          operatorF->torolAnimeXML(obj->getId());
          model->deleteHummel(obj);
          ui->listView->setModel(model);
+
+         if (model->length() != 0) {
+
+             componentesEnablingMinusMenu(true);
+         } else {
+
+             componentesEnablingMinusMenu(false);
+         }
+
+
     } catch (...) {}
 
 
@@ -508,6 +621,7 @@ void MainWindow::on_actionNew_triggered()
 
     if (fileName != "") {
         operatorF->newFile(fileName);
+        menuAction(defaultCondition);
 
 
     }
@@ -549,8 +663,9 @@ void MainWindow::createHashMap()
 
 
     if(!file.open(QIODevice::ReadOnly)) {
+        QString errorMessage =  tr("The file \"smiles.dat\"")  + tr(" not found");
     //    qDebug()<<"filenot opened"<<endl;
-        QMessageBox::information(0,"error",file.errorString());
+        QMessageBox::information(0,tr("Error"), errorMessage);
     }
     else
     {

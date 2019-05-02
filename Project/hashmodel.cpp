@@ -1,5 +1,4 @@
 #include "hashmodel.h"
-#include <QDebug>
 
 HashModel::HashModel(QObject *parent)
     : QAbstractListModel(parent)
@@ -50,20 +49,23 @@ HashModel::~HashModel()
 void HashModel::clear()
 {
 
-    /*for (int i = 0; i < items.length(); ++i)
+
+    for (int i = 0; i < items.length(); ++i)
     {
 
-        HummelObject *p = items.at(i);
+
         delete items.at(i);
 
 
 
 
-    }*/
+    }
 
-    qDeleteAll(items);
+    //qDeleteAll(items);
 
     items.clear();
+
+
 
 }
 

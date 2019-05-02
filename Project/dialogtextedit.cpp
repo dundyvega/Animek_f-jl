@@ -18,6 +18,9 @@ DialogTextEdit::DialogTextEdit(QString htmlString, QHash<QString, DoubleString> 
    setWindowFlags(Qt::Dialog | Qt::FramelessWindowHint | Qt::WindowTitleHint);
   // createHashMap();
 
+   ui->pushButton->setStyleSheet("QPushButton {font: bold }");
+   ui->pushButton_2->setStyleSheet("QPushButton {font: italic }");
+
 
     this->setWindowIcon(QIcon("favicon.ico"));
 

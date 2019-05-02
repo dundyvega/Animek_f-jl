@@ -392,7 +392,7 @@ A főszereplő Shirayuki, egy egyszerű gyógyszerész lány, aki csupán ritka 
   <animeID>21</animeID>
   <animeNev>Akagami no Shirayukihime 2</animeNev>
   <nezem>3</nezem>
-  <reszek>0</reszek>
+  <reszek>12</reszek>
   <megjegyzes>3,15.rész senpaj 13-26</megjegyzes>
   <tartalom>...</tartalom>
  </anime>
@@ -11738,7 +11738,7 @@ A 15 éves Kohinata Hikari vidám és gondtalan életet él egy óceán parti ki
   <animeID>1051</animeID>
   <animeNev>Ashen Oiaokeli</animeNev>
   <nezem>3</nezem>
-  <reszek>0</reszek>
+  <reszek>12</reszek>
   <megjegyzes>3 haru</megjegyzes>
   <tartalom>...</tartalom>
  </anime>
@@ -15187,21 +15187,23 @@ Hozzáadva:
   <animeNev>Isekai Quartet </animeNev>
   <nezem>1</nezem>
   <reszek>0</reszek>
-  <megjegyzes>3  sorozat mix</megjegyzes>
-  <tartalom>Az Overlord, a KonoSuba, a Re:Zero és a Youjo Senki karakterei összetalálkoznak egy új, alternatív világban.
+  <megjegyzes>4 sorozat mix</megjegyzes>
+  <tartalom>{s=22}Isekai Quartet{/s}
+
+Az Overlord, a KonoSuba, a Re:Zero és a Youjo Senki karakterei összetalálkoznak egy új, alternatív világban.
 
 [h=https://animeaddicts.hu/encyclopedia.php?anime.15978]AA[/a]
 [h=https://indavideo.hu/profile/HunDaniel10/all-videos#]Dani[/a]
 
 Hozzáadva:
 
-2019.04.09</tartalom>
+2019.04.09{c=rgb(200,155,144)}</tartalom>
  </anime>
  <anime>
   <animeID>1299</animeID>
   <animeNev>Nande Koko ni Sensei ga!? </animeNev>
   <nezem>1</nezem>
-  <reszek>0</reszek>
+  <reszek>12</reszek>
   <megjegyzes>3 kicsit perverz, de semmitmondó</megjegyzes>
   <tartalom>Satou Ichirou egy 17 éves középiskolás, aki rendszeresen kerül félreérthető helyzetekbe az iskola legfélelmetesebb, ugyanakkor legszebb tanárnőjével, Kojima Kanával. A sorozat kettejük, valamint három másik tanárnő-diák páros viszontagságos mindennapjait mutatja be, ahogy megpróbálják elkerülni a kínos szituációkat, vagy pedig közös erővel kimászni belőlük.
 
@@ -15222,7 +15224,7 @@ Hozzáadva:
 [h=https://animeaddicts.hu/encyclopedia.php?anime.15707]AA[/a]
 [h=https://indavideo.hu/profile/AdasiX/all-videos#]Adidas[/a]
 
-:(:):):)
+:(:):):)!perverz
 
 Hozzáadva:
 2019.04.12
@@ -15234,21 +15236,25 @@ Hozzáadva:
   <nezem>1</nezem>
   <reszek>0</reszek>
   <megjegyzes>3 péntek</megjegyzes>
-  <tartalom>Shin egy fantasy világban születik újjá, ahol egy nagyhatalmú mágushős, Merlin Wolford fogadja örökbe, átadva neki minden mágikus tudását. Épp csak a hétköznapi dolgokat nem tanítja meg hősünknek, aki 15 évesen kerül csak emberek (pontosabban lányok) közé, mikor beiratkozik a királyi mágusakadémiára.
+  <tartalom>{s=22}Kenja no Mago{/s}
+
+Shin egy fantasy világban születik újjá, ahol egy nagyhatalmú mágushős, Merlin Wolford fogadja örökbe, átadva neki minden mágikus tudását. Épp csak a hétköznapi dolgokat nem tanítja meg hősünknek, aki 15 évesen kerül csak emberek (pontosabban lányok) közé, mikor beiratkozik a királyi mágusakadémiára.
 
 [h=https://animeaddicts.hu/encyclopedia.php?anime.13063]AA[/a]
 [h=https://indavideo.hu/profile/kyuubi1992naru/all-videos#]Felirt[/a]
 
 hozzáadva:
-2019.04.12</tartalom>
+2019.04.12{c=rgb(82,155,200)}</tartalom>
  </anime>
  <anime>
   <animeID>1302</animeID>
-  <animeNev>pénzem</animeNev>
+  <animeNev>pénzem - 2019 április</animeNev>
   <nezem>6</nezem>
-  <reszek>0</reszek>
-  <megjegyzes>vagyonom kötségvetés</megjegyzes>
-  <tartalom>összesen: 25 050 - 140 = 2490 
+  <reszek>12</reszek>
+  <megjegyzes>4 -2019</megjegyzes>
+  <tartalom>2019. Április
+
+összesen: 25 050 - 140 = 2490 
 
 Magamnak: 23 050 - 140 = 22900
 
@@ -15326,6 +15332,6 @@ Hozzáadva
 
  Hozzáadva:
 2019.04.30
-{c=rgb(255, 200, 200)}</tartalom>
+{c=rgb(255, 200, 200)} :(</tartalom>
  </anime>
 </Animek>

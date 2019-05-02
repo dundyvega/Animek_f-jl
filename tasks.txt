@@ -1,7 +1,7 @@
-1. return to former version of fileoperator, mainwindow
-2. Delete Összes from config.fil
-3. On menus add on menu tr"all", who calling the action 100
-4. Delete line-s: createModel() or ading delete model tó createModel if not null
+1. return to former version of fileoperator, mainwindow - OK
+2. Delete Összes from config.fil - OK
+3. On menus add on menu tr"all", who calling the action 100 - OK
+4. Delete line-s: createModel() or ading delete model tó createModel if not null - OK
 5. Adding if - case to functions : findbyName, findByCondition, findByCategories - what happen if items has no elements   ->(buttons and etc. visible false)
               - else: -> buttons and etc set visible - true
               

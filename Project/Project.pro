@@ -7,7 +7,7 @@
 QT       += core gui
 QT       += core gui xml
 
-TRANSLATIONS = deneraHummel_hu_HU.ts
+TRANSLATIONS = deneraHummel_hu_HU.ts deneraHumel_en_EN.ts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
