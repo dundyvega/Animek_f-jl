@@ -172,7 +172,7 @@
   </action>
   <action name="actionOpen">
    <property name="icon">
-    <iconset resource="sm.qrc">
+    <iconset>
      <normaloff>:/smiles/rar.gif</normaloff>:/smiles/rar.gif</iconset>
    </property>
    <property name="text">
@@ -191,7 +191,7 @@
   </action>
   <action name="actionClose">
    <property name="icon">
-    <iconset resource="sm.qrc">
+    <iconset>
      <normaloff>:/smiles/flower.gif</normaloff>:/smiles/flower.gif</iconset>
    </property>
    <property name="text">
@@ -200,7 +200,7 @@
   </action>
   <action name="actionSave_2">
    <property name="icon">
-    <iconset resource="sm.qrc">
+    <iconset>
      <normaloff>:/smiles/gif.gif</normaloff>:/smiles/gif.gif</iconset>
    </property>
    <property name="text">
@@ -229,8 +229,14 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="sm.qrc"/>
- </resources>
+ <tabstops>
+  <tabstop>listView</tabstop>
+  <tabstop>lineName</tabstop>
+  <tabstop>lineComment1</tabstop>
+  <tabstop>lineComment2</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
  <connections/>
 </ui>
