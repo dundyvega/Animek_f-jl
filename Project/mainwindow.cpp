@@ -234,7 +234,7 @@ void MainWindow::on_pushButton_clicked()
         obj->setCondition(ui->comboBox->currentIndex());
         //qDebug() << ui->lineComment1->text() << "txt - átadva";
         operatorF->modositAnimeXML(obj->getId(), obj->getName(), obj->getComment2(), ui->lineComment1->text(), obj->getCondition());
-        QString savedMessage = tr("The \ ") + obj->getName() + "\" file was saved with modifications.";
+        QString savedMessage = tr("The \ ") + obj->getName() + "\"" +  tr(" file was saved with modifications.");
         QMessageBox::information(0, tr("Saved"), savedMessage);
 
     } catch (...) {}
@@ -283,6 +283,7 @@ void MainWindow::menuAction(int b)
 
                 componentesEnablingMinusMenu(true);
 
+                 ui->statusBar->showMessage(tr("The number of ") + ui->comboBox->currentText() + tr(" is ") + QString::number(obj.length()));
     }  else {
 
 
@@ -513,6 +514,7 @@ void MainWindow::on_actionOpen_triggered()
                 operatorF->setFileName(fileName);
 
                 QList<HummelObject*> obj = operatorF->animekXML(defaultCondition);
+                //ui->statusBar->showMessage(tr("The number of: "));
                 this->model->clear();
                  createModel();
 
