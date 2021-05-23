@@ -1,0 +1,20 @@
+#filmeket játsz le, ha azt akarod, hogy mihelyt egyet megnézel törölje is le
+if test $# -lt 2
+then
+  echo "Nincs argumentum"
+  exit
+fi
+
+ while test 2 -eq 2
+ do
+      i=`ls |egrep $2 |head -n 1`
+      if test "$i" != ""
+      then
+        clear
+        "$1" "$i"
+        ln "$i" ~/média/tmp/"$i"
+	
+        rm "$i"
+        clear
+      fi
+done
