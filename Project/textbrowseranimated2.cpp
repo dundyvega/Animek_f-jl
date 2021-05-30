@@ -1,6 +1,7 @@
 #include "textbrowseranimated2.h"
 #include <QDebug>
 #include "dialogtextedit.h"
+#include <QFile>
 
 TextBrowserAnimated2::TextBrowserAnimated2(QWidget *parent) : QTextBrowser(parent)
 {

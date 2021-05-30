@@ -3,8 +3,8 @@
 #include <QDebug>
 #include "hummelobject.h"
 #include <algorithm>
-
-
+#include <iostream>
+using namespace std;
 
 FileOperator::FileOperator()
 {
