@@ -12,7 +12,6 @@
 #include "contentdialog.h"
 #include <QFileDialog>
 #include "aboutdialog.h"
-#include <QKeyEvent>
 
 
 
